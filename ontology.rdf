@@ -6,30 +6,30 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:FirefightersDataRequirementOntology="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology/1.0.0"/>
-        <terms:abstract xml:lang="en">Abstract
+        <dcterms:abstract xml:lang="en">Abstract
 
 Firefighters require accurate and timely information regarding a building and its
 environment to perform their duty safely and effectively during a fire emergency. However, due to the chaotic nature of building fires, firefighters often receive erroneous, conflicting, or delayed information that can affect the outcome of a hazard. In this paper, we propose a solution in the form of an ontology that defines building and environmental data needed by firefighters during a building
 fire emergency. The ontology can be a basis for developing intelligent tools and systems that collect building and environmental data from different data sources and provide comprehensive information to firefighters. It can also facilitate the data exchange process between the different personnel involved in emergency response. The ontology was developed by following the METHONTOLOGY method, and it was implemented using the web ontology language (OWL) in
-Protégé 5.5.0.</terms:abstract>
-        <terms:creator xml:lang="en">Eyosias Guyo
+Protégé 5.5.0.</dcterms:abstract>
+        <dcterms:creator xml:lang="en">Eyosias Guyo
 
 Technische Universität Berlin, Germany
 Trimble Solutions Oy, Finland
 
-eyosias.guyo@trimble.com</terms:creator>
-        <terms:creator xml:lang="en">Timo Hartmann
+eyosias.guyo@trimble.com</dcterms:creator>
+        <dcterms:creator xml:lang="en">Timo Hartmann
 
-Technische Universität Berlin, Germany</terms:creator>
-        <terms:language xml:lang="en">English</terms:language>
-        <terms:license xml:lang="en">This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International.
+Technische Universität Berlin, Germany</dcterms:creator>
+        <dcterms:language xml:lang="en">English</dcterms:language>
+        <dcterms:license xml:lang="en">This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International.
  
-License: https://creativecommons.org/licenses/by-nc/4.0/</terms:license>
-        <terms:title xml:lang="en">Fire Fighters&apos; Data Requirements Ontology</terms:title>
+License: https://creativecommons.org/licenses/by-nc/4.0/</dcterms:license>
+        <dcterms:title xml:lang="en">Fire Fighters&apos; Data Requirements Ontology</dcterms:title>
         <rdfs:comment xml:lang="en">Domain: 
 
 Building fire emergency</rdfs:comment>
@@ -57,12 +57,10 @@ The focus is on data about an affected building, its different components, and i
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://purl.org/dc/terms/abstract -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
     
@@ -70,13 +68,11 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://purl.org/dc/terms/creator -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
@@ -84,20 +80,17 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://purl.org/dc/terms/language -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
@@ -111,12 +104,10 @@ The focus is on data about an affected building, its different components, and i
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#contains -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#contains">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -148,7 +139,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasAddress -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasAddress">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isAddressOf"/>
         <rdfs:domain>
@@ -179,7 +169,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasBuildingPlan -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasBuildingPlan">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isBuildingPlanOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
@@ -192,7 +181,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasComponent -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasComponent">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isComponentOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
@@ -204,7 +192,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasConnectionWith -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasConnectionWith">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
@@ -232,7 +219,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasConstructionType -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasConstructionType">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isConstructionTypeOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
@@ -244,7 +230,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasControlPanel -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasControlPanel">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isControlPanelOf"/>
@@ -282,7 +267,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireExtinguishingSystem -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireExtinguishingSystem">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isFireExtinguishingSystemOf"/>
         <rdfs:domain>
@@ -304,7 +288,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHoseConnection -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHoseConnection">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isHoseConnectionOf"/>
         <rdfs:domain>
@@ -324,7 +307,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasMaterial -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasMaterial">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isMaterialOf"/>
@@ -347,7 +329,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasOccupancy -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasOccupancy">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isOccupancyOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
@@ -360,7 +341,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasShaftEnclosure -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasShaftEnclosure">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isShaftEnclosureOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#VerticalOpening"/>
@@ -372,7 +352,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWaterSource -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWaterSource">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isWaterSourceOf"/>
@@ -403,7 +382,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWeatherCondition -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWeatherCondition">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isWeatherConditionOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentSite"/>
@@ -415,7 +393,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isAddressOf -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isAddressOf">
         <rdfs:domain>
@@ -445,7 +422,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isBuildingPlanOf -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isBuildingPlanOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingPlan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
@@ -455,7 +431,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isComponentOf -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isComponentOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
@@ -467,7 +442,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isConstructionTypeOf -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isConstructionTypeOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConstructionType"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
@@ -477,7 +451,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isContainedBy -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isContainedBy">
         <rdfs:domain>
@@ -505,7 +478,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isControlPanelOf -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isControlPanelOf">
         <rdfs:domain>
@@ -541,7 +513,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isFireExtinguishingSystemOf -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isFireExtinguishingSystemOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticFireExtinguishingSystem"/>
         <rdfs:range>
@@ -561,7 +532,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isHoseConnectionOf -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isHoseConnectionOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HoseConnection"/>
         <rdfs:range>
@@ -579,7 +549,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isMaterialOf -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isMaterialOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Material"/>
@@ -600,7 +569,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isOccupancyOf -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isOccupancyOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
@@ -611,7 +579,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isShaftEnclosureOf -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isShaftEnclosureOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ShaftEnclosure"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#VerticalOpening"/>
@@ -621,7 +588,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isWaterSourceOf -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isWaterSourceOf">
         <rdfs:domain>
@@ -650,7 +616,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isWeatherConditionOf -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isWeatherConditionOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WeatherCondition"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentSite"/>
@@ -667,12 +632,10 @@ The focus is on data about an affected building, its different components, and i
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasAccessBarrierType -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasAccessBarrierType">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireLane"/>
@@ -686,7 +649,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasAnglesOfApproach -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasAnglesOfApproach">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireLane"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -697,7 +659,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasArea -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasArea">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ParkingLot"/>
@@ -710,7 +671,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasBuildingArea -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasBuildingArea">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -722,7 +682,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasBuildingHeight -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasBuildingHeight">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -733,7 +692,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasCapacity -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasCapacity">
         <rdfs:domain>
@@ -757,7 +715,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasClass -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasClass">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StandpipeSystem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -768,7 +725,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasCondition -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasCondition">
         <rdfs:domain>
@@ -787,7 +743,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasCoverageZone -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasCoverageZone">
         <rdfs:domain>
@@ -812,7 +767,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDemography -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDemography">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentSite"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -823,7 +777,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDescription -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDescription">
         <rdfs:domain>
@@ -850,7 +803,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDirectionToExit -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDirectionToExit">
         <rdfs:domain>
             <owl:Class>
@@ -868,7 +820,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDischargeLevel -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDischargeLevel">
         <rdfs:domain>
@@ -889,7 +840,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDistanceFromFDC -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDistanceFromFDC">
         <rdfs:domain>
             <owl:Class>
@@ -907,7 +857,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDistanceFromIncidentBuilding -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDistanceFromIncidentBuilding">
         <rdfs:domain>
@@ -928,7 +877,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDistanceFromWaterSource -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDistanceFromWaterSource">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireDepartmentConnection"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -939,7 +887,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasEnclosedArea -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasEnclosedArea">
         <rdfs:domain>
@@ -962,7 +909,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasExitTravelDistances -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasExitTravelDistances">
         <rdfs:domain>
             <owl:Class>
@@ -983,7 +929,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFillPressure -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFillPressure">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FarsFillStation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -994,7 +939,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFillTime -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFillTime">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FarsFillStation"/>
@@ -1007,7 +951,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireExtinguisherRating -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireExtinguisherRating">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PortableFireExtinguisher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1018,7 +961,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireFlow -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireFlow">
         <rdfs:domain>
@@ -1038,7 +980,6 @@ The focus is on data about an affected building, its different components, and i
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireResistanceRating -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireResistanceRating">
         <rdfs:domain>
             <owl:Class>
@@ -1057,7 +998,6 @@ The focus is on data about an affected building, its different components, and i
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFlammabilityLevel -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFlammabilityLevel">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHazardLevel"/>
@@ -1101,7 +1041,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFloorsServed -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFloorsServed">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
@@ -1121,7 +1060,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHazardLevel -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHazardLevel">
         <rdfs:domain>
@@ -1153,7 +1091,6 @@ Levels from 0 to 4
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHealthHazardSeverityLevel -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHealthHazardSeverityLevel">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHazardLevel"/>
@@ -1189,7 +1126,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHeight -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHeight">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Window"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1201,7 +1137,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasID -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasID">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1212,7 +1147,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasInstabilityLevel -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasInstabilityLevel">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHazardLevel"/>
@@ -1247,7 +1181,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasIsolationValveLocation -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasIsolationValveLocation">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StandpipeSystem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1258,7 +1191,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasKey -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasKey">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#KeyBox"/>
@@ -1271,7 +1203,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasKeyLocated -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasKeyLocated">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireCommandCenter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1282,7 +1213,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasLocation -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasLocation">
         <rdfs:domain>
@@ -1325,7 +1255,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasLocationOfControlValve -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasLocationOfControlValve">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticFireExtinguishingSystem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1336,7 +1265,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasMachineRoomLocation -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasMachineRoomLocation">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Elevator"/>
@@ -1349,7 +1277,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfExit -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfExit">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
@@ -1360,7 +1287,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfInlet -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfInlet">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireDepartmentConnection"/>
@@ -1373,7 +1299,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfOutlet -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfOutlet">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireHydrant"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
@@ -1384,7 +1309,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfSimultaneousFill -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfSimultaneousFill">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FarsFillStation"/>
@@ -1397,7 +1321,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfStory -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfStory">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
@@ -1408,7 +1331,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfSublevel -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfSublevel">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
@@ -1421,7 +1343,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasOccupantLoad -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasOccupantLoad">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
@@ -1432,7 +1353,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasOpeningDirection -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasOpeningDirection">
         <rdfs:domain>
@@ -1452,7 +1372,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasPrecipitationValue -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasPrecipitationValue">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WeatherCondition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1463,7 +1382,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasPressure -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasPressure">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#MunicipalDistributionSystem"/>
@@ -1476,7 +1394,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasRelativeHumidity -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasRelativeHumidity">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WeatherCondition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1487,7 +1404,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasRequiredMaximumPressure -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasRequiredMaximumPressure">
         <rdfs:domain>
@@ -1507,7 +1423,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasRequiredMinimumPressure -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasRequiredMinimumPressure">
         <rdfs:domain>
             <owl:Class>
@@ -1526,7 +1441,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSize -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSize">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HoseConnection"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1537,7 +1451,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSlope -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSlope">
         <rdfs:domain>
@@ -1556,7 +1469,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSpecialHazard -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSpecialHazard">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -1577,7 +1489,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSpecies -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSpecies">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Vegetation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1588,7 +1499,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasStatus -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasStatus">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Road"/>
@@ -1601,7 +1511,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTemperature -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTemperature">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WeatherCondition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1612,7 +1521,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasThickness -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasThickness">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Wall"/>
@@ -1625,7 +1533,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTimeMark -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTimeMark">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WeatherCondition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
@@ -1636,7 +1543,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTrafficLevel -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTrafficLevel">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoadToIncident"/>
@@ -1649,7 +1555,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTurningRadius -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTurningRadius">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireLane"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1660,7 +1565,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasType -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasType">
         <rdfs:domain>
@@ -1693,7 +1597,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTypeOfSignalInitiator -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTypeOfSignalInitiator">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireAlarmSystem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1713,7 +1616,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasVerticalClearance -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasVerticalClearance">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireLane"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1724,7 +1626,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWidth -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWidth">
         <rdfs:domain>
@@ -1749,7 +1650,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWindDirection -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWindDirection">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WeatherCondition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1760,7 +1660,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWindSpeed -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWindSpeed">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WeatherCondition"/>
@@ -1773,7 +1672,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#includeHazardousOperation -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#includeHazardousOperation">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -1784,7 +1682,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isAbandoned -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isAbandoned">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
@@ -1797,7 +1694,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isAccessible -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isAccessible">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoofAssembly"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -1808,7 +1704,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isControlValveOn -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isControlValveOn">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticSprinklerSystem"/>
@@ -1821,7 +1716,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isDecontaminationRequired -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isDecontaminationRequired">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HazardousSubstance"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -1832,7 +1726,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isExit -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isExit">
         <rdfs:domain>
@@ -1852,7 +1745,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isFunctional -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isFunctional">
         <rdfs:domain>
@@ -1875,7 +1767,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isInAlarm -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isInAlarm">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SensorDetector"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -1887,7 +1778,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isIsolationValveOpen -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isIsolationValveOpen">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StandpipeSystem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -1898,7 +1788,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isLightweightConstruction -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isLightweightConstruction">
         <rdfs:domain>
@@ -1917,7 +1806,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isOnExterior -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isOnExterior">
         <rdfs:domain>
@@ -1938,7 +1826,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isPrimaryFireServiceEntryPoint -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isPrimaryFireServiceEntryPoint">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Door"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -1950,7 +1837,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isQualifiedForEvacuation -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isQualifiedForEvacuation">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Elevator"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -1961,7 +1847,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isRoofAccess -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isRoofAccess">
         <rdfs:domain>
@@ -1981,7 +1866,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isShaftway -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isShaftway">
         <rdfs:domain>
             <owl:Class>
@@ -1999,7 +1883,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isSystemActivated -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isSystemActivated">
         <rdfs:domain>
@@ -2021,7 +1904,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isUtilityRunning -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isUtilityRunning">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingUtilitySystem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -2039,12 +1921,10 @@ Source: NFPA 704, 2022</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Address -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Address">
         <rdfs:comment xml:lang="en">The &apos;Address&apos; class represents different types of addresses needed during a building fire emergency.</rdfs:comment>
@@ -2054,7 +1934,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AirSupply -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AirSupply">
         <rdfs:subClassOf>
@@ -2078,7 +1957,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AlarmSystemAnnunciatorPanel -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AlarmSystemAnnunciatorPanel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel"/>
         <rdfs:comment xml:lang="en">The &apos;AlarmSystemAnnunciatorPanel&apos; class represents annunciator panels that display information about the type and location of an active alarm.</rdfs:comment>
@@ -2088,7 +1966,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AlternativeAutomaticFireExtinguishingSystem -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AlternativeAutomaticFireExtinguishingSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticFireExtinguishingSystem"/>
@@ -2100,7 +1977,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AreaOfRefuge -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AreaOfRefuge">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
@@ -2123,7 +1999,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticFireExtinguishingSystem -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticFireExtinguishingSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -2158,7 +2033,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticSprinklerSystem -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticSprinklerSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticFireExtinguishingSystem"/>
@@ -2201,7 +2075,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BackUpPowerSupplySystem -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BackUpPowerSupplySystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingUtilitySystem"/>
         <rdfs:comment xml:lang="en">The &apos;BackUpPowerSupplySystem&apos; class represents a building&apos;s backup power supply system.</rdfs:comment>
@@ -2211,7 +2084,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Balcony -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Balcony">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
@@ -2237,7 +2109,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Building -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Building">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure"/>
         <rdfs:comment xml:lang="en">The &apos;Building&apos; class represents buildings other than the incident building.</rdfs:comment>
@@ -2247,7 +2118,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingAddress -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingAddress">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Address"/>
@@ -2259,7 +2129,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent">
         <rdfs:comment xml:lang="en">The &apos;BuildingComponent&apos; class represents different building components that firefighters may interact with during a building fire emergency.</rdfs:comment>
         <rdfs:label xml:lang="en">BuildingComponent</rdfs:label>
@@ -2268,7 +2137,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingEngineerContactAddress -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingEngineerContactAddress">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Address"/>
@@ -2280,7 +2148,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingManagerContactAddress -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingManagerContactAddress">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Address"/>
         <rdfs:comment xml:lang="en">The &apos;BuildingManagerContactAddress&apos; class represents a building manager&apos;s contact address.</rdfs:comment>
@@ -2290,7 +2157,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy">
         <owl:equivalentClass>
@@ -2329,7 +2195,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingPlan -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingPlan">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2351,7 +2216,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
         <rdfs:comment xml:lang="en">The &apos;BuildingSafetySystem&apos; class represents components of a building geared towards building safety.</rdfs:comment>
@@ -2361,7 +2225,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingUtilitySystem -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingUtilitySystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
@@ -2391,7 +2254,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#CarbonMonoxideDetector -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#CarbonMonoxideDetector">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SensorDetector"/>
         <rdfs:comment xml:lang="en">The &apos;CarbonMonoxideDetector&apos; class represents Carbon Monoxide detectors installed in a building.</rdfs:comment>
@@ -2402,7 +2264,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#CbrSensor -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#CbrSensor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SensorDetector"/>
         <rdfs:comment xml:lang="en">The &apos;CbrSensor&apos; class represents Chemical/Biological/Radiation (CBR) sensors installed in a building.</rdfs:comment>
@@ -2412,7 +2273,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConcealedSpace -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConcealedSpace">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
@@ -2441,7 +2301,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConstructionType -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConstructionType">
         <owl:equivalentClass>
@@ -2475,7 +2334,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2496,7 +2354,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Door -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Door">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
@@ -2559,7 +2416,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#DoorUnlockingSystemControlPanel -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#DoorUnlockingSystemControlPanel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel"/>
         <rdfs:comment xml:lang="en">The &apos;DoorUnlockingSystemControlPanel&apos; class represents a control panel used to unlock some or all doors in a building.</rdfs:comment>
@@ -2569,7 +2425,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Elevator -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Elevator">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
@@ -2636,7 +2491,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ElevatorOverrideControlPanel -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ElevatorOverrideControlPanel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel"/>
         <rdfs:comment xml:lang="en">The &apos;ElevatorOverrideControlPanel&apos; class represents a control panel used to override elevators in a building.</rdfs:comment>
@@ -2646,7 +2500,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyPowerOutlet -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyPowerOutlet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -2669,7 +2522,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyServiceProvider -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyServiceProvider">
         <rdfs:subClassOf>
@@ -2698,7 +2550,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyServiceProviderContactAddress -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyServiceProviderContactAddress">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Address"/>
         <rdfs:comment xml:lang="en">The &apos;EmergencyServiceProviderContactAddress&apos; class represents different emergency service provider&apos;s contact address.</rdfs:comment>
@@ -2708,7 +2559,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExteriorDoor -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExteriorDoor">
         <owl:equivalentClass>
@@ -2731,7 +2581,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExteriorWall -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExteriorWall">
         <owl:equivalentClass>
             <owl:Class>
@@ -2752,7 +2601,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExteriorWindow -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExteriorWindow">
         <owl:equivalentClass>
@@ -2775,7 +2623,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExtremelyValuableMaterial -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExtremelyValuableMaterial">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
         <rdfs:subClassOf>
@@ -2792,7 +2639,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Facade -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Facade">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
         <rdfs:comment xml:lang="en">The &apos;Facade&apos; class represents the facade of a building.</rdfs:comment>
@@ -2803,7 +2649,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FarsControlPanel -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FarsControlPanel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel"/>
         <rdfs:comment xml:lang="en">The &apos;FarsControlPanel&apos; class represents a control panel used to control a firefighter&apos;s air replenishment system (FARS)  that may be found in a building.</rdfs:comment>
@@ -2813,7 +2658,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FarsFillStation -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FarsFillStation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -2855,7 +2699,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireAlarmSystem -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireAlarmSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
         <rdfs:subClassOf>
@@ -2890,7 +2733,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireBarrier -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireBarrier">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireandSmokeProtectionElement"/>
         <rdfs:subClassOf>
@@ -2906,7 +2748,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireCommandCenter -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireCommandCenter">
         <rdfs:subClassOf>
@@ -2935,7 +2776,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireDepartmentCommunicationSystemPanel -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireDepartmentCommunicationSystemPanel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel"/>
         <rdfs:comment xml:lang="en">The &apos;FireDepartmentCommunicationSystemPanel&apos; class represents a control panel used to control a fire department communication system that may be found in a building.</rdfs:comment>
@@ -2945,7 +2785,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireDepartmentConnection -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireDepartmentConnection">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -2993,7 +2832,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireHoseConnection -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireHoseConnection">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
         <rdfs:subClassOf>
@@ -3021,7 +2859,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireHydrant -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireHydrant">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure"/>
@@ -3076,7 +2913,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireLane -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireLane">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Road"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure"/>
@@ -3113,7 +2949,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FirePartition -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FirePartition">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireandSmokeProtectionElement"/>
         <rdfs:subClassOf>
@@ -3129,7 +2964,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FirePump -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FirePump">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -3147,7 +2981,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireServiceOrganization -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireServiceOrganization">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyServiceProvider"/>
         <rdfs:comment xml:lang="en">The &apos;FireServiceOrganization&apos; class represents fire service organizations involved in a building fire emergency response.</rdfs:comment>
@@ -3157,7 +2990,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireandSmokeProtectionElement -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireandSmokeProtectionElement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -3188,7 +3020,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Firewall -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Firewall">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Facade"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireandSmokeProtectionElement"/>
@@ -3206,7 +3037,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FloorAssembly -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FloorAssembly">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
         <rdfs:subClassOf>
@@ -3223,7 +3053,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#GasDetector -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#GasDetector">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SensorDetector"/>
         <rdfs:comment xml:lang="en">The &apos;GasDetector&apos; class represents different gas detectors installed in a building.</rdfs:comment>
@@ -3234,7 +3063,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#GasSupplySystem -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#GasSupplySystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingUtilitySystem"/>
         <rdfs:comment xml:lang="en">The &apos;GasSupplySystem&apos; class represents a building&apos;s gas supply system.</rdfs:comment>
@@ -3244,7 +3072,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Hallway -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Hallway">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
@@ -3269,7 +3096,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HazardousMaterial -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HazardousMaterial">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure"/>
@@ -3298,7 +3124,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HazardousSubstance -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HazardousSubstance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
@@ -3340,7 +3165,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Helipad -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Helipad">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
         <rdfs:subClassOf>
@@ -3356,7 +3180,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HoseConnection -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HoseConnection">
         <rdfs:subClassOf>
@@ -3380,7 +3203,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Hospital -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Hospital">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyServiceProvider"/>
         <rdfs:comment xml:lang="en">The &apos;Hospital&apos; class represents hospitals.</rdfs:comment>
@@ -3391,7 +3213,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HvacSystem -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HvacSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingUtilitySystem"/>
         <rdfs:comment xml:lang="en">The &apos;HvacSystem&apos; class represents a building&apos;s heating, ventilation, and air conditioning (HVAC) system.</rdfs:comment>
@@ -3401,7 +3222,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding">
         <rdfs:subClassOf>
@@ -3495,7 +3315,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentSite -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentSite">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3547,7 +3366,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#KeyBox -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#KeyBox">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
         <rdfs:subClassOf>
@@ -3569,7 +3387,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#MassNotificationSystem -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#MassNotificationSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -3600,7 +3417,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#MassNotificationSystemControlPanel -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#MassNotificationSystemControlPanel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel"/>
         <rdfs:comment xml:lang="en">The &apos;MassNotificationSystemControlPanel&apos; class represents a control panel used to control a mass notification system that may be found in a building.</rdfs:comment>
@@ -3611,7 +3427,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Material -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Material">
         <rdfs:comment xml:lang="en">The &apos;Material&apos; class represents the constituting materials of different elements.</rdfs:comment>
         <rdfs:label xml:lang="en">Material</rdfs:label>
@@ -3620,7 +3435,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#MunicipalDistributionSystem -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#MunicipalDistributionSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WaterSource"/>
@@ -3638,7 +3452,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
@@ -3675,7 +3488,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Obstruction -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Obstruction">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure"/>
         <rdfs:subClassOf>
@@ -3698,7 +3510,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#OwnerContactAddress -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#OwnerContactAddress">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Address"/>
         <rdfs:comment xml:lang="en">The &apos;OwnerContactAddress&apos; class represents a building owner&apos;s contact address.</rdfs:comment>
@@ -3708,7 +3519,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ParkingLot -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ParkingLot">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure"/>
@@ -3726,7 +3536,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Pipeline -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Pipeline">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure"/>
         <rdfs:comment xml:lang="en">The &apos;Pipeline&apos; class represents pipelines located near an incident building.</rdfs:comment>
@@ -3737,7 +3546,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PoliceDepartment -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PoliceDepartment">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyServiceProvider"/>
         <rdfs:comment xml:lang="en">The &apos;PoliceDepartment&apos; class represents police departments.</rdfs:comment>
@@ -3747,7 +3555,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PortableFireExtinguisher -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PortableFireExtinguisher">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -3778,7 +3585,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PowerLine -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PowerLine">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure"/>
         <rdfs:comment xml:lang="en">The &apos;PowerLine&apos; class represents power lines located near an incident building.</rdfs:comment>
@@ -3788,7 +3594,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PrimaryPowerSupplySystem -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PrimaryPowerSupplySystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingUtilitySystem"/>
@@ -3800,7 +3605,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PublicSafetyAgencyContactAddress -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PublicSafetyAgencyContactAddress">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Address"/>
         <rdfs:comment xml:lang="en">The &apos;PublicSafetyAgencyContactAddress&apos; class represents public safety agencies&apos;s contact address.</rdfs:comment>
@@ -3810,7 +3614,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Ramp -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Ramp">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
@@ -3880,7 +3683,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Road -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Road">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3920,7 +3722,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoadToIncident -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoadToIncident">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Road"/>
         <rdfs:subClassOf>
@@ -3936,7 +3737,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoofAssembly -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoofAssembly">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
@@ -3959,7 +3759,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoofTopElement -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoofTopElement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
@@ -3989,7 +3788,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SensorDetector -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SensorDetector">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
         <rdfs:subClassOf>
@@ -4012,7 +3810,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ShaftEnclosure -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ShaftEnclosure">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireandSmokeProtectionElement"/>
         <rdfs:comment xml:lang="en">The &apos;ShaftEnclosure&apos; class represents a shaft enclosure that protects vertical openings.</rdfs:comment>
@@ -4022,7 +3819,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeBarrier -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeBarrier">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireandSmokeProtectionElement"/>
@@ -4039,7 +3835,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeControlSystem -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeControlSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -4076,7 +3871,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeControlSystemControlPanel -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeControlSystemControlPanel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel"/>
         <rdfs:comment xml:lang="en">The &apos;SmokeControlSystemControlPanel&apos; class represents a control panel used to control a smoke control system that may be found in a building.</rdfs:comment>
@@ -4086,7 +3880,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokePartition -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokePartition">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireandSmokeProtectionElement"/>
@@ -4103,7 +3896,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeandHeatRemovalSystem -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeandHeatRemovalSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -4132,7 +3924,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Stairway -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Stairway">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
@@ -4201,7 +3992,6 @@ Source: NFPA 704, 2022</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StandpipeSystem -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StandpipeSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem"/>
@@ -4275,7 +4065,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StaticWaterSource -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StaticWaterSource">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WaterSource"/>
         <rdfs:subClassOf>
@@ -4311,7 +4100,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StructuralElement -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StructuralElement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
         <rdfs:subClassOf>
@@ -4341,7 +4129,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4363,7 +4150,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingTerrain -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingTerrain">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4379,7 +4165,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#UtilityContactAddress -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#UtilityContactAddress">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Address"/>
         <rdfs:comment>The &apos;UtilityContactAddress&apos; class represents the address of people that manage the utilities in a building.</rdfs:comment>
@@ -4390,7 +4175,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#UtilityControlPanel -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#UtilityControlPanel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel"/>
         <rdfs:comment xml:lang="en">The &apos;UtilityControlPanel&apos; class represents control panels used to control different utilities found in a building.</rdfs:comment>
@@ -4400,7 +4184,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Vegetation -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Vegetation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure"/>
@@ -4423,7 +4206,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#VerticalOpening -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#VerticalOpening">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent"/>
@@ -4453,7 +4235,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Wall -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Wall">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
         <rdfs:subClassOf>
@@ -4469,7 +4250,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WaterSource -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WaterSource">
         <rdfs:subClassOf>
@@ -4492,7 +4272,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WaterSupplyandSewerageSystem -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WaterSupplyandSewerageSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingUtilitySystem"/>
         <rdfs:comment xml:lang="en">The &apos;WaterSupplyandSewerageSystem&apos; class represents a building&apos;s water supply and sewerage system.</rdfs:comment>
@@ -4502,7 +4281,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WeatherCondition -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WeatherCondition">
         <rdfs:subClassOf>
@@ -4548,7 +4326,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Window -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Window">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement"/>
@@ -4603,12 +4380,10 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Assembly -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Assembly">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
@@ -4620,7 +4395,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Business -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Business">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
         <rdfs:comment xml:lang="en">The &apos;Business&apos; class represents business occupancy, which includes, among others,  the use of a building for office, professional or service-type transactions, including storage of records and accounts (IBC, 2018).</rdfs:comment>
@@ -4631,7 +4405,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Educational -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Educational">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
         <rdfs:comment xml:lang="en">The &apos;Educational&apos; class represents educational occupancy, which includes, among others, the use of a building for educational purposes (IBC, 2018).</rdfs:comment>
@@ -4641,7 +4414,6 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FactoryAndIndustrial -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FactoryAndIndustrial">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
@@ -4662,7 +4434,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HighHazard -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HighHazard">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
         <rdfs:comment xml:lang="en">The &apos;HighHazard&apos; class represents high-hazard occupancy, which includes, among others, the use of a building that involves the manufacturing, processing, generation, or storage of materials that constitute a physical or health hazard (IBC, 2018).</rdfs:comment>
@@ -4672,7 +4443,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Institutional -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Institutional">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
@@ -4684,7 +4454,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Mercantile -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Mercantile">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
         <rdfs:comment xml:lang="en">The &apos;Mercantile&apos; class represents mercantile occupancy, which includes, among others, the use of a building for the display and sale of merchandise (IBC, 2018).</rdfs:comment>
@@ -4694,7 +4463,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Residential -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Residential">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
@@ -4706,7 +4474,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Storage -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Storage">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
         <rdfs:comment xml:lang="en">The &apos;Storage&apos; class represents storage occupancy, which includes, among others, the use of a building for storage that is not classified as a hazardous occupancy (IBC, 2018).</rdfs:comment>
@@ -4716,7 +4483,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeI -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeI">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConstructionType"/>
@@ -4729,7 +4495,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeII -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeII">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConstructionType"/>
         <hasDescription>Non-combustible: Walls, partitions, columns, floors, and roofs are noncombustible. However, they provide less fire resistance and do not withstand the effects or spreading of fire as well as Type I.</hasDescription>
@@ -4740,7 +4505,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeIII -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeIII">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConstructionType"/>
@@ -4753,7 +4517,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeIV -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeIV">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConstructionType"/>
         <hasDescription>(Heavy Timber: type of construction in which the exterior walls are of noncombustible materials and the interior building elements are of solid wood, laminated wood, heavy timber (HT) or structural composite lumber (SCL) without concealed spaces.</hasDescription>
@@ -4765,7 +4528,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeV -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeV">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConstructionType"/>
         <hasDescription>Type of construction in which the structural elements, exterior walls and interior walls are of any materials.</hasDescription>
@@ -4776,7 +4538,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
 
     <!-- http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#UtilityAndMiscellaneous -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#UtilityAndMiscellaneous">
         <rdf:type rdf:resource="http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy"/>
@@ -4793,7 +4554,6 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
@@ -4926,6 +4686,5 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
 
 
 
-<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
