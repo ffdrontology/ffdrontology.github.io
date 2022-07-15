@@ -93,6 +93,28 @@
           .end();
       };
     </script>
+    <style>
+      .figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      i {
+        color: #005a9c;
+      }
+
+      @media only screen and (max-width: 400) {
+        #image_1 {
+          content: url("resources\images\ontology_01.jpg");
+        }
+      }
+      @media screen and (min-width: 401) {
+        #image_1 {
+          content: url("resources\images\ontology_01h.jpg");
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -121,9 +143,9 @@
           <dd>V 1.0.0</dd>
           <dt>Authors:</dt>
           <dd>
-            Eyosias Guyo , Technische Universität Berlin, Trimble Solutions Oy
+            Eyosias Guyo, Technische Universität Berlin, Trimble Solutions Oy
           </dd>
-          <dd>Timo Hartmann</dd>
+          <dd>Timo Hartmann, Technische Universität Berlin</dd>
 
           <dt>Download serialization:</dt>
           <dd>
@@ -155,20 +177,38 @@
           </dd>
           <dt>License:</dt>
           <dd>
-            <a href="http://insertlicenseURIhere.org" target="_blank"
+            <a
+              href="https://creativecommons.org/licenses/by-nc/4.0/"
+              target="_blank"
               ><img
                 src="https://img.shields.io/badge/License-%20Creative%20Commons%20CC%20BY_NC%204.0-blue.svg"
                 alt="http://insertlicenseURIhere.org"
             /></a>
           </dd>
-          <dt>Visualization:</dt>
+          <dt>Publication:</dt>
+          <dd>
+            <a href="https://doi.org/10.7146/aul.455.c190">
+              Guyo, E. and Hartmann, T. (2022). Development of an ontology for
+              the representation of firefighters’ data requirements during
+              building fire emergencies. In: Proceedings of the 29th EG-ICE
+              International Workshop on Intelligent Computing in Engineering.
+              EG-ICE. doi:10.7146/aul.455.c190
+
+              <!-- <img
+                src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg"
+                alt="Published in EG-ICE 2022"
+            /> -->
+            </a>
+          </dd>
+
+          <!-- <dt>Visualization:</dt>
           <dd>
             <a href="webvowl/index.html#" target="_blank"
               ><img
                 src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg"
                 alt="Visualize with WebVowl"
             /></a>
-          </dd>
+          </dd> -->
           <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> -->
           <dt>Cite as:</dt>
           <dd>
@@ -186,8 +226,11 @@
         </div>
       </div>
       <div id="abstract">
-        <h2>Abstract</h2>
-        <span class="markdown">
+        <h2>
+          Abstract
+          <span class="backlink"> back to <a href="#toc">ToC</a></span>
+        </h2>
+        <p>
           Firefighters require accurate and timely information regarding a
           building and its environment to perform their duty safely and
           effectively during a fire emergency. However, due to the chaotic
@@ -202,8 +245,8 @@
           facilitate the data exchange process between the different personnel
           involved in emergency response. The ontology was developed by
           following the METHONTOLOGY method, and it was implemented using the
-          web ontology language (OWL) in Protégé 5.5.0.</span
-        >
+          web ontology language (OWL) in Protégé 5.5.0.
+        </p>
       </div>
       <div id="toc"></div>
 
@@ -213,17 +256,112 @@
           Introduction
           <span class="backlink"> back to <a href="#toc">ToC</a></span>
         </h2>
-        <span class="markdown">
-          This is a place holder text for the introduction. The introduction
-          should briefly describe the ontology, its motivation, state of the art
-          and goals.</span
-        >
+        <p>
+          Firefighters employ different strategies to safeguard occupants,
+          reduce property damage, and protect themselves during building fires.
+          They devise their strategy based on the best available information
+          they have at any given time (OSHA, 2015). Hence, the availability and
+          quality of information play a vital role in the outcome of an
+          emergency. Additionally, Firefighters should be made aware of any
+          hazards or obstacles they may come across outside or inside the
+          affected building ahead of time. The success of a firefighting
+          strategy relies on providing the correct information and resources to
+          the right people at the right time (Xu and Zlatanova, 2007).
+        </p>
+        <p>
+          Intelligent tools and systems that collect required data about an
+          affected building and its surrounding from different data sources can
+          assist firefighters in conducting their tasks with the utmost safety
+          and effectiveness. However, before designing such systems, we need to
+          have a well-defined understanding of firefighters’ data requirements.
+          Ontologies can be used to establish such understanding. They enable us
+          to develop machine-understandable definitions of different concepts in
+          a given domain along with their relationships (Noy and McGuinness,
+          2001). Through ontologies, a shared understanding of a domain between
+          people and systems can be established (Neto et al., 2021).
+        </p>
+        <p>
+          In this documentation, we present an ontology that models
+          firefighters’ data requirements. The ontology will represent the data
+          firefighters require regarding different elements and features inside
+          an affected building and its surrounding. The ontology can then be
+          used to design systems that gather and integrate data from different
+          data sources and provide comprehensive information to firefighters
+          during building fires. Having a well-defined data requirement will
+          also facilitate the data exchange process through various mediums
+          between the different personnel involved in the emergency response
+          (Jones et al., 2005). Understanding how first responders interact with
+          building features can also assist building designers in designing
+          structures that ensure firefighters’ safety and provide necessary
+          firefighting features (OSHA, 2015).
+        </p>
+
+        <table>
+          <caption>
+            <b>Table 1</b
+            >: Ontology specification document.
+          </caption>
+          <tr style="font-weight: 700">
+            <td>Requirements</td>
+            <td>Descriptions</td>
+          </tr>
+          <tr>
+            <td>Domain</td>
+            <td>Building fire emergency</td>
+          </tr>
+          <tr>
+            <td>Purpose</td>
+            <td>
+              Building an ontology to represent data regarding several features
+              and components of a building and its surroundings that
+              firefighters need when responding to building fires.
+            </td>
+          </tr>
+          <tr>
+            <td>Scope</td>
+            <td>
+              The focus is on data about an affected building, its different
+              components, and its surrounding.
+            </td>
+          </tr>
+          <tr>
+            <td>Intended use</td>
+            <td>
+              The ontology can be a basis for developing tools and systems that
+              gather essential data about a building and its surroundings and
+              provide the collected data to firefighters in an integrated form.
+              <p>
+                It can also facilitate the data exchange process between
+                different personnel involved in emergency response.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>Knowledge source</td>
+            <td>
+              Scientific papers: (Li et al., 2014), (Isikdag, Underwood and
+              Aouad, 2008), (Jones et al., 2005), (Ghodrat et al., 2021),
+              (Santarpia et al., 2019), and (Heron et al., 2003).
+              <p>Manual: (OSHA, 2015).</p>
+              <p>International codes: (ICC, 2018a), and (ICC, 2018b).</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!--OVERVIEW SECTION-->
+      <div id="overview">
+        <h2 id="overv" class="list">
+          Firefighters' Data Requirements Ontology: Overview
+          <span class="backlink"> back to <a href="#toc">ToC</a></span>
+        </h2>
+
         <div id="namespacedeclarations">
           <h3 id="ns" class="list">Namespace declarations</h3>
           <div id="ns" align="center">
             <table>
               <caption>
-                <a href="#ns"> Table 1</a
+                <a href="#ns"> Table 2</a
                 >: Namespaces used in the document
               </caption>
               <tbody>
@@ -259,17 +397,12 @@
             </table>
           </div>
         </div>
-      </div>
 
-      <!--OVERVIEW SECTION-->
-      <div id="overview">
-        <h2 id="overv" class="list">
-          Firefighters' Data Requirements Ontology: Overview
-          <span class="backlink"> back to <a href="#toc">ToC</a></span>
-        </h2>
-        <span class="markdown">
-          This ontology has the following classes and properties.</span
-        >
+        <div id="classesandproperties">
+          <h3 id="ns" class="list">Classes and Properties</h3>
+          <div id="ns" align="center"></div>
+        </div>
+        <p>This ontology has the following classes and properties.</p>
         <h4>Classes</h4>
         <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
           <li>
@@ -1845,12 +1978,12 @@
             >
           </li>
         </ul>
-        <iframe
+        <!-- <iframe
           align="center"
           width="100%"
           height="500px"
           src="webvowl/index.html"
-        ></iframe>
+        ></iframe> -->
       </div>
 
       <!--DESCRIPTION SECTION-->
@@ -1859,11 +1992,257 @@
           Firefighters' Data Requirements Ontology: Description
           <span class="backlink"> back to <a href="#toc">ToC</a></span>
         </h2>
-        <span class="markdown">
-          This is a placeholder text for the description of your ontology. The
-          description should include an explanation and a diagram explaining how
-          the classes are related, examples of usage, etc.</span
-        >
+        <p>
+          The firefighters’ data Requirement ontology represents concepts
+          regarding the data firefighters need about an affected building, the
+          building’s features, and the building’s surroundings. In protégé,
+          several classes were created to represent different concepts. OWL
+          provides the ObjectProperty feature to represent the relationship
+          between two classes and the DatatypeProperty feature to represent the
+          relationship from a class to a data value (McGuinness and van
+          Harmelen, 2004). We have used both features extensively in the
+          ontology.
+        </p>
+        <p>
+          In this section, the ontology is described with the help of figures
+          (Figure 1 – 3). In the first two figures, the following convention is
+          used. The red box emphasizes a class, and the yellow boxes represent
+          all other classes related to the class in the red box. Different lines
+          are used to represent different relationships. Solid lines with a
+          black ‘is a’ text indicate subclass relationship. Solid lines with a
+          blue text indicate ObjectProperty relationship between classes, and
+          broken lines with a green text indicate DatatypeProperty relationship
+          from a class to a data value. Lastly, the deep purple blocks indicate
+          instances of a class. Sometimes a thick black arrow is extended from a
+          class to indicate the existence of more information that is not shown
+          in the figure. And a yellow box with three dots is used to indicate
+          the existence of more subclasses.
+        </p>
+
+        <div class="figure">
+          <picture>
+            <source
+              media="(min-width: 1530px)"
+              srcset="resources\images\ontology_01h.jpg"
+            />
+            <img
+              style="max-height: 1500px; width: 95%"
+              src="resources\images\ontology_01.jpg"
+            />
+          </picture>
+          <!-- <img id="image_1" src="resources\images\ontology_01h.jpg" /> -->
+          <caption>
+            <div>
+              <b>Figure 1</b>: The
+              <a href="https://ffdr-ontology.github.io/#IncidentSite "
+                >IncidentSite
+              </a>
+              class, its properties, and its relationship with other classes.
+            </div>
+          </caption>
+        </div>
+        <p>
+          The ontology uses
+          <a href="https://ffdr-ontology.github.io/#IncidentSite"
+            >IncidentSite</a
+          >
+          class to represent the site where the building with fire hazard is
+          located. This class is shown in a red box in Figure 1. The class is
+          related to
+          <a href="https://ffdr-ontology.github.io/#IncidentBuilding"
+            >IncidentBuilding</a
+          >,
+          <a href="https://ffdr-ontology.github.io/#SurroundingTerrain"
+            >SurroundingTerrain</a
+          >,
+          <a href="https://ffdr-ontology.github.io/#SurroundingStructure"
+            >SurroundingStructure</a
+          >,
+          <a href="https://ffdr-ontology.github.io/#FireCommandCenter"
+            >FireCommandCenter</a
+          >
+          and
+          <a href="https://ffdr-ontology.github.io/#WeatherCondition"
+            >WeatherCondition</a
+          >
+          classes. The
+          <a href="https://ffdr-ontology.github.io/#IncidentBuilding"
+            >IncidentBuilding</a
+          >
+          class represents the building where the fire hazard occurred. The
+          classes
+          <a href="https://ffdr-ontology.github.io/#SurroundingTerrain"
+            >SurroundingTerrain</a
+          >
+          and
+          <a href="https://ffdr-ontology.github.io/#SurroundingStructure"
+            >SurroundingStructure</a
+          >
+          represent the terrain and structures surrounding the incident
+          building, respectively. The
+          <a href="https://ffdr-ontology.github.io/#FireCommandCenter"
+            >FireCommandCenter</a
+          >
+          class is related to the
+          <a href="https://ffdr-ontology.github.io/#ControlPanel"
+            >ControlPanel</a
+          >
+          class, which represents the different control panels firefighters
+          would want to locate and use to control several building systems and
+          utilities. The IncidentSite class is also related to the
+          <a href="https://ffdr-ontology.github.io/#Address">Address</a> class,
+          which captures several types of addresses required during a building
+          emergency.
+        </p>
+
+        <p>
+          The
+          <a href="https://ffdr-ontology.github.io/#SurroundingStructure"
+            >SurroundingStructure</a
+          >
+          class represents all artificial and natural structures surrounding the
+          incident building. The subclass of
+          <a href="https://ffdr-ontology.github.io/#SurroundingStructure"
+            >SurroundingStructure</a
+          >
+          represents powerlines, pipelines, hazardous materials, and
+          obstructions such as fences. Vegetation surrounding an incident
+          building is represented using the
+          <a href="https://ffdr-ontology.github.io/#Vegetation">Vegetation</a>
+          class. A fire lane is an access road designated for the passage of
+          fire apparatus (ICC, 2018b). This class is also a subclass of the
+          <a href="https://ffdr-ontology.github.io/#Road">Road</a> class. In
+          addition to the fire lane, the Road class represents the road that
+          leads to the incident site (<a
+            href="https://ffdr-ontology.github.io/#RoadToIncident"
+            >RoadToIncident</a
+          >).
+        </p>
+
+        <p>
+          Fire hydrants are essential for most fire suppression operations since
+          they provide access to a water supply system. We modelled information
+          that should be provided to firefighters in advance to locate and
+          connect to a fire hydrant rapidly. The FireHydrant class is related to
+          two classes representing water sources and hose connections. We also
+          connected all other concepts in our ontology related to some form of
+          hose connection to HoseConnection class.
+        </p>
+
+        <p>
+          Several information requirements about the incident building are
+          modelled as properties of the
+          <a href="https://ffdr-ontology.github.io/#IncidentBuilding"
+            >IncidentBuilding</a
+          >
+          class. A complete list of the requirements can be seen in Figure 2.
+          The figure also shows the relationship between
+          <a href="https://ffdr-ontology.github.io/#IncidentBuilding"
+            >IncidentBuilding</a
+          >
+          and other classes. These classes include the
+          <a href="https://ffdr-ontology.github.io/#BuildingOccupancy"
+            >BuildingOccupancy</a
+          >
+          class, which represents a building’s occupancy based on the
+          international building code (ICC, 2018a), the
+          <a href="https://ffdr-ontology.github.io/#BuildingComponent"
+            >BuildingComponent</a
+          >
+          class, which represents information about the different components of
+          the building, and the
+          <a href="https://ffdr-ontology.github.io/#ConstructionType"
+            >ConstructionType</a
+          >
+          class with its five possible alternatives (ICC, 2018a).
+        </p>
+
+        <div class="figure">
+          <img height="900px" src="resources\images\ontology_02.jpg" />
+          <caption>
+            <div>
+              <b>Figure 2</b>: The
+              <a href="https://ffdr-ontology.github.io/#IncidentBuilding"
+                >IncidentBuilding</a
+              >
+              class, its properties, and its relationship with other classes.
+            </div>
+          </caption>
+        </div>
+
+        <p>
+          The
+          <a href="https://ffdr-ontology.github.io/#BuildingComponent"
+            >BuildingComponent</a
+          >
+          class has several subclasses representing different building elements
+          and systems firefighters interact with during their operations (see
+          Figure 3(A)).
+          <a href="https://ffdr-ontology.github.io/#BuildingSafetySystem"
+            >BuildingSafetySystem</a
+          >
+          is the largest subclass of
+          <a href="https://ffdr-ontology.github.io/#BuildingComponent"
+            >BuildingComponent</a
+          >. Several subclasses are defined for
+          <a href="https://ffdr-ontology.github.io/#BuildingSafetySystem"
+            >BuildingSafetySystem</a
+          >
+          that capture information about the different fire safety systems found
+          inside buildings. The complete list is shown in Figure 3(B). An
+          automatic fire extinguishing system refers to sprinkler systems or
+          another automatic fire extinguisher system installed in a building. In
+          most buildings, a sprinkler system is separated into coverage zones
+          (OSHA, 2015). This information is valuable to firefighters because the
+          fire can be located based on the active sprinkler zone. The Fire alarm
+          system and other sensors and detectors are also divided into different
+          zones. A standpipe system is a system of pipes in a building that
+          provides water for manual firefighting and, in some cases, to
+          sprinkler systems (OSHA, 2015). A fire department connection (FDC) is
+          an inlet through which firefighters feed water into the standpipe
+          system. In contrast, fire hose connections (FHC) are outlets of the
+          standpipe system inside the building where firefighters can connect
+          their fire hoses (OSHA, 2015).
+        </p>
+
+        <p>
+          In addition to safety systems, other building components firefighters
+          may interact with are also captured in the ontology. This includes
+          several building utilities that usually need to be shut down or at
+          least controlled during fire emergencies (OSHA, 2015). Firefighters
+          should also be informed of the location and type of any hazardous
+          material they may come across in the building. Information regarding
+          the façade of an incident building is essential for firefighters. Some
+          rooftop elements could be helpful in some firefighting operations, but
+          they can also cause hazards. For instance, skylights can be used to
+          ventilate a building, but they can also cause firefighters to fall
+          through (OSHA, 2015). Limited information about structural and
+          nonstructural building elements is modelled in the ontology to not
+          overload firefighters with excess information. The complete list of
+          the nonstructural elements (subclasses of NonStructuralElement) is
+          given in Figure 3(C).
+        </p>
+
+        <div class="figure">
+          <img height="900px" src="resources\images\ontology_03.jpg" />
+          <caption>
+            <div>
+              <b>Figure 3</b>: Subclasses of (left)
+              <a href="https://ffdr-ontology.github.io/#BuildingComponent"
+                >BuildingComponent</a
+              >
+              class, (top right)
+              <a href="https://ffdr-ontology.github.io/#BuildingSafetySystem"
+                >BuildingSafetySystem</a
+              >
+              class, and (bottom right)
+              <a href="https://ffdr-ontology.github.io/#NonStructuralElement"
+                >NonStructuralElement</a
+              >
+              class.
+            </div>
+          </caption>
+        </div>
       </div>
 
       <!--CROSSREF SECTION-->
@@ -19237,10 +19616,75 @@
           References
           <span class="backlink"> back to <a href="#toc">ToC</a></span>
         </h2>
-        <span class="markdown">
-          Add your references here. It is recommended to have them as a
-          list.</span
-        >
+        <ul>
+          <li>
+            Guyo, E. and Hartmann, T. (2022). Development of an ontology for the
+            representation of firefighters’ data requirements during building
+            fire emergencies. In: Proceedings of the 29th EG-ICE International
+            Workshop on Intelligent Computing in Engineering. EG-ICE.
+            doi:10.7146/aul.455.c190
+          </li>
+          <li>
+            Ghodrat, M., Shakeriaski, F., Nelson, D.J. and Simeoni, A. (2021).
+            Existing Improvements in Simulation of Fire–Wind Interaction and Its
+            Effects on Structures. Fire, 4(27). doi:10.3390/fire4020027
+          </li>
+          <li>
+            Heron, D., Thomas, G., Cousins, J., Lukovic, B. and Schmid, R.
+            (2003). Modelling Fire-Spread In and Around Urban Centres. New
+            Zealand Fire Service Commission Research Report Number 44
+          </li>
+          <li>
+            International Code Council (ICC) (2018a). 2018 International
+            Building Code. International Code Council, Inc.
+          </li>
+          <li>
+            International Code Council (ICC) (2018b). 2018 International Fire
+            Code. International Code Council, Inc.
+          </li>
+          <li>
+            Isikdag, U., Underwood, J. and Aouad, G. (2008). An investigation
+            into the applicability of building information models in geospatial
+            environment in support of site selection and fire response
+            management processes. Advanced Engineering Informatics, 22(4), pp.
+            504–519. doi:10.1016/j.aei.2008.06.001
+          </li>
+          <li>
+            Jones, W.W., Holmberg, D.G., Davis, W.D., Evans, D.D., Bushby, S.T.
+            and Reed, K. a (2005). Workshop to define information needed by
+            emergency responders during building emergencies. National Institute
+            of Standards and Technology. Gaithersburg, MD.
+            doi:10.6028/NIST.IR.7193
+          </li>
+          <li>
+            Li, N., Yang, Z., Ghahramani, A., Becerik-Gerber, B. and Soibelman,
+            L. (2014). Situational awareness for supporting building fire
+            emergency response: Information needs, information sources, and
+            implementation requirements. Fire Safety Journal, 63, pp. 17–28.
+            doi:10.1016/j.firesaf.2013.11.010
+          </li>
+          <li>
+            McGuinness, D.L. and van Harmelen, F. (2004). OWL Web Ontology
+            Language Overview. W3C recommendation. Edited by D.L. McGuinness and
+            F. Van Harmelen. W3C. Available at:
+            http://www.w3.org/TR/owl-features/,
+          </li>
+          <li>
+            Noy, N.F. and McGuinness, D.L. (2001). Ontology Development 101: A
+            Guide to Creating Your First Ontology. Stanford Knowledge Systems
+            Laboratory. doi:10.1016/j.artmed.2004.01.014
+          </li>
+          <li>
+            Occupational Safety and Health Administration (OSHA) (2015). Fire
+            Service Features of Buildings and Fire Protection Systems
+          </li>
+          <li>
+            Santarpia, L., Bologna, S., Ciancio, V., Golasi, I. and Salata, F.
+            (2019). Fire Temperature Based on the Time and Resistance of
+            Buildings—Predicting the Adoption of Fire Safety Measures. Fire,
+            2(2), p. 19. doi:10.3390/fire2020019
+          </li>
+        </ul>
       </div>
       <div id="acknowledgments">
         <h2 id="ack" class="list">
@@ -19256,6 +19700,11 @@
           <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for
           developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the
           program used to create the template used in this documentation.
+        </p>
+        <p>
+          This project is receiving funding from the European Union’s Horizon
+          2020 research and innovation programme under the Marie
+          Skłodowska-Curie grant agreement No 860555.
         </p>
       </div>
     </div>
