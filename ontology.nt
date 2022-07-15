@@ -5,12 +5,12 @@
 <https://purl.org/ffdr-ontology> <http://purl.org/dc/terms/creator> "Timo Hartmann\n\nTechnische Universität Berlin, Germany"@en .
 <https://purl.org/ffdr-ontology> <http://purl.org/dc/terms/language> "English"@en .
 <https://purl.org/ffdr-ontology> <http://purl.org/dc/terms/license> "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International.\n \nLicense: https://creativecommons.org/licenses/by-nc/4.0/"@en .
-<https://purl.org/ffdr-ontology> <http://purl.org/dc/terms/title> "Fire Fighters' Data Requirements Ontology"@en .
+<https://purl.org/ffdr-ontology> <http://purl.org/dc/terms/title> "Firefighters' Data Requirements Ontology"@en .
 <https://purl.org/ffdr-ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Domain: \n\nBuilding fire emergency"@en .
 <https://purl.org/ffdr-ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Intended use:\n\nThe ontology can be a basis for developing tools and systems that gather essential data about a building and its surroundings and provide the collected data to firefighters in an integrated form. \nIt can also facilitate the data exchange process between different personnel involved in emergency response."@en .
 <https://purl.org/ffdr-ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Purpose:\n\nBuilding an ontology to represent data regarding several features and components of a building and its surroundings that firefighters need when responding to building fires."@en .
 <https://purl.org/ffdr-ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope:\n\nThe focus is on data about an affected building, its different components, and its surrounding."@en .
-<https://purl.org/ffdr-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Fire Fighters' Data Requirements Ontology"@en .
+<https://purl.org/ffdr-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Firefighters' Data Requirements Ontology"@en .
 <https://purl.org/ffdr-ontology> <http://www.w3.org/2002/07/owl#versionInfo> "V 1.0.0"@en .
 # 
 # 

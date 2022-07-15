@@ -29,7 +29,7 @@ Technische Universität Berlin, Germany</terms:creator>
         <terms:license xml:lang="en">This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International.
  
 License: https://creativecommons.org/licenses/by-nc/4.0/</terms:license>
-        <terms:title xml:lang="en">Fire Fighters&apos; Data Requirements Ontology</terms:title>
+        <terms:title xml:lang="en">Firefighters&apos; Data Requirements Ontology</terms:title>
         <rdfs:comment xml:lang="en">Domain: 
 
 Building fire emergency</rdfs:comment>
@@ -43,7 +43,7 @@ Building an ontology to represent data regarding several features and components
         <rdfs:comment xml:lang="en">Scope:
 
 The focus is on data about an affected building, its different components, and its surrounding.</rdfs:comment>
-        <rdfs:label xml:lang="en">Fire Fighters&apos; Data Requirements Ontology</rdfs:label>
+        <rdfs:label xml:lang="en">Firefighters&apos; Data Requirements Ontology</rdfs:label>
         <owl:versionInfo xml:lang="en">V 1.0.0</owl:versionInfo>
     </owl:Ontology>
     

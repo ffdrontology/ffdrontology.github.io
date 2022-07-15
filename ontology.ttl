@@ -27,7 +27,7 @@ Technische Universität Berlin, Germany"""@en ;
                                   <http://purl.org/dc/terms/license> """This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International.
  
 License: https://creativecommons.org/licenses/by-nc/4.0/"""@en ;
-                                  <http://purl.org/dc/terms/title> "Fire Fighters' Data Requirements Ontology"@en ;
+                                  <http://purl.org/dc/terms/title> "Firefighters' Data Requirements Ontology"@en ;
                                   rdfs:comment """Domain: 
 
 Building fire emergency"""@en ,
@@ -41,7 +41,7 @@ Building an ontology to represent data regarding several features and components
                                                """Scope:
 
 The focus is on data about an affected building, its different components, and its surrounding."""@en ;
-                                  rdfs:label "Fire Fighters' Data Requirements Ontology"@en ;
+                                  rdfs:label "Firefighters' Data Requirements Ontology"@en ;
                                   owl:versionInfo "V 1.0.0"@en .
 
 #################################################################
