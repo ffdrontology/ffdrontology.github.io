@@ -1,48 +1,48 @@
-@prefix : <http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#> .
+@prefix : <https://purl.org/ffdr-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology> .
+@base <https://purl.org/ffdr-ontology> .
 
-<http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology> rdf:type owl:Ontology ;
-                                                                                          owl:versionIRI <http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology/1.0.0> ;
-                                                                                          <http://purl.org/dc/terms/abstract> """Abstract
+<https://purl.org/ffdr-ontology> rdf:type owl:Ontology ;
+                                  owl:versionIRI <https://purl.org/ffdr-ontology/1.0.0> ;
+                                  <http://purl.org/dc/terms/abstract> """Abstract
 
 Firefighters require accurate and timely information regarding a building and its
 environment to perform their duty safely and effectively during a fire emergency. However, due to the chaotic nature of building fires, firefighters often receive erroneous, conflicting, or delayed information that can affect the outcome of a hazard. In this paper, we propose a solution in the form of an ontology that defines building and environmental data needed by firefighters during a building
 fire emergency. The ontology can be a basis for developing intelligent tools and systems that collect building and environmental data from different data sources and provide comprehensive information to firefighters. It can also facilitate the data exchange process between the different personnel involved in emergency response. The ontology was developed by following the METHONTOLOGY method, and it was implemented using the web ontology language (OWL) in
 Protégé 5.5.0."""@en ;
-                                                                                          <http://purl.org/dc/terms/creator> """Eyosias Guyo
+                                  <http://purl.org/dc/terms/creator> """Eyosias Guyo
 
 Technische Universität Berlin, Germany
 Trimble Solutions Oy, Finland
 
 eyosias.guyo@trimble.com"""@en ,
-                                                                                                                             """Timo Hartmann
+                                                                     """Timo Hartmann
 
 Technische Universität Berlin, Germany"""@en ;
-                                                                                          <http://purl.org/dc/terms/language> "English"@en ;
-                                                                                          <http://purl.org/dc/terms/license> """This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International.
+                                  <http://purl.org/dc/terms/language> "English"@en ;
+                                  <http://purl.org/dc/terms/license> """This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International.
  
 License: https://creativecommons.org/licenses/by-nc/4.0/"""@en ;
-                                                                                          <http://purl.org/dc/terms/title> "Fire Fighters' Data Requirements Ontology"@en ;
-                                                                                          rdfs:comment """Domain: 
+                                  <http://purl.org/dc/terms/title> "Fire Fighters' Data Requirements Ontology"@en ;
+                                  rdfs:comment """Domain: 
 
 Building fire emergency"""@en ,
-                                                                                                       """Intended use:
+                                               """Intended use:
 
 The ontology can be a basis for developing tools and systems that gather essential data about a building and its surroundings and provide the collected data to firefighters in an integrated form. 
 It can also facilitate the data exchange process between different personnel involved in emergency response."""@en ,
-                                                                                                       """Purpose:
+                                               """Purpose:
 
 Building an ontology to represent data regarding several features and components of a building and its surroundings that firefighters need when responding to building fires."""@en ,
-                                                                                                       """Scope:
+                                               """Scope:
 
 The focus is on data about an affected building, its different components, and its surrounding."""@en ;
-                                                                                          rdfs:label "Fire Fighters' Data Requirements Ontology"@en ;
-                                                                                          owl:versionInfo "V 1.0.0"@en .
+                                  rdfs:label "Fire Fighters' Data Requirements Ontology"@en ;
+                                  owl:versionInfo "V 1.0.0"@en .
 
 #################################################################
 #    Annotation properties
@@ -76,7 +76,7 @@ The focus is on data about an affected building, its different components, and i
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#contains
+###  https://purl.org/ffdr-ontology#contains
 :contains rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
           owl:inverseOf :isContainedBy ;
@@ -97,7 +97,7 @@ The focus is on data about an affected building, its different components, and i
           rdfs:label "contains"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasAddress
+###  https://purl.org/ffdr-ontology#hasAddress
 :hasAddress rdf:type owl:ObjectProperty ;
             owl:inverseOf :isAddressOf ;
             rdfs:domain [ rdf:type owl:Class ;
@@ -118,7 +118,7 @@ The focus is on data about an affected building, its different components, and i
             rdfs:label "hasAddress"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasBuildingPlan
+###  https://purl.org/ffdr-ontology#hasBuildingPlan
 :hasBuildingPlan rdf:type owl:ObjectProperty ;
                  owl:inverseOf :isBuildingPlanOf ;
                  rdfs:domain :IncidentBuilding ;
@@ -127,7 +127,7 @@ The focus is on data about an affected building, its different components, and i
                  rdfs:label "hasBuildingPlan"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasComponent
+###  https://purl.org/ffdr-ontology#hasComponent
 :hasComponent rdf:type owl:ObjectProperty ;
               owl:inverseOf :isComponentOf ;
               rdfs:domain :IncidentBuilding ;
@@ -136,7 +136,7 @@ The focus is on data about an affected building, its different components, and i
               rdfs:label "hasComponent"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasConnectionWith
+###  https://purl.org/ffdr-ontology#hasConnectionWith
 :hasConnectionWith rdf:type owl:ObjectProperty ,
                             owl:SymmetricProperty ;
                    rdfs:domain [ rdf:type owl:Class ;
@@ -153,7 +153,7 @@ The focus is on data about an affected building, its different components, and i
                    rdfs:label "hasConnectionWith"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasConstructionType
+###  https://purl.org/ffdr-ontology#hasConstructionType
 :hasConstructionType rdf:type owl:ObjectProperty ;
                      owl:inverseOf :isConstructionTypeOf ;
                      rdfs:domain :IncidentBuilding ;
@@ -162,7 +162,7 @@ The focus is on data about an affected building, its different components, and i
                      rdfs:label "hasConstructionType"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasControlPanel
+###  https://purl.org/ffdr-ontology#hasControlPanel
 :hasControlPanel rdf:type owl:ObjectProperty ;
                  owl:inverseOf :isControlPanelOf ;
                  rdfs:domain [ rdf:type owl:Class ;
@@ -189,7 +189,7 @@ The focus is on data about an affected building, its different components, and i
                  rdfs:label "hasControlPanel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireExtinguishingSystem
+###  https://purl.org/ffdr-ontology#hasFireExtinguishingSystem
 :hasFireExtinguishingSystem rdf:type owl:ObjectProperty ;
                             owl:inverseOf :isFireExtinguishingSystemOf ;
                             rdfs:domain [ rdf:type owl:Class ;
@@ -204,7 +204,7 @@ The focus is on data about an affected building, its different components, and i
                             rdfs:label "hasFireExtinguishingSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHoseConnection
+###  https://purl.org/ffdr-ontology#hasHoseConnection
 :hasHoseConnection rdf:type owl:ObjectProperty ;
                    owl:inverseOf :isHoseConnectionOf ;
                    rdfs:domain [ rdf:type owl:Class ;
@@ -218,7 +218,7 @@ The focus is on data about an affected building, its different components, and i
                    rdfs:label "hasHoseConnection"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasMaterial
+###  https://purl.org/ffdr-ontology#hasMaterial
 :hasMaterial rdf:type owl:ObjectProperty ;
              owl:inverseOf :isMaterialOf ;
              rdfs:domain [ rdf:type owl:Class ;
@@ -233,7 +233,7 @@ The focus is on data about an affected building, its different components, and i
              rdfs:label "hasMaterial"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasOccupancy
+###  https://purl.org/ffdr-ontology#hasOccupancy
 :hasOccupancy rdf:type owl:ObjectProperty ;
               owl:inverseOf :isOccupancyOf ;
               rdfs:domain :IncidentBuilding ;
@@ -242,7 +242,7 @@ The focus is on data about an affected building, its different components, and i
               rdfs:label "hasOccupancy"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasShaftEnclosure
+###  https://purl.org/ffdr-ontology#hasShaftEnclosure
 :hasShaftEnclosure rdf:type owl:ObjectProperty ;
                    owl:inverseOf :isShaftEnclosureOf ;
                    rdfs:domain :VerticalOpening ;
@@ -251,7 +251,7 @@ The focus is on data about an affected building, its different components, and i
                    rdfs:label "hasShaftEnclosure"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWaterSource
+###  https://purl.org/ffdr-ontology#hasWaterSource
 :hasWaterSource rdf:type owl:ObjectProperty ;
                 owl:inverseOf :isWaterSourceOf ;
                 rdfs:domain [ rdf:type owl:Class ;
@@ -271,7 +271,7 @@ The focus is on data about an affected building, its different components, and i
                 rdfs:label "hasWaterSource"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWeatherCondition
+###  https://purl.org/ffdr-ontology#hasWeatherCondition
 :hasWeatherCondition rdf:type owl:ObjectProperty ;
                      owl:inverseOf :isWeatherConditionOf ;
                      rdfs:domain :IncidentSite ;
@@ -280,7 +280,7 @@ The focus is on data about an affected building, its different components, and i
                      rdfs:label "hasWeatherCondition"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isAddressOf
+###  https://purl.org/ffdr-ontology#isAddressOf
 :isAddressOf rdf:type owl:ObjectProperty ;
              rdfs:domain [ rdf:type owl:Class ;
                            owl:unionOf ( :Address
@@ -299,28 +299,28 @@ The focus is on data about an affected building, its different components, and i
              rdfs:label "isAddressOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isBuildingPlanOf
+###  https://purl.org/ffdr-ontology#isBuildingPlanOf
 :isBuildingPlanOf rdf:type owl:ObjectProperty ;
                   rdfs:domain :BuildingPlan ;
                   rdfs:range :IncidentBuilding ;
                   rdfs:label "isBuildingPlanOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isComponentOf
+###  https://purl.org/ffdr-ontology#isComponentOf
 :isComponentOf rdf:type owl:ObjectProperty ;
                rdfs:domain :BuildingComponent ;
                rdfs:range :IncidentBuilding ;
                rdfs:label "isComponentOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isConstructionTypeOf
+###  https://purl.org/ffdr-ontology#isConstructionTypeOf
 :isConstructionTypeOf rdf:type owl:ObjectProperty ;
                       rdfs:domain :ConstructionType ;
                       rdfs:range :IncidentBuilding ;
                       rdfs:label "isConstructionTypeOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isContainedBy
+###  https://purl.org/ffdr-ontology#isContainedBy
 :isContainedBy rdf:type owl:ObjectProperty ;
                rdfs:domain [ rdf:type owl:Class ;
                              owl:unionOf ( :ControlPanel
@@ -338,7 +338,7 @@ The focus is on data about an affected building, its different components, and i
                rdfs:label "isContainedBy"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isControlPanelOf
+###  https://purl.org/ffdr-ontology#isControlPanelOf
 :isControlPanelOf rdf:type owl:ObjectProperty ;
                   rdfs:domain [ rdf:type owl:Class ;
                                 owl:unionOf ( :AlarmSystemAnnunciatorPanel
@@ -363,7 +363,7 @@ The focus is on data about an affected building, its different components, and i
                   rdfs:label "isControlPanelOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isFireExtinguishingSystemOf
+###  https://purl.org/ffdr-ontology#isFireExtinguishingSystemOf
 :isFireExtinguishingSystemOf rdf:type owl:ObjectProperty ;
                              rdfs:domain :AutomaticFireExtinguishingSystem ;
                              rdfs:range [ rdf:type owl:Class ;
@@ -376,7 +376,7 @@ The focus is on data about an affected building, its different components, and i
                              rdfs:label "isFireExtinguishingSystemOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isHoseConnectionOf
+###  https://purl.org/ffdr-ontology#isHoseConnectionOf
 :isHoseConnectionOf rdf:type owl:ObjectProperty ;
                     rdfs:domain :HoseConnection ;
                     rdfs:range [ rdf:type owl:Class ;
@@ -388,7 +388,7 @@ The focus is on data about an affected building, its different components, and i
                     rdfs:label "isHoseConnectionOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isMaterialOf
+###  https://purl.org/ffdr-ontology#isMaterialOf
 :isMaterialOf rdf:type owl:ObjectProperty ;
               rdfs:domain :Material ;
               rdfs:range [ rdf:type owl:Class ;
@@ -401,21 +401,21 @@ The focus is on data about an affected building, its different components, and i
               rdfs:label "isMaterialOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isOccupancyOf
+###  https://purl.org/ffdr-ontology#isOccupancyOf
 :isOccupancyOf rdf:type owl:ObjectProperty ;
                rdfs:domain :BuildingOccupancy ;
                rdfs:range :IncidentBuilding ;
                rdfs:label "isOccupancyOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isShaftEnclosureOf
+###  https://purl.org/ffdr-ontology#isShaftEnclosureOf
 :isShaftEnclosureOf rdf:type owl:ObjectProperty ;
                     rdfs:domain :ShaftEnclosure ;
                     rdfs:range :VerticalOpening ;
                     rdfs:label "isShaftEnclosureOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isWaterSourceOf
+###  https://purl.org/ffdr-ontology#isWaterSourceOf
 :isWaterSourceOf rdf:type owl:ObjectProperty ;
                  rdfs:domain [ rdf:type owl:Class ;
                                owl:unionOf ( :StandpipeSystem
@@ -433,7 +433,7 @@ The focus is on data about an affected building, its different components, and i
                  rdfs:label "isWaterSourceOf"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isWeatherConditionOf
+###  https://purl.org/ffdr-ontology#isWeatherConditionOf
 :isWeatherConditionOf rdf:type owl:ObjectProperty ;
                       rdfs:domain :WeatherCondition ;
                       rdfs:range :IncidentSite ;
@@ -444,7 +444,7 @@ The focus is on data about an affected building, its different components, and i
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasAccessBarrierType
+###  https://purl.org/ffdr-ontology#hasAccessBarrierType
 :hasAccessBarrierType rdf:type owl:DatatypeProperty ;
                       rdfs:domain :FireLane ;
                       rdfs:range xsd:string ;
@@ -453,7 +453,7 @@ The focus is on data about an affected building, its different components, and i
                       rdfs:label "hasAccessBarrierType"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasAnglesOfApproach
+###  https://purl.org/ffdr-ontology#hasAnglesOfApproach
 :hasAnglesOfApproach rdf:type owl:DatatypeProperty ;
                      rdfs:domain :FireLane ;
                      rdfs:range xsd:double ;
@@ -461,7 +461,7 @@ The focus is on data about an affected building, its different components, and i
                      rdfs:label "hasAnglesOfApproach"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasArea
+###  https://purl.org/ffdr-ontology#hasArea
 :hasArea rdf:type owl:DatatypeProperty ;
          rdfs:domain :ParkingLot ;
          rdfs:range xsd:double ;
@@ -469,7 +469,7 @@ The focus is on data about an affected building, its different components, and i
          rdfs:label "hasArea"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasBuildingArea
+###  https://purl.org/ffdr-ontology#hasBuildingArea
 :hasBuildingArea rdf:type owl:DatatypeProperty ;
                  rdfs:domain :IncidentBuilding ;
                  rdfs:range xsd:double ;
@@ -477,7 +477,7 @@ The focus is on data about an affected building, its different components, and i
                  rdfs:label "hasBuildingArea"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasBuildingHeight
+###  https://purl.org/ffdr-ontology#hasBuildingHeight
 :hasBuildingHeight rdf:type owl:DatatypeProperty ;
                    rdfs:domain :IncidentBuilding ;
                    rdfs:range xsd:double ;
@@ -485,7 +485,7 @@ The focus is on data about an affected building, its different components, and i
                    rdfs:label "hasBuildingHeight"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasCapacity
+###  https://purl.org/ffdr-ontology#hasCapacity
 :hasCapacity rdf:type owl:DatatypeProperty ;
              rdfs:domain [ rdf:type owl:Class ;
                            owl:unionOf ( :AreaOfRefuge
@@ -501,7 +501,7 @@ The focus is on data about an affected building, its different components, and i
              rdfs:label "hasCapacity"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasClass
+###  https://purl.org/ffdr-ontology#hasClass
 :hasClass rdf:type owl:DatatypeProperty ;
           rdfs:domain :StandpipeSystem ;
           rdfs:range xsd:string ;
@@ -509,7 +509,7 @@ The focus is on data about an affected building, its different components, and i
           rdfs:label "hasClass"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasCondition
+###  https://purl.org/ffdr-ontology#hasCondition
 :hasCondition rdf:type owl:DatatypeProperty ;
               rdfs:domain [ rdf:type owl:Class ;
                             owl:unionOf ( :IncidentBuilding
@@ -521,7 +521,7 @@ The focus is on data about an affected building, its different components, and i
               rdfs:label "hasCondition"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasCoverageZone
+###  https://purl.org/ffdr-ontology#hasCoverageZone
 :hasCoverageZone rdf:type owl:DatatypeProperty ;
                  rdfs:domain [ rdf:type owl:Class ;
                                owl:unionOf ( :AutomaticFireExtinguishingSystem
@@ -538,7 +538,7 @@ The focus is on data about an affected building, its different components, and i
                  rdfs:label "hasCoverageZone"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDemography
+###  https://purl.org/ffdr-ontology#hasDemography
 :hasDemography rdf:type owl:DatatypeProperty ;
                rdfs:domain :IncidentSite ;
                rdfs:range xsd:string ;
@@ -546,7 +546,7 @@ The focus is on data about an affected building, its different components, and i
                rdfs:label "hasDemography"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDescription
+###  https://purl.org/ffdr-ontology#hasDescription
 :hasDescription rdf:type owl:DatatypeProperty ;
                 rdfs:domain [ rdf:type owl:Class ;
                               owl:unionOf ( :BuildingOccupancy
@@ -565,7 +565,7 @@ The focus is on data about an affected building, its different components, and i
                 rdfs:label "hasDescription"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDirectionToExit
+###  https://purl.org/ffdr-ontology#hasDirectionToExit
 :hasDirectionToExit rdf:type owl:DatatypeProperty ;
                     rdfs:domain [ rdf:type owl:Class ;
                                   owl:unionOf ( :Ramp
@@ -577,7 +577,7 @@ The focus is on data about an affected building, its different components, and i
                     rdfs:label "hasDirectionToExit"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDischargeLevel
+###  https://purl.org/ffdr-ontology#hasDischargeLevel
 :hasDischargeLevel rdf:type owl:DatatypeProperty ;
                    rdfs:domain [ rdf:type owl:Class ;
                                  owl:unionOf ( :Elevator
@@ -590,7 +590,7 @@ The focus is on data about an affected building, its different components, and i
                    rdfs:label "hasDischargeLevel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDistanceFromFDC
+###  https://purl.org/ffdr-ontology#hasDistanceFromFDC
 :hasDistanceFromFDC rdf:type owl:DatatypeProperty ;
                     rdfs:domain [ rdf:type owl:Class ;
                                   owl:unionOf ( :FireHydrant
@@ -602,7 +602,7 @@ The focus is on data about an affected building, its different components, and i
                     rdfs:label "hasDistanceFromFDC"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDistanceFromIncidentBuilding
+###  https://purl.org/ffdr-ontology#hasDistanceFromIncidentBuilding
 :hasDistanceFromIncidentBuilding rdf:type owl:DatatypeProperty ;
                                  rdfs:domain [ rdf:type owl:Class ;
                                                owl:unionOf ( :EmergencyServiceProvider
@@ -615,7 +615,7 @@ The focus is on data about an affected building, its different components, and i
                                  rdfs:label "hasDistanceFromIncidentBuilding"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasDistanceFromWaterSource
+###  https://purl.org/ffdr-ontology#hasDistanceFromWaterSource
 :hasDistanceFromWaterSource rdf:type owl:DatatypeProperty ;
                             rdfs:domain :FireDepartmentConnection ;
                             rdfs:range xsd:double ;
@@ -623,7 +623,7 @@ The focus is on data about an affected building, its different components, and i
                             rdfs:label "hasDistanceFromWaterSource"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasEnclosedArea
+###  https://purl.org/ffdr-ontology#hasEnclosedArea
 :hasEnclosedArea rdf:type owl:DatatypeProperty ;
                  rdfs:domain [ rdf:type owl:Class ;
                                owl:unionOf ( :FireBarrier
@@ -638,7 +638,7 @@ The focus is on data about an affected building, its different components, and i
                  rdfs:label "hasEnclosedArea"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasExitTravelDistances
+###  https://purl.org/ffdr-ontology#hasExitTravelDistances
 :hasExitTravelDistances rdf:type owl:DatatypeProperty ;
                         rdfs:domain [ rdf:type owl:Class ;
                                       owl:unionOf ( :Door
@@ -652,7 +652,7 @@ The focus is on data about an affected building, its different components, and i
                         rdfs:label "hasExitTravelDistances"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFillPressure
+###  https://purl.org/ffdr-ontology#hasFillPressure
 :hasFillPressure rdf:type owl:DatatypeProperty ;
                  rdfs:domain :FarsFillStation ;
                  rdfs:range xsd:double ;
@@ -660,7 +660,7 @@ The focus is on data about an affected building, its different components, and i
                  rdfs:label "hasFillPressure"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFillTime
+###  https://purl.org/ffdr-ontology#hasFillTime
 :hasFillTime rdf:type owl:DatatypeProperty ;
              rdfs:domain :FarsFillStation ;
              rdfs:range xsd:double ;
@@ -668,7 +668,7 @@ The focus is on data about an affected building, its different components, and i
              rdfs:label "hasFillTime"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireExtinguisherRating
+###  https://purl.org/ffdr-ontology#hasFireExtinguisherRating
 :hasFireExtinguisherRating rdf:type owl:DatatypeProperty ;
                            rdfs:domain :PortableFireExtinguisher ;
                            rdfs:range xsd:string ;
@@ -676,7 +676,7 @@ The focus is on data about an affected building, its different components, and i
                            rdfs:label "hasFireExtinguisherRating"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireFlow
+###  https://purl.org/ffdr-ontology#hasFireFlow
 :hasFireFlow rdf:type owl:DatatypeProperty ;
              rdfs:domain [ rdf:type owl:Class ;
                            owl:unionOf ( :FireHydrant
@@ -688,7 +688,7 @@ The focus is on data about an affected building, its different components, and i
              rdfs:label "hasFireFlow"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFireResistanceRating
+###  https://purl.org/ffdr-ontology#hasFireResistanceRating
 :hasFireResistanceRating rdf:type owl:DatatypeProperty ;
                          rdfs:domain [ rdf:type owl:Class ;
                                        owl:unionOf ( :FireandSmokeProtectionElement
@@ -701,7 +701,7 @@ The focus is on data about an affected building, its different components, and i
                          rdfs:label "hasFireResistanceRating"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFlammabilityLevel
+###  https://purl.org/ffdr-ontology#hasFlammabilityLevel
 :hasFlammabilityLevel rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf :hasHazardLevel ;
                       rdfs:domain [ rdf:type owl:Class ;
@@ -737,7 +737,7 @@ Source: NFPA 704, 2022"""@en ;
                       rdfs:label "hasFlammabilityLevel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasFloorsServed
+###  https://purl.org/ffdr-ontology#hasFloorsServed
 :hasFloorsServed rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain [ rdf:type owl:Class ;
@@ -751,7 +751,7 @@ Source: NFPA 704, 2022"""@en ;
                  rdfs:label "hasFloorsServed"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHazardLevel
+###  https://purl.org/ffdr-ontology#hasHazardLevel
 :hasHazardLevel rdf:type owl:DatatypeProperty ;
                 rdfs:domain [ rdf:type owl:Class ;
                               owl:unionOf ( :HazardousMaterial
@@ -773,7 +773,7 @@ Levels from 0 to 4
                 rdfs:label "hasHazardLevel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHealthHazardSeverityLevel
+###  https://purl.org/ffdr-ontology#hasHealthHazardSeverityLevel
 :hasHealthHazardSeverityLevel rdf:type owl:DatatypeProperty ;
                               rdfs:subPropertyOf :hasHazardLevel ;
                               rdfs:domain [ rdf:type owl:Class ;
@@ -801,7 +801,7 @@ Source: NFPA 704, 2022"""@en ;
                               rdfs:label "hasHealthHazardSeverityLevel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasHeight
+###  https://purl.org/ffdr-ontology#hasHeight
 :hasHeight rdf:type owl:DatatypeProperty ;
            rdfs:domain :Window ;
            rdfs:range xsd:double ;
@@ -809,7 +809,7 @@ Source: NFPA 704, 2022"""@en ;
            rdfs:label "hasHeight"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasID
+###  https://purl.org/ffdr-ontology#hasID
 :hasID rdf:type owl:DatatypeProperty ;
        rdfs:domain :NonStructuralElement ;
        rdfs:range xsd:string ;
@@ -817,7 +817,7 @@ Source: NFPA 704, 2022"""@en ;
        rdfs:label "hasID"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasInstabilityLevel
+###  https://purl.org/ffdr-ontology#hasInstabilityLevel
 :hasInstabilityLevel rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf :hasHazardLevel ;
                      rdfs:domain [ rdf:type owl:Class ;
@@ -844,7 +844,7 @@ Source: NFPA 704, 2022"""@en ;
                      rdfs:label "hasInstabilityLevel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasIsolationValveLocation
+###  https://purl.org/ffdr-ontology#hasIsolationValveLocation
 :hasIsolationValveLocation rdf:type owl:DatatypeProperty ;
                            rdfs:domain :StandpipeSystem ;
                            rdfs:range xsd:string ;
@@ -852,7 +852,7 @@ Source: NFPA 704, 2022"""@en ;
                            rdfs:label "hasIsolationValveLocation"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasKey
+###  https://purl.org/ffdr-ontology#hasKey
 :hasKey rdf:type owl:DatatypeProperty ;
         rdfs:domain :KeyBox ;
         rdfs:range xsd:string ;
@@ -860,7 +860,7 @@ Source: NFPA 704, 2022"""@en ;
         rdfs:label "hasKey"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasKeyLocated
+###  https://purl.org/ffdr-ontology#hasKeyLocated
 :hasKeyLocated rdf:type owl:DatatypeProperty ;
                rdfs:domain :FireCommandCenter ;
                rdfs:range xsd:string ;
@@ -868,7 +868,7 @@ Source: NFPA 704, 2022"""@en ;
                rdfs:label "hasKeyLocated"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasLocation
+###  https://purl.org/ffdr-ontology#hasLocation
 :hasLocation rdf:type owl:DatatypeProperty ;
              rdfs:domain [ rdf:type owl:Class ;
                            owl:unionOf ( :AirSupply
@@ -903,7 +903,7 @@ Source: NFPA 704, 2022"""@en ;
              rdfs:label "hasLocation"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasLocationOfControlValve
+###  https://purl.org/ffdr-ontology#hasLocationOfControlValve
 :hasLocationOfControlValve rdf:type owl:DatatypeProperty ;
                            rdfs:domain :AutomaticFireExtinguishingSystem ;
                            rdfs:range xsd:string ;
@@ -911,7 +911,7 @@ Source: NFPA 704, 2022"""@en ;
                            rdfs:label "hasLocationOfControlValve"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasMachineRoomLocation
+###  https://purl.org/ffdr-ontology#hasMachineRoomLocation
 :hasMachineRoomLocation rdf:type owl:DatatypeProperty ;
                         rdfs:domain :Elevator ;
                         rdfs:range xsd:string ;
@@ -919,7 +919,7 @@ Source: NFPA 704, 2022"""@en ;
                         rdfs:label "hasMachineRoomLocation"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfExit
+###  https://purl.org/ffdr-ontology#hasNumberOfExit
 :hasNumberOfExit rdf:type owl:DatatypeProperty ;
                  rdfs:domain :IncidentBuilding ;
                  rdfs:range xsd:int ;
@@ -927,7 +927,7 @@ Source: NFPA 704, 2022"""@en ;
                  rdfs:label "hasNumberOfExit"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfInlet
+###  https://purl.org/ffdr-ontology#hasNumberOfInlet
 :hasNumberOfInlet rdf:type owl:DatatypeProperty ;
                   rdfs:domain :FireDepartmentConnection ;
                   rdfs:range xsd:int ;
@@ -935,7 +935,7 @@ Source: NFPA 704, 2022"""@en ;
                   rdfs:label "hasNumberOfInlet"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfOutlet
+###  https://purl.org/ffdr-ontology#hasNumberOfOutlet
 :hasNumberOfOutlet rdf:type owl:DatatypeProperty ;
                    rdfs:domain :FireHydrant ;
                    rdfs:range xsd:int ;
@@ -943,7 +943,7 @@ Source: NFPA 704, 2022"""@en ;
                    rdfs:label "hasNumberOfOutlet"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfSimultaneousFill
+###  https://purl.org/ffdr-ontology#hasNumberOfSimultaneousFill
 :hasNumberOfSimultaneousFill rdf:type owl:DatatypeProperty ;
                              rdfs:domain :FarsFillStation ;
                              rdfs:range xsd:int ;
@@ -951,7 +951,7 @@ Source: NFPA 704, 2022"""@en ;
                              rdfs:label "hasNumberOfSimultaneousFill"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfStory
+###  https://purl.org/ffdr-ontology#hasNumberOfStory
 :hasNumberOfStory rdf:type owl:DatatypeProperty ;
                   rdfs:domain :IncidentBuilding ;
                   rdfs:range xsd:int ;
@@ -959,7 +959,7 @@ Source: NFPA 704, 2022"""@en ;
                   rdfs:label "hasNumberOfStory"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasNumberOfSublevel
+###  https://purl.org/ffdr-ontology#hasNumberOfSublevel
 :hasNumberOfSublevel rdf:type owl:DatatypeProperty ;
                      rdfs:domain :IncidentBuilding ;
                      rdfs:range xsd:int ;
@@ -967,7 +967,7 @@ Source: NFPA 704, 2022"""@en ;
                      rdfs:label "hasNumberOfSublevel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasOccupantLoad
+###  https://purl.org/ffdr-ontology#hasOccupantLoad
 :hasOccupantLoad rdf:type owl:DatatypeProperty ;
                  rdfs:domain :IncidentBuilding ;
                  rdfs:range xsd:int ;
@@ -975,7 +975,7 @@ Source: NFPA 704, 2022"""@en ;
                  rdfs:label "hasOccupantLoad"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasOpeningDirection
+###  https://purl.org/ffdr-ontology#hasOpeningDirection
 :hasOpeningDirection rdf:type owl:DatatypeProperty ;
                      rdfs:domain [ rdf:type owl:Class ;
                                    owl:unionOf ( :Door
@@ -987,7 +987,7 @@ Source: NFPA 704, 2022"""@en ;
                      rdfs:label "hasOpeningDirection"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasPrecipitationValue
+###  https://purl.org/ffdr-ontology#hasPrecipitationValue
 :hasPrecipitationValue rdf:type owl:DatatypeProperty ;
                        rdfs:domain :WeatherCondition ;
                        rdfs:range xsd:double ;
@@ -995,7 +995,7 @@ Source: NFPA 704, 2022"""@en ;
                        rdfs:label "hasPrecipitationValue"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasPressure
+###  https://purl.org/ffdr-ontology#hasPressure
 :hasPressure rdf:type owl:DatatypeProperty ;
              rdfs:domain :MunicipalDistributionSystem ;
              rdfs:range xsd:double ;
@@ -1003,7 +1003,7 @@ Source: NFPA 704, 2022"""@en ;
              rdfs:label "hasPressure"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasRelativeHumidity
+###  https://purl.org/ffdr-ontology#hasRelativeHumidity
 :hasRelativeHumidity rdf:type owl:DatatypeProperty ;
                      rdfs:domain :WeatherCondition ;
                      rdfs:range xsd:double ;
@@ -1011,7 +1011,7 @@ Source: NFPA 704, 2022"""@en ;
                      rdfs:label "hasRelativeHumidity"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasRequiredMaximumPressure
+###  https://purl.org/ffdr-ontology#hasRequiredMaximumPressure
 :hasRequiredMaximumPressure rdf:type owl:DatatypeProperty ;
                             rdfs:domain [ rdf:type owl:Class ;
                                           owl:unionOf ( :AutomaticSprinklerSystem
@@ -1023,7 +1023,7 @@ Source: NFPA 704, 2022"""@en ;
                             rdfs:label "hasRequiredMaximumPressure"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasRequiredMinimumPressure
+###  https://purl.org/ffdr-ontology#hasRequiredMinimumPressure
 :hasRequiredMinimumPressure rdf:type owl:DatatypeProperty ;
                             rdfs:domain [ rdf:type owl:Class ;
                                           owl:unionOf ( :AutomaticSprinklerSystem
@@ -1035,7 +1035,7 @@ Source: NFPA 704, 2022"""@en ;
                             rdfs:label "hasRequiredMinimumPressure"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSize
+###  https://purl.org/ffdr-ontology#hasSize
 :hasSize rdf:type owl:DatatypeProperty ;
          rdfs:domain :HoseConnection ;
          rdfs:range xsd:double ;
@@ -1043,7 +1043,7 @@ Source: NFPA 704, 2022"""@en ;
          rdfs:label "hasSize"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSlope
+###  https://purl.org/ffdr-ontology#hasSlope
 :hasSlope rdf:type owl:DatatypeProperty ;
           rdfs:domain [ rdf:type owl:Class ;
                         owl:unionOf ( :Road
@@ -1055,7 +1055,7 @@ Source: NFPA 704, 2022"""@en ;
           rdfs:label "hasSlope"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSpecialHazard
+###  https://purl.org/ffdr-ontology#hasSpecialHazard
 :hasSpecialHazard rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain [ rdf:type owl:Class ;
@@ -1068,7 +1068,7 @@ Source: NFPA 704, 2022"""@en ;
                   rdfs:label "hasSpecialHazard"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasSpecies
+###  https://purl.org/ffdr-ontology#hasSpecies
 :hasSpecies rdf:type owl:DatatypeProperty ;
             rdfs:domain :Vegetation ;
             rdfs:range xsd:string ;
@@ -1076,7 +1076,7 @@ Source: NFPA 704, 2022"""@en ;
             rdfs:label "hasSpecies"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasStatus
+###  https://purl.org/ffdr-ontology#hasStatus
 :hasStatus rdf:type owl:DatatypeProperty ;
            rdfs:domain :Road ;
            rdfs:range xsd:string ;
@@ -1084,7 +1084,7 @@ Source: NFPA 704, 2022"""@en ;
            rdfs:label "hasStatus"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTemperature
+###  https://purl.org/ffdr-ontology#hasTemperature
 :hasTemperature rdf:type owl:DatatypeProperty ;
                 rdfs:domain :WeatherCondition ;
                 rdfs:range xsd:double ;
@@ -1092,7 +1092,7 @@ Source: NFPA 704, 2022"""@en ;
                 rdfs:label "hasTemperature"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasThickness
+###  https://purl.org/ffdr-ontology#hasThickness
 :hasThickness rdf:type owl:DatatypeProperty ;
               rdfs:domain :Wall ;
               rdfs:range xsd:double ;
@@ -1100,7 +1100,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "hasThickness"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTimeMark
+###  https://purl.org/ffdr-ontology#hasTimeMark
 :hasTimeMark rdf:type owl:DatatypeProperty ;
              rdfs:domain :WeatherCondition ;
              rdfs:range xsd:dateTimeStamp ;
@@ -1108,7 +1108,7 @@ Source: NFPA 704, 2022"""@en ;
              rdfs:label "hasTimeMark"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTrafficLevel
+###  https://purl.org/ffdr-ontology#hasTrafficLevel
 :hasTrafficLevel rdf:type owl:DatatypeProperty ;
                  rdfs:domain :RoadToIncident ;
                  rdfs:range xsd:string ;
@@ -1116,7 +1116,7 @@ Source: NFPA 704, 2022"""@en ;
                  rdfs:label "hasTrafficLevel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTurningRadius
+###  https://purl.org/ffdr-ontology#hasTurningRadius
 :hasTurningRadius rdf:type owl:DatatypeProperty ;
                   rdfs:domain :FireLane ;
                   rdfs:range xsd:double ;
@@ -1124,7 +1124,7 @@ Source: NFPA 704, 2022"""@en ;
                   rdfs:label "hasTurningRadius"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasType
+###  https://purl.org/ffdr-ontology#hasType
 :hasType rdf:type owl:DatatypeProperty ;
          rdfs:domain [ rdf:type owl:Class ;
                        owl:unionOf ( :AirSupply
@@ -1149,7 +1149,7 @@ Source: NFPA 704, 2022"""@en ;
          rdfs:label "hasType"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasTypeOfSignalInitiator
+###  https://purl.org/ffdr-ontology#hasTypeOfSignalInitiator
 :hasTypeOfSignalInitiator rdf:type owl:DatatypeProperty ;
                           rdfs:domain :FireAlarmSystem ;
                           rdfs:range xsd:string ;
@@ -1165,7 +1165,7 @@ Source: NFPA 704, 2022"""@en ;
                           rdfs:label "hasTypeOfSignalInitiator"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasVerticalClearance
+###  https://purl.org/ffdr-ontology#hasVerticalClearance
 :hasVerticalClearance rdf:type owl:DatatypeProperty ;
                       rdfs:domain :FireLane ;
                       rdfs:range xsd:double ;
@@ -1173,7 +1173,7 @@ Source: NFPA 704, 2022"""@en ;
                       rdfs:label "hasVerticalClearance"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWidth
+###  https://purl.org/ffdr-ontology#hasWidth
 :hasWidth rdf:type owl:DatatypeProperty ;
           rdfs:domain [ rdf:type owl:Class ;
                         owl:unionOf ( :Balcony
@@ -1190,7 +1190,7 @@ Source: NFPA 704, 2022"""@en ;
           rdfs:label "hasWidth"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWindDirection
+###  https://purl.org/ffdr-ontology#hasWindDirection
 :hasWindDirection rdf:type owl:DatatypeProperty ;
                   rdfs:domain :WeatherCondition ;
                   rdfs:range xsd:string ;
@@ -1198,7 +1198,7 @@ Source: NFPA 704, 2022"""@en ;
                   rdfs:label "hasWindDirection"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#hasWindSpeed
+###  https://purl.org/ffdr-ontology#hasWindSpeed
 :hasWindSpeed rdf:type owl:DatatypeProperty ;
               rdfs:domain :WeatherCondition ;
               rdfs:range xsd:double ;
@@ -1206,7 +1206,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "hasWindSpeed"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#includeHazardousOperation
+###  https://purl.org/ffdr-ontology#includeHazardousOperation
 :includeHazardousOperation rdf:type owl:DatatypeProperty ;
                            rdfs:domain :IncidentBuilding ;
                            rdfs:range xsd:boolean ;
@@ -1214,7 +1214,7 @@ Source: NFPA 704, 2022"""@en ;
                            rdfs:label "includeHazardousOperation"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isAbandoned
+###  https://purl.org/ffdr-ontology#isAbandoned
 :isAbandoned rdf:type owl:DatatypeProperty ;
              rdfs:domain :BuildingOccupancy ;
              rdfs:range xsd:boolean ;
@@ -1222,7 +1222,7 @@ Source: NFPA 704, 2022"""@en ;
              rdfs:label "isAbandoned"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isAccessible
+###  https://purl.org/ffdr-ontology#isAccessible
 :isAccessible rdf:type owl:DatatypeProperty ;
               rdfs:domain :RoofAssembly ;
               rdfs:range xsd:boolean ;
@@ -1230,7 +1230,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "isAccessible"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isControlValveOn
+###  https://purl.org/ffdr-ontology#isControlValveOn
 :isControlValveOn rdf:type owl:DatatypeProperty ;
                   rdfs:domain :AutomaticSprinklerSystem ;
                   rdfs:range xsd:boolean ;
@@ -1238,7 +1238,7 @@ Source: NFPA 704, 2022"""@en ;
                   rdfs:label "isControlValveOn"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isDecontaminationRequired
+###  https://purl.org/ffdr-ontology#isDecontaminationRequired
 :isDecontaminationRequired rdf:type owl:DatatypeProperty ;
                            rdfs:domain :HazardousSubstance ;
                            rdfs:range xsd:boolean ;
@@ -1246,7 +1246,7 @@ Source: NFPA 704, 2022"""@en ;
                            rdfs:label "isDecontaminationRequired"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isExit
+###  https://purl.org/ffdr-ontology#isExit
 :isExit rdf:type owl:DatatypeProperty ;
         rdfs:domain [ rdf:type owl:Class ;
                       owl:unionOf ( :Door
@@ -1259,7 +1259,7 @@ Source: NFPA 704, 2022"""@en ;
         rdfs:label "isExit"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isFunctional
+###  https://purl.org/ffdr-ontology#isFunctional
 :isFunctional rdf:type owl:DatatypeProperty ;
               rdfs:domain [ rdf:type owl:Class ;
                             owl:unionOf ( :Door
@@ -1274,7 +1274,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "isFunctional"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isInAlarm
+###  https://purl.org/ffdr-ontology#isInAlarm
 :isInAlarm rdf:type owl:DatatypeProperty ;
            rdfs:domain :SensorDetector ;
            rdfs:range xsd:boolean ;
@@ -1282,7 +1282,7 @@ Source: NFPA 704, 2022"""@en ;
            rdfs:label "isInAlarm"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isIsolationValveOpen
+###  https://purl.org/ffdr-ontology#isIsolationValveOpen
 :isIsolationValveOpen rdf:type owl:DatatypeProperty ;
                       rdfs:domain :StandpipeSystem ;
                       rdfs:range xsd:boolean ;
@@ -1290,7 +1290,7 @@ Source: NFPA 704, 2022"""@en ;
                       rdfs:label "isIsolationValveOpen"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isLightweightConstruction
+###  https://purl.org/ffdr-ontology#isLightweightConstruction
 :isLightweightConstruction rdf:type owl:DatatypeProperty ;
                            rdfs:domain [ rdf:type owl:Class ;
                                          owl:unionOf ( :FloorAssembly
@@ -1302,7 +1302,7 @@ Source: NFPA 704, 2022"""@en ;
                            rdfs:label "isLightweightConstruction"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isOnExterior
+###  https://purl.org/ffdr-ontology#isOnExterior
 :isOnExterior rdf:type owl:DatatypeProperty ;
               rdfs:domain [ rdf:type owl:Class ;
                             owl:unionOf ( :ExteriorWall
@@ -1315,7 +1315,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "isOnExterior"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isPrimaryFireServiceEntryPoint
+###  https://purl.org/ffdr-ontology#isPrimaryFireServiceEntryPoint
 :isPrimaryFireServiceEntryPoint rdf:type owl:DatatypeProperty ;
                                 rdfs:domain :Door ;
                                 rdfs:range xsd:boolean ;
@@ -1323,7 +1323,7 @@ Source: NFPA 704, 2022"""@en ;
                                 rdfs:label "isPrimaryFireServiceEntryPoint"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isQualifiedForEvacuation
+###  https://purl.org/ffdr-ontology#isQualifiedForEvacuation
 :isQualifiedForEvacuation rdf:type owl:DatatypeProperty ;
                           rdfs:domain :Elevator ;
                           rdfs:range xsd:boolean ;
@@ -1331,7 +1331,7 @@ Source: NFPA 704, 2022"""@en ;
                           rdfs:label "isQualifiedForEvacuation"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isRoofAccess
+###  https://purl.org/ffdr-ontology#isRoofAccess
 :isRoofAccess rdf:type owl:DatatypeProperty ;
               rdfs:domain [ rdf:type owl:Class ;
                             owl:unionOf ( :Ramp
@@ -1343,7 +1343,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "isRoofAccess"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isShaftway
+###  https://purl.org/ffdr-ontology#isShaftway
 :isShaftway rdf:type owl:DatatypeProperty ;
             rdfs:domain [ rdf:type owl:Class ;
                           owl:unionOf ( :Door
@@ -1355,7 +1355,7 @@ Source: NFPA 704, 2022"""@en ;
             rdfs:label "isShaftway"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isSystemActivated
+###  https://purl.org/ffdr-ontology#isSystemActivated
 :isSystemActivated rdf:type owl:DatatypeProperty ;
                    rdfs:domain [ rdf:type owl:Class ;
                                  owl:unionOf ( :AutomaticFireExtinguishingSystem
@@ -1369,7 +1369,7 @@ Source: NFPA 704, 2022"""@en ;
                    rdfs:label "isSystemActivated"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#isUtilityRunning
+###  https://purl.org/ffdr-ontology#isUtilityRunning
 :isUtilityRunning rdf:type owl:DatatypeProperty ;
                   rdfs:domain :BuildingUtilitySystem ;
                   rdfs:range xsd:boolean ;
@@ -1381,13 +1381,13 @@ Source: NFPA 704, 2022"""@en ;
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Address
+###  https://purl.org/ffdr-ontology#Address
 :Address rdf:type owl:Class ;
          rdfs:comment "The 'Address' class represents different types of addresses needed during a building fire emergency."@en ;
          rdfs:label "Address"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AirSupply
+###  https://purl.org/ffdr-ontology#AirSupply
 :AirSupply rdf:type owl:Class ;
            rdfs:subClassOf [ rdf:type owl:Restriction ;
                              owl:onProperty :hasLocation ;
@@ -1402,14 +1402,14 @@ Source: NFPA 704, 2022"""@en ;
            rdfs:label "AirSupply"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AlarmSystemAnnunciatorPanel
+###  https://purl.org/ffdr-ontology#AlarmSystemAnnunciatorPanel
 :AlarmSystemAnnunciatorPanel rdf:type owl:Class ;
                              rdfs:subClassOf :ControlPanel ;
                              rdfs:comment "The 'AlarmSystemAnnunciatorPanel' class represents annunciator panels that display information about the type and location of an active alarm."@en ;
                              rdfs:label "AlarmSystemAnnunciatorPanel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AlternativeAutomaticFireExtinguishingSystem
+###  https://purl.org/ffdr-ontology#AlternativeAutomaticFireExtinguishingSystem
 :AlternativeAutomaticFireExtinguishingSystem rdf:type owl:Class ;
                                              rdfs:subClassOf :AutomaticFireExtinguishingSystem ;
                                              owl:disjointWith :AutomaticSprinklerSystem ;
@@ -1417,7 +1417,7 @@ Source: NFPA 704, 2022"""@en ;
                                              rdfs:label "AlternativeAutomaticFireExtinguishingSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AreaOfRefuge
+###  https://purl.org/ffdr-ontology#AreaOfRefuge
 :AreaOfRefuge rdf:type owl:Class ;
               rdfs:subClassOf :BuildingComponent ,
                               [ rdf:type owl:Restriction ;
@@ -1432,7 +1432,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "AreaOfRefuge"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticFireExtinguishingSystem
+###  https://purl.org/ffdr-ontology#AutomaticFireExtinguishingSystem
 :AutomaticFireExtinguishingSystem rdf:type owl:Class ;
                                   rdfs:subClassOf :BuildingSafetySystem ,
                                                   [ rdf:type owl:Restriction ;
@@ -1455,7 +1455,7 @@ Source: NFPA 704, 2022"""@en ;
                                   rdfs:label "AutomaticFireExtinguishingSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#AutomaticSprinklerSystem
+###  https://purl.org/ffdr-ontology#AutomaticSprinklerSystem
 :AutomaticSprinklerSystem rdf:type owl:Class ;
                           rdfs:subClassOf :AutomaticFireExtinguishingSystem ,
                                           [ rdf:type owl:Restriction ;
@@ -1482,14 +1482,14 @@ Source: NFPA 704, 2022"""@en ;
                           rdfs:label "AutomaticSprinklerSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BackUpPowerSupplySystem
+###  https://purl.org/ffdr-ontology#BackUpPowerSupplySystem
 :BackUpPowerSupplySystem rdf:type owl:Class ;
                          rdfs:subClassOf :BuildingUtilitySystem ;
                          rdfs:comment "The 'BackUpPowerSupplySystem' class represents a building's backup power supply system."@en ;
                          rdfs:label "BackUpPowerSupplySystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Balcony
+###  https://purl.org/ffdr-ontology#Balcony
 :Balcony rdf:type owl:Class ;
          rdfs:subClassOf :NonStructuralElement ,
                          [ rdf:type owl:Restriction ;
@@ -1506,41 +1506,41 @@ Source: NFPA 704, 2022"""@en ;
          rdfs:label "Balcony"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Building
+###  https://purl.org/ffdr-ontology#Building
 :Building rdf:type owl:Class ;
           rdfs:subClassOf :SurroundingStructure ;
           rdfs:comment "The 'Building' class represents buildings other than the incident building."@en ;
           rdfs:label "Building"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingAddress
+###  https://purl.org/ffdr-ontology#BuildingAddress
 :BuildingAddress rdf:type owl:Class ;
                  rdfs:subClassOf :Address ;
                  rdfs:comment "The 'BuildingAddress' class represents a building's address."@en ;
                  rdfs:label "BuildingAddress"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingComponent
+###  https://purl.org/ffdr-ontology#BuildingComponent
 :BuildingComponent rdf:type owl:Class ;
                    rdfs:comment "The 'BuildingComponent' class represents different building components that firefighters may interact with during a building fire emergency."@en ;
                    rdfs:label "BuildingComponent"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingEngineerContactAddress
+###  https://purl.org/ffdr-ontology#BuildingEngineerContactAddress
 :BuildingEngineerContactAddress rdf:type owl:Class ;
                                 rdfs:subClassOf :Address ;
                                 rdfs:comment "The 'BuildingEngineerContactAddress' class represents a building engineer's contact address."@en ;
                                 rdfs:label "BuildingEngineerContactAddress"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingManagerContactAddress
+###  https://purl.org/ffdr-ontology#BuildingManagerContactAddress
 :BuildingManagerContactAddress rdf:type owl:Class ;
                                rdfs:subClassOf :Address ;
                                rdfs:comment "The 'BuildingManagerContactAddress' class represents a building manager's contact address."@en ;
                                rdfs:label "BuildingManagerContactAddress"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingOccupancy
+###  https://purl.org/ffdr-ontology#BuildingOccupancy
 :BuildingOccupancy rdf:type owl:Class ;
                    owl:equivalentClass [ rdf:type owl:Class ;
                                          owl:oneOf ( :Assembly
@@ -1567,7 +1567,7 @@ Source: NFPA 704, 2022"""@en ;
                    rdfs:label "BuildingOccupancy"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingPlan
+###  https://purl.org/ffdr-ontology#BuildingPlan
 :BuildingPlan rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasLocation ;
@@ -1581,14 +1581,14 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "BuildingPlan"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingSafetySystem
+###  https://purl.org/ffdr-ontology#BuildingSafetySystem
 :BuildingSafetySystem rdf:type owl:Class ;
                       rdfs:subClassOf :BuildingComponent ;
                       rdfs:comment "The 'BuildingSafetySystem' class represents components of a building geared towards building safety."@en ;
                       rdfs:label "BuildingSafetySystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#BuildingUtilitySystem
+###  https://purl.org/ffdr-ontology#BuildingUtilitySystem
 :BuildingUtilitySystem rdf:type owl:Class ;
                        rdfs:subClassOf :BuildingComponent ,
                                        [ rdf:type owl:Restriction ;
@@ -1607,21 +1607,21 @@ Source: NFPA 704, 2022"""@en ;
                        rdfs:label "BuildingUtilitySystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#CarbonMonoxideDetector
+###  https://purl.org/ffdr-ontology#CarbonMonoxideDetector
 :CarbonMonoxideDetector rdf:type owl:Class ;
                         rdfs:subClassOf :SensorDetector ;
                         rdfs:comment "The 'CarbonMonoxideDetector' class represents Carbon Monoxide detectors installed in a building."@en ;
                         rdfs:label "CarbonMonoxideDetector"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#CbrSensor
+###  https://purl.org/ffdr-ontology#CbrSensor
 :CbrSensor rdf:type owl:Class ;
            rdfs:subClassOf :SensorDetector ;
            rdfs:comment "The 'CbrSensor' class represents Chemical/Biological/Radiation (CBR) sensors installed in a building."@en ;
            rdfs:label "CbrSensor"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConcealedSpace
+###  https://purl.org/ffdr-ontology#ConcealedSpace
 :ConcealedSpace rdf:type owl:Class ;
                 rdfs:subClassOf :BuildingComponent ,
                                 [ rdf:type owl:Restriction ;
@@ -1640,7 +1640,7 @@ Source: NFPA 704, 2022"""@en ;
                 rdfs:label "ConcealedSpace"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ConstructionType
+###  https://purl.org/ffdr-ontology#ConstructionType
 :ConstructionType rdf:type owl:Class ;
                   owl:equivalentClass [ rdf:type owl:Class ;
                                         owl:oneOf ( :TypeI
@@ -1662,7 +1662,7 @@ Source: NFPA 704, 2022"""@en ;
                   rdfs:label "ConstructionType"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ControlPanel
+###  https://purl.org/ffdr-ontology#ControlPanel
 :ControlPanel rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasDescription ;
@@ -1676,7 +1676,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "ControlPanel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Door
+###  https://purl.org/ffdr-ontology#Door
 :Door rdf:type owl:Class ;
       rdfs:subClassOf :NonStructuralElement ,
                       [ rdf:type owl:Restriction ;
@@ -1718,14 +1718,14 @@ Source: NFPA 704, 2022"""@en ;
       rdfs:label "Door"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#DoorUnlockingSystemControlPanel
+###  https://purl.org/ffdr-ontology#DoorUnlockingSystemControlPanel
 :DoorUnlockingSystemControlPanel rdf:type owl:Class ;
                                  rdfs:subClassOf :ControlPanel ;
                                  rdfs:comment "The 'DoorUnlockingSystemControlPanel' class represents a control panel used to unlock some or all doors in a building."@en ;
                                  rdfs:label "DoorUnlockingSystemControlPanel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Elevator
+###  https://purl.org/ffdr-ontology#Elevator
 :Elevator rdf:type owl:Class ;
           rdfs:subClassOf :NonStructuralElement ,
                           [ rdf:type owl:Restriction ;
@@ -1769,14 +1769,14 @@ Source: NFPA 704, 2022"""@en ;
           rdfs:label "Elevator"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ElevatorOverrideControlPanel
+###  https://purl.org/ffdr-ontology#ElevatorOverrideControlPanel
 :ElevatorOverrideControlPanel rdf:type owl:Class ;
                               rdfs:subClassOf :ControlPanel ;
                               rdfs:comment "The 'ElevatorOverrideControlPanel' class represents a control panel used to override elevators in a building."@en ;
                               rdfs:label "ElevatorOverrideControlPanel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyPowerOutlet
+###  https://purl.org/ffdr-ontology#EmergencyPowerOutlet
 :EmergencyPowerOutlet rdf:type owl:Class ;
                       rdfs:subClassOf :BuildingSafetySystem ,
                                       [ rdf:type owl:Restriction ;
@@ -1791,7 +1791,7 @@ Source: NFPA 704, 2022"""@en ;
                       rdfs:label "EmergencyPowerOutlet"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyServiceProvider
+###  https://purl.org/ffdr-ontology#EmergencyServiceProvider
 :EmergencyServiceProvider rdf:type owl:Class ;
                           rdfs:subClassOf [ rdf:type owl:Restriction ;
                                             owl:onProperty :hasAddress ;
@@ -1809,14 +1809,14 @@ Source: NFPA 704, 2022"""@en ;
                           rdfs:label "EmergencyServiceProvider"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#EmergencyServiceProviderContactAddress
+###  https://purl.org/ffdr-ontology#EmergencyServiceProviderContactAddress
 :EmergencyServiceProviderContactAddress rdf:type owl:Class ;
                                         rdfs:subClassOf :Address ;
                                         rdfs:comment "The 'EmergencyServiceProviderContactAddress' class represents different emergency service provider's contact address."@en ;
                                         rdfs:label "EmergencyServiceProviderContactAddress"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExteriorDoor
+###  https://purl.org/ffdr-ontology#ExteriorDoor
 :ExteriorDoor rdf:type owl:Class ;
               owl:equivalentClass [ owl:intersectionOf ( :Door
                                                          [ rdf:type owl:Restriction ;
@@ -1831,7 +1831,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "ExteriorDoor"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExteriorWall
+###  https://purl.org/ffdr-ontology#ExteriorWall
 :ExteriorWall rdf:type owl:Class ;
               owl:equivalentClass [ owl:intersectionOf ( :Wall
                                                          [ rdf:type owl:Restriction ;
@@ -1846,7 +1846,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "ExteriorWall"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExteriorWindow
+###  https://purl.org/ffdr-ontology#ExteriorWindow
 :ExteriorWindow rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( :Window
                                                            [ rdf:type owl:Restriction ;
@@ -1861,7 +1861,7 @@ Source: NFPA 704, 2022"""@en ;
                 rdfs:label "ExteriorWindow"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ExtremelyValuableMaterial
+###  https://purl.org/ffdr-ontology#ExtremelyValuableMaterial
 :ExtremelyValuableMaterial rdf:type owl:Class ;
                            rdfs:subClassOf :BuildingComponent ,
                                            [ rdf:type owl:Restriction ;
@@ -1872,21 +1872,21 @@ Source: NFPA 704, 2022"""@en ;
                            rdfs:label "ExtremelyValuableMaterial"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Facade
+###  https://purl.org/ffdr-ontology#Facade
 :Facade rdf:type owl:Class ;
         rdfs:subClassOf :BuildingComponent ;
         rdfs:comment "The 'Facade' class represents the facade of a building."@en ;
         rdfs:label "Facade"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FarsControlPanel
+###  https://purl.org/ffdr-ontology#FarsControlPanel
 :FarsControlPanel rdf:type owl:Class ;
                   rdfs:subClassOf :ControlPanel ;
                   rdfs:comment "The 'FarsControlPanel' class represents a control panel used to control a firefighter's air replenishment system (FARS)  that may be found in a building."@en ;
                   rdfs:label "FarsControlPanel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FarsFillStation
+###  https://purl.org/ffdr-ontology#FarsFillStation
 :FarsFillStation rdf:type owl:Class ;
                  rdfs:subClassOf :BuildingSafetySystem ,
                                  [ rdf:type owl:Restriction ;
@@ -1913,7 +1913,7 @@ Source: NFPA 704, 2022"""@en ;
                  rdfs:label "FarsFillStation"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireAlarmSystem
+###  https://purl.org/ffdr-ontology#FireAlarmSystem
 :FireAlarmSystem rdf:type owl:Class ;
                  rdfs:subClassOf :BuildingSafetySystem ,
                                  [ rdf:type owl:Restriction ;
@@ -1936,7 +1936,7 @@ Source: NFPA 704, 2022"""@en ;
                  rdfs:label "FireAlarmSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireBarrier
+###  https://purl.org/ffdr-ontology#FireBarrier
 :FireBarrier rdf:type owl:Class ;
              rdfs:subClassOf :FireandSmokeProtectionElement ,
                              [ rdf:type owl:Restriction ;
@@ -1947,7 +1947,7 @@ Source: NFPA 704, 2022"""@en ;
              rdfs:label "FireBarrier"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireCommandCenter
+###  https://purl.org/ffdr-ontology#FireCommandCenter
 :FireCommandCenter rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
                                      owl:onProperty :contains ;
@@ -1965,14 +1965,14 @@ Source: NFPA 704, 2022"""@en ;
                    rdfs:label "FireCommandCenter"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireDepartmentCommunicationSystemPanel
+###  https://purl.org/ffdr-ontology#FireDepartmentCommunicationSystemPanel
 :FireDepartmentCommunicationSystemPanel rdf:type owl:Class ;
                                         rdfs:subClassOf :ControlPanel ;
                                         rdfs:comment "The 'FireDepartmentCommunicationSystemPanel' class represents a control panel used to control a fire department communication system that may be found in a building."@en ;
                                         rdfs:label "FireDepartmentCommunicationSystemPanel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireDepartmentConnection
+###  https://purl.org/ffdr-ontology#FireDepartmentConnection
 :FireDepartmentConnection rdf:type owl:Class ;
                           rdfs:subClassOf :BuildingSafetySystem ,
                                           [ rdf:type owl:Restriction ;
@@ -2003,7 +2003,7 @@ Source: NFPA 704, 2022"""@en ;
                           rdfs:label "FireDepartmentConnection"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireHoseConnection
+###  https://purl.org/ffdr-ontology#FireHoseConnection
 :FireHoseConnection rdf:type owl:Class ;
                     rdfs:subClassOf :BuildingSafetySystem ,
                                     [ rdf:type owl:Restriction ;
@@ -2022,7 +2022,7 @@ Source: NFPA 704, 2022"""@en ;
                     rdfs:label "FireHoseConnection"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireHydrant
+###  https://purl.org/ffdr-ontology#FireHydrant
 :FireHydrant rdf:type owl:Class ;
              rdfs:subClassOf :SurroundingStructure ,
                              [ rdf:type owl:Restriction ;
@@ -2058,7 +2058,7 @@ Source: NFPA 704, 2022"""@en ;
              rdfs:label "FireHydrant"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireLane
+###  https://purl.org/ffdr-ontology#FireLane
 :FireLane rdf:type owl:Class ;
           rdfs:subClassOf :Road ,
                           :SurroundingStructure ,
@@ -2083,7 +2083,7 @@ Source: NFPA 704, 2022"""@en ;
           rdfs:label "FireLane"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FirePartition
+###  https://purl.org/ffdr-ontology#FirePartition
 :FirePartition rdf:type owl:Class ;
                rdfs:subClassOf :FireandSmokeProtectionElement ,
                                [ rdf:type owl:Restriction ;
@@ -2094,7 +2094,7 @@ Source: NFPA 704, 2022"""@en ;
                rdfs:label "FirePartition"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FirePump
+###  https://purl.org/ffdr-ontology#FirePump
 :FirePump rdf:type owl:Class ;
           rdfs:subClassOf :BuildingSafetySystem ,
                           [ rdf:type owl:Restriction ;
@@ -2105,14 +2105,14 @@ Source: NFPA 704, 2022"""@en ;
           rdfs:label "FirePump"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireServiceOrganization
+###  https://purl.org/ffdr-ontology#FireServiceOrganization
 :FireServiceOrganization rdf:type owl:Class ;
                          rdfs:subClassOf :EmergencyServiceProvider ;
                          rdfs:comment "The 'FireServiceOrganization' class represents fire service organizations involved in a building fire emergency response."@en ;
                          rdfs:label "FireServiceOrganization"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FireandSmokeProtectionElement
+###  https://purl.org/ffdr-ontology#FireandSmokeProtectionElement
 :FireandSmokeProtectionElement rdf:type owl:Class ;
                                rdfs:subClassOf :BuildingSafetySystem ,
                                                [ rdf:type owl:Restriction ;
@@ -2132,7 +2132,7 @@ Source: NFPA 704, 2022"""@en ;
                                rdfs:label "FireandSmokeProtectionElement"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Firewall
+###  https://purl.org/ffdr-ontology#Firewall
 :Firewall rdf:type owl:Class ;
           rdfs:subClassOf :Facade ,
                           :FireandSmokeProtectionElement ,
@@ -2144,7 +2144,7 @@ Source: NFPA 704, 2022"""@en ;
           rdfs:label "Firewall"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FloorAssembly
+###  https://purl.org/ffdr-ontology#FloorAssembly
 :FloorAssembly rdf:type owl:Class ;
                rdfs:subClassOf :NonStructuralElement ,
                                [ rdf:type owl:Restriction ;
@@ -2155,21 +2155,21 @@ Source: NFPA 704, 2022"""@en ;
                rdfs:label "FloorAssembly"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#GasDetector
+###  https://purl.org/ffdr-ontology#GasDetector
 :GasDetector rdf:type owl:Class ;
              rdfs:subClassOf :SensorDetector ;
              rdfs:comment "The 'GasDetector' class represents different gas detectors installed in a building."@en ;
              rdfs:label "GasDetector"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#GasSupplySystem
+###  https://purl.org/ffdr-ontology#GasSupplySystem
 :GasSupplySystem rdf:type owl:Class ;
                  rdfs:subClassOf :BuildingUtilitySystem ;
                  rdfs:comment "The 'GasSupplySystem' class represents a building's gas supply system."@en ;
                  rdfs:label "GasSupplySystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Hallway
+###  https://purl.org/ffdr-ontology#Hallway
 :Hallway rdf:type owl:Class ;
          rdfs:subClassOf :NonStructuralElement ,
                          [ rdf:type owl:Restriction ;
@@ -2186,7 +2186,7 @@ Source: NFPA 704, 2022"""@en ;
          rdfs:label "Hallway"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HazardousMaterial
+###  https://purl.org/ffdr-ontology#HazardousMaterial
 :HazardousMaterial rdf:type owl:Class ;
                    rdfs:subClassOf :SurroundingStructure ,
                                    [ rdf:type owl:Restriction ;
@@ -2205,7 +2205,7 @@ Source: NFPA 704, 2022"""@en ;
                    rdfs:label "HazardousMaterial"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HazardousSubstance
+###  https://purl.org/ffdr-ontology#HazardousSubstance
 :HazardousSubstance rdf:type owl:Class ;
                     rdfs:subClassOf :BuildingComponent ,
                                     [ rdf:type owl:Restriction ;
@@ -2232,7 +2232,7 @@ Source: NFPA 704, 2022"""@en ;
                     rdfs:label "HazardousSubstance"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Helipad
+###  https://purl.org/ffdr-ontology#Helipad
 :Helipad rdf:type owl:Class ;
          rdfs:subClassOf :BuildingComponent ,
                          [ rdf:type owl:Restriction ;
@@ -2243,7 +2243,7 @@ Source: NFPA 704, 2022"""@en ;
          rdfs:label "Helipad"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HoseConnection
+###  https://purl.org/ffdr-ontology#HoseConnection
 :HoseConnection rdf:type owl:Class ;
                 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasSize ;
@@ -2258,21 +2258,21 @@ Source: NFPA 704, 2022"""@en ;
                 rdfs:label "HoseConnection"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Hospital
+###  https://purl.org/ffdr-ontology#Hospital
 :Hospital rdf:type owl:Class ;
           rdfs:subClassOf :EmergencyServiceProvider ;
           rdfs:comment "The 'Hospital' class represents hospitals."@en ;
           rdfs:label "Hospital"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HvacSystem
+###  https://purl.org/ffdr-ontology#HvacSystem
 :HvacSystem rdf:type owl:Class ;
             rdfs:subClassOf :BuildingUtilitySystem ;
             rdfs:comment "The 'HvacSystem' class represents a building's heating, ventilation, and air conditioning (HVAC) system."@en ;
             rdfs:label "HvacSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentBuilding
+###  https://purl.org/ffdr-ontology#IncidentBuilding
 :IncidentBuilding rdf:type owl:Class ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
                                     owl:onProperty :hasAddress ;
@@ -2335,7 +2335,7 @@ Source: NFPA 704, 2022"""@en ;
                   rdfs:label "IncidentBuilding"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#IncidentSite
+###  https://purl.org/ffdr-ontology#IncidentSite
 :IncidentSite rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                 owl:onProperty :contains ;
@@ -2369,7 +2369,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "IncidentSite"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#KeyBox
+###  https://purl.org/ffdr-ontology#KeyBox
 :KeyBox rdf:type owl:Class ;
         rdfs:subClassOf :BuildingComponent ,
                         [ rdf:type owl:Restriction ;
@@ -2384,7 +2384,7 @@ Source: NFPA 704, 2022"""@en ;
         rdfs:label "KeyBox"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#MassNotificationSystem
+###  https://purl.org/ffdr-ontology#MassNotificationSystem
 :MassNotificationSystem rdf:type owl:Class ;
                         rdfs:subClassOf :BuildingSafetySystem ,
                                         [ rdf:type owl:Restriction ;
@@ -2404,20 +2404,20 @@ Source: NFPA 704, 2022"""@en ;
                         rdfs:label "MassNotificationSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#MassNotificationSystemControlPanel
+###  https://purl.org/ffdr-ontology#MassNotificationSystemControlPanel
 :MassNotificationSystemControlPanel rdf:type owl:Class ;
                                     rdfs:subClassOf :ControlPanel ;
                                     rdfs:comment "The 'MassNotificationSystemControlPanel' class represents a control panel used to control a mass notification system that may be found in a building."@en ;
                                     rdfs:label "MassNotificationSystemControlPanel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Material
+###  https://purl.org/ffdr-ontology#Material
 :Material rdf:type owl:Class ;
           rdfs:comment "The 'Material' class represents the constituting materials of different elements."@en ;
           rdfs:label "Material"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#MunicipalDistributionSystem
+###  https://purl.org/ffdr-ontology#MunicipalDistributionSystem
 :MunicipalDistributionSystem rdf:type owl:Class ;
                              rdfs:subClassOf :WaterSource ,
                                              [ rdf:type owl:Restriction ;
@@ -2429,7 +2429,7 @@ Source: NFPA 704, 2022"""@en ;
                              rdfs:label "MunicipalDistributionSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#NonStructuralElement
+###  https://purl.org/ffdr-ontology#NonStructuralElement
 :NonStructuralElement rdf:type owl:Class ;
                       rdfs:subClassOf :BuildingComponent ,
                                       [ rdf:type owl:Restriction ;
@@ -2453,7 +2453,7 @@ Source: NFPA 704, 2022"""@en ;
                       rdfs:label "NonStructuralElement"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Obstruction
+###  https://purl.org/ffdr-ontology#Obstruction
 :Obstruction rdf:type owl:Class ;
              rdfs:subClassOf :SurroundingStructure ,
                              [ rdf:type owl:Restriction ;
@@ -2468,14 +2468,14 @@ Source: NFPA 704, 2022"""@en ;
              rdfs:label "Obstruction"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#OwnerContactAddress
+###  https://purl.org/ffdr-ontology#OwnerContactAddress
 :OwnerContactAddress rdf:type owl:Class ;
                      rdfs:subClassOf :Address ;
                      rdfs:comment "The 'OwnerContactAddress' class represents a building owner's contact address."@en ;
                      rdfs:label "OwnerContactAddress"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ParkingLot
+###  https://purl.org/ffdr-ontology#ParkingLot
 :ParkingLot rdf:type owl:Class ;
             rdfs:subClassOf :SurroundingStructure ,
                             [ rdf:type owl:Restriction ;
@@ -2486,21 +2486,21 @@ Source: NFPA 704, 2022"""@en ;
             rdfs:label "ParkingLot"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Pipeline
+###  https://purl.org/ffdr-ontology#Pipeline
 :Pipeline rdf:type owl:Class ;
           rdfs:subClassOf :SurroundingStructure ;
           rdfs:comment "The 'Pipeline' class represents pipelines located near an incident building."@en ;
           rdfs:label "Pipeline"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PoliceDepartment
+###  https://purl.org/ffdr-ontology#PoliceDepartment
 :PoliceDepartment rdf:type owl:Class ;
                   rdfs:subClassOf :EmergencyServiceProvider ;
                   rdfs:comment "The 'PoliceDepartment' class represents police departments."@en ;
                   rdfs:label "PoliceDepartment"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PortableFireExtinguisher
+###  https://purl.org/ffdr-ontology#PortableFireExtinguisher
 :PortableFireExtinguisher rdf:type owl:Class ;
                           rdfs:subClassOf :BuildingSafetySystem ,
                                           [ rdf:type owl:Restriction ;
@@ -2520,28 +2520,28 @@ Source: NFPA 704, 2022"""@en ;
                           rdfs:label "PortableFireExtinguisher"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PowerLine
+###  https://purl.org/ffdr-ontology#PowerLine
 :PowerLine rdf:type owl:Class ;
            rdfs:subClassOf :SurroundingStructure ;
            rdfs:comment "The 'PowerLine' class represents power lines located near an incident building."@en ;
            rdfs:label "PowerLine"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PrimaryPowerSupplySystem
+###  https://purl.org/ffdr-ontology#PrimaryPowerSupplySystem
 :PrimaryPowerSupplySystem rdf:type owl:Class ;
                           rdfs:subClassOf :BuildingUtilitySystem ;
                           rdfs:comment "The 'PrimaryPowerSupplySystem' class represents a building's primary power supply system."@en ;
                           rdfs:label "PrimaryPowerSupplySystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#PublicSafetyAgencyContactAddress
+###  https://purl.org/ffdr-ontology#PublicSafetyAgencyContactAddress
 :PublicSafetyAgencyContactAddress rdf:type owl:Class ;
                                   rdfs:subClassOf :Address ;
                                   rdfs:comment "The 'PublicSafetyAgencyContactAddress' class represents public safety agencies's contact address."@en ;
                                   rdfs:label "PublicSafetyAgencyContactAddress"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Ramp
+###  https://purl.org/ffdr-ontology#Ramp
 :Ramp rdf:type owl:Class ;
       rdfs:subClassOf :NonStructuralElement ,
                       [ rdf:type owl:Restriction ;
@@ -2588,7 +2588,7 @@ Source: NFPA 704, 2022"""@en ;
       rdfs:label "Ramp"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Road
+###  https://purl.org/ffdr-ontology#Road
 :Road rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
                         owl:onProperty :hasMaterial ;
@@ -2614,7 +2614,7 @@ Source: NFPA 704, 2022"""@en ;
       rdfs:label "Road"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoadToIncident
+###  https://purl.org/ffdr-ontology#RoadToIncident
 :RoadToIncident rdf:type owl:Class ;
                 rdfs:subClassOf :Road ,
                                 [ rdf:type owl:Restriction ;
@@ -2625,7 +2625,7 @@ Source: NFPA 704, 2022"""@en ;
                 rdfs:label "RoadToIncident"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoofAssembly
+###  https://purl.org/ffdr-ontology#RoofAssembly
 :RoofAssembly rdf:type owl:Class ;
               rdfs:subClassOf :NonStructuralElement ,
                               [ rdf:type owl:Restriction ;
@@ -2640,7 +2640,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "RoofAssembly"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#RoofTopElement
+###  https://purl.org/ffdr-ontology#RoofTopElement
 :RoofTopElement rdf:type owl:Class ;
                 rdfs:subClassOf :BuildingComponent ,
                                 [ rdf:type owl:Restriction ;
@@ -2659,7 +2659,7 @@ Source: NFPA 704, 2022"""@en ;
                 rdfs:label "RoofTopElement"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SensorDetector
+###  https://purl.org/ffdr-ontology#SensorDetector
 :SensorDetector rdf:type owl:Class ;
                 rdfs:subClassOf :BuildingSafetySystem ,
                                 [ rdf:type owl:Restriction ;
@@ -2674,14 +2674,14 @@ Source: NFPA 704, 2022"""@en ;
                 rdfs:label "SensorDetector"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#ShaftEnclosure
+###  https://purl.org/ffdr-ontology#ShaftEnclosure
 :ShaftEnclosure rdf:type owl:Class ;
                 rdfs:subClassOf :FireandSmokeProtectionElement ;
                 rdfs:comment "The 'ShaftEnclosure' class represents a shaft enclosure that protects vertical openings."@en ;
                 rdfs:label "ShaftEnclosure"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeBarrier
+###  https://purl.org/ffdr-ontology#SmokeBarrier
 :SmokeBarrier rdf:type owl:Class ;
               rdfs:subClassOf :FireandSmokeProtectionElement ,
                               [ rdf:type owl:Restriction ;
@@ -2692,7 +2692,7 @@ Source: NFPA 704, 2022"""@en ;
               rdfs:label "SmokeBarrier"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeControlSystem
+###  https://purl.org/ffdr-ontology#SmokeControlSystem
 :SmokeControlSystem rdf:type owl:Class ;
                     rdfs:subClassOf :BuildingSafetySystem ,
                                     [ rdf:type owl:Restriction ;
@@ -2716,14 +2716,14 @@ Source: NFPA 704, 2022"""@en ;
                     rdfs:label "SmokeControlSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeControlSystemControlPanel
+###  https://purl.org/ffdr-ontology#SmokeControlSystemControlPanel
 :SmokeControlSystemControlPanel rdf:type owl:Class ;
                                 rdfs:subClassOf :ControlPanel ;
                                 rdfs:comment "The 'SmokeControlSystemControlPanel' class represents a control panel used to control a smoke control system that may be found in a building."@en ;
                                 rdfs:label "SmokeControlSystemControlPanel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokePartition
+###  https://purl.org/ffdr-ontology#SmokePartition
 :SmokePartition rdf:type owl:Class ;
                 rdfs:subClassOf :FireandSmokeProtectionElement ,
                                 [ rdf:type owl:Restriction ;
@@ -2734,7 +2734,7 @@ Source: NFPA 704, 2022"""@en ;
                 rdfs:label "SmokePartition"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SmokeandHeatRemovalSystem
+###  https://purl.org/ffdr-ontology#SmokeandHeatRemovalSystem
 :SmokeandHeatRemovalSystem rdf:type owl:Class ;
                            rdfs:subClassOf :BuildingSafetySystem ,
                                            [ rdf:type owl:Restriction ;
@@ -2753,7 +2753,7 @@ Source: NFPA 704, 2022"""@en ;
                            rdfs:label "SmokeandHeatRemovalSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Stairway
+###  https://purl.org/ffdr-ontology#Stairway
 :Stairway rdf:type owl:Class ;
           rdfs:subClassOf :NonStructuralElement ,
                           [ rdf:type owl:Restriction ;
@@ -2800,7 +2800,7 @@ Source: NFPA 704, 2022"""@en ;
           rdfs:label "Stairway"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StandpipeSystem
+###  https://purl.org/ffdr-ontology#StandpipeSystem
 :StandpipeSystem rdf:type owl:Class ;
                  rdfs:subClassOf :BuildingSafetySystem ,
                                  [ rdf:type owl:Restriction ;
@@ -2850,7 +2850,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                  rdfs:label "StandpipeSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StaticWaterSource
+###  https://purl.org/ffdr-ontology#StaticWaterSource
 :StaticWaterSource rdf:type owl:Class ;
                    rdfs:subClassOf :WaterSource ,
                                    [ rdf:type owl:Restriction ;
@@ -2874,7 +2874,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                    rdfs:label "StaticWaterSource"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#StructuralElement
+###  https://purl.org/ffdr-ontology#StructuralElement
 :StructuralElement rdf:type owl:Class ;
                    rdfs:subClassOf :BuildingComponent ,
                                    [ rdf:type owl:Restriction ;
@@ -2894,7 +2894,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                    rdfs:label "StructuralElement"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingStructure
+###  https://purl.org/ffdr-ontology#SurroundingStructure
 :SurroundingStructure rdf:type owl:Class ;
                       rdfs:subClassOf [ rdf:type owl:Restriction ;
                                         owl:onProperty :hasDistanceFromIncidentBuilding ;
@@ -2908,7 +2908,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                       rdfs:label "SurroundingStructure"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#SurroundingTerrain
+###  https://purl.org/ffdr-ontology#SurroundingTerrain
 :SurroundingTerrain rdf:type owl:Class ;
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty :hasSlope ;
@@ -2918,21 +2918,21 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                     rdfs:label "SurroundingTerrain"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#UtilityContactAddress
+###  https://purl.org/ffdr-ontology#UtilityContactAddress
 :UtilityContactAddress rdf:type owl:Class ;
                        rdfs:subClassOf :Address ;
                        rdfs:comment "The 'UtilityContactAddress' class represents the address of people that manage the utilities in a building." ;
                        rdfs:label "UtilityContactAddress"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#UtilityControlPanel
+###  https://purl.org/ffdr-ontology#UtilityControlPanel
 :UtilityControlPanel rdf:type owl:Class ;
                      rdfs:subClassOf :ControlPanel ;
                      rdfs:comment "The 'UtilityControlPanel' class represents control panels used to control different utilities found in a building."@en ;
                      rdfs:label "UtilityControlPanel"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Vegetation
+###  https://purl.org/ffdr-ontology#Vegetation
 :Vegetation rdf:type owl:Class ;
             rdfs:subClassOf :SurroundingStructure ,
                             [ rdf:type owl:Restriction ;
@@ -2947,7 +2947,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
             rdfs:label "Vegetation"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#VerticalOpening
+###  https://purl.org/ffdr-ontology#VerticalOpening
 :VerticalOpening rdf:type owl:Class ;
                  rdfs:subClassOf :BuildingComponent ,
                                  [ rdf:type owl:Restriction ;
@@ -2966,7 +2966,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                  rdfs:label "VerticalOpening"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Wall
+###  https://purl.org/ffdr-ontology#Wall
 :Wall rdf:type owl:Class ;
       rdfs:subClassOf :NonStructuralElement ,
                       [ rdf:type owl:Restriction ;
@@ -2977,7 +2977,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
       rdfs:label "Wall"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WaterSource
+###  https://purl.org/ffdr-ontology#WaterSource
 :WaterSource rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                owl:onProperty :hasFireFlow ;
@@ -2991,14 +2991,14 @@ has type: Wet (automatic or manual) and Dry"""@en ,
              rdfs:label "WaterSource" .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WaterSupplyandSewerageSystem
+###  https://purl.org/ffdr-ontology#WaterSupplyandSewerageSystem
 :WaterSupplyandSewerageSystem rdf:type owl:Class ;
                               rdfs:subClassOf :BuildingUtilitySystem ;
                               rdfs:comment "The 'WaterSupplyandSewerageSystem' class represents a building's water supply and sewerage system."@en ;
                               rdfs:label "WaterSupplyandSewerageSystem"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#WeatherCondition
+###  https://purl.org/ffdr-ontology#WeatherCondition
 :WeatherCondition rdf:type owl:Class ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
                                     owl:onProperty :hasPrecipitationValue ;
@@ -3028,7 +3028,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                   rdfs:label "WeatherCondition"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Window
+###  https://purl.org/ffdr-ontology#Window
 :Window rdf:type owl:Class ;
         rdfs:subClassOf :NonStructuralElement ,
                         [ rdf:type owl:Restriction ;
@@ -3064,28 +3064,28 @@ has type: Wet (automatic or manual) and Dry"""@en ,
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Assembly
+###  https://purl.org/ffdr-ontology#Assembly
 :Assembly rdf:type owl:NamedIndividual ,
                    :BuildingOccupancy ;
           rdfs:comment "The 'Assembly' class represents assembly occupancy, which includes, among others, the use of a building for the gathering of people (IBC, 2018)."@en ;
           rdfs:label "Assembly"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Business
+###  https://purl.org/ffdr-ontology#Business
 :Business rdf:type owl:NamedIndividual ,
                    :BuildingOccupancy ;
           rdfs:comment "The 'Business' class represents business occupancy, which includes, among others,  the use of a building for office, professional or service-type transactions, including storage of records and accounts (IBC, 2018)."@en ;
           rdfs:label "Business"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Educational
+###  https://purl.org/ffdr-ontology#Educational
 :Educational rdf:type owl:NamedIndividual ,
                       :BuildingOccupancy ;
              rdfs:comment "The 'Educational' class represents educational occupancy, which includes, among others, the use of a building for educational purposes (IBC, 2018)."@en ;
              rdfs:label "Educational"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#FactoryAndIndustrial
+###  https://purl.org/ffdr-ontology#FactoryAndIndustrial
 :FactoryAndIndustrial rdf:type owl:NamedIndividual ,
                                :BuildingOccupancy ;
                       rdfs:comment """The 'FactoryAndIndustrial' class represents factory and industrial occupancy, which includes, among others, the use of a building for: 
@@ -3101,42 +3101,42 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
                       rdfs:label "FactoryAndIndustrial"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#HighHazard
+###  https://purl.org/ffdr-ontology#HighHazard
 :HighHazard rdf:type owl:NamedIndividual ,
                      :BuildingOccupancy ;
             rdfs:comment "The 'HighHazard' class represents high-hazard occupancy, which includes, among others, the use of a building that involves the manufacturing, processing, generation, or storage of materials that constitute a physical or health hazard (IBC, 2018)."@en ;
             rdfs:label "HighHazard"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Institutional
+###  https://purl.org/ffdr-ontology#Institutional
 :Institutional rdf:type owl:NamedIndividual ,
                         :BuildingOccupancy ;
                rdfs:comment "The 'Institutional' class represents institutional occupancy, which includes, among others, the use of a building where supervision is provided to people who may or may not need physical assistance for self-preservation. Additionally, it represents occupancies where the liberty of occupants is restricted (such as correction facilities) (IBC, 2018)."@en ;
                rdfs:label "Institutional"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Mercantile
+###  https://purl.org/ffdr-ontology#Mercantile
 :Mercantile rdf:type owl:NamedIndividual ,
                      :BuildingOccupancy ;
             rdfs:comment "The 'Mercantile' class represents mercantile occupancy, which includes, among others, the use of a building for the display and sale of merchandise (IBC, 2018)."@en ;
             rdfs:label "Mercantile"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Residential
+###  https://purl.org/ffdr-ontology#Residential
 :Residential rdf:type owl:NamedIndividual ,
                       :BuildingOccupancy ;
              rdfs:comment "The 'Residential' class represents residential occupancy, which includes, among others, the use of a building for sleeping purposes when not classified as an institutional (IBC, 2018)."@en ;
              rdfs:label "Residential"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#Storage
+###  https://purl.org/ffdr-ontology#Storage
 :Storage rdf:type owl:NamedIndividual ,
                   :BuildingOccupancy ;
          rdfs:comment "The 'Storage' class represents storage occupancy, which includes, among others, the use of a building for storage that is not classified as a hazardous occupancy (IBC, 2018)."@en ;
          rdfs:label "Storage"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeI
+###  https://purl.org/ffdr-ontology#TypeI
 :TypeI rdf:type owl:NamedIndividual ,
                 :ConstructionType ;
        :hasDescription "Fire-resistive: types of construction in which the building elements are of noncombustible materials." ;
@@ -3144,7 +3144,7 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
        rdfs:label "TypeI"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeII
+###  https://purl.org/ffdr-ontology#TypeII
 :TypeII rdf:type owl:NamedIndividual ,
                  :ConstructionType ;
         :hasDescription "Non-combustible: Walls, partitions, columns, floors, and roofs are noncombustible. However, they provide less fire resistance and do not withstand the effects or spreading of fire as well as Type I." ;
@@ -3152,7 +3152,7 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
         rdfs:label "TypeII"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeIII
+###  https://purl.org/ffdr-ontology#TypeIII
 :TypeIII rdf:type owl:NamedIndividual ,
                   :ConstructionType ;
          :hasDescription "Ordinary: construction is that type of construction in which the exterior walls are of noncombustible materials and the interior building elements are of any material." ;
@@ -3160,7 +3160,7 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
          rdfs:label "TypeIII"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeIV
+###  https://purl.org/ffdr-ontology#TypeIV
 :TypeIV rdf:type owl:NamedIndividual ,
                  :ConstructionType ;
         :hasDescription "(Heavy Timber: type of construction in which the exterior walls are of noncombustible materials and the interior building elements are of solid wood, laminated wood, heavy timber (HT) or structural composite lumber (SCL) without concealed spaces." ;
@@ -3168,7 +3168,7 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
         rdfs:label "TypeIV"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#TypeV
+###  https://purl.org/ffdr-ontology#TypeV
 :TypeV rdf:type owl:NamedIndividual ,
                 :ConstructionType ;
        :hasDescription "Type of construction in which the structural elements, exterior walls and interior walls are of any materials." ;
@@ -3176,7 +3176,7 @@ operations that are not classified as hazardous or storage occupancy (IBC, 2018)
        rdfs:label "TypeV"@en .
 
 
-###  http://www.semanticweb.org/eyogu/ontologies/2021/6/FirefightersDataRequirementOntology#UtilityAndMiscellaneous
+###  https://purl.org/ffdr-ontology#UtilityAndMiscellaneous
 :UtilityAndMiscellaneous rdf:type owl:NamedIndividual ,
                                   :BuildingOccupancy ;
                          rdfs:comment "The 'Storage' class represents storage occupancy, which includes, among others, the use of a building for storage that is not classified as a hazardous occupancy (IBC, 2018)."@en ;
