@@ -16,9 +16,9 @@
         "url": "https://purl.org/ffdr-ontology",
         "image": "http://vowl.visualdataweb.org/webvowl/#iri=https://purl.org/ffdr-ontology",
         "name": "Firefighters' Data Requirements Ontology",
-        "headline": "Firefighters require accurate and timely information regarding a building and its environment to perform their duty safely and successfully during a fire emergency. However, due to the chaotic nature of building fires, firefighters often receive erroneous, conflicting, or delayed information that can affect the outcome of a hazard. In this paper, we propose a solution in the form of an ontology that defines building and environmental data needed by firefighters during a building fire emergency. The ontology was developed by following the METHONTOLOGY method and implemented using the web ontology language (OWL) in Protégé 5.5.0. Built-in reasoners in Protégé and an ontology pitfall scanning tool were employed to verify the structure and consistency of the new ontology. A prototype web application was created based on the ontology for validation. Interviews with firefighters were also conducted during the validation process. The prototype and the interviews were used to validate the ontology's usefulness. Finally, a specification document that describes the ontology was created and published online. The proposed ontology can be a basis for developing intelligent tools and systems that collect building and environmental data from different sources and provide comprehensive information to firefighters. It can also facilitate the data exchange process between the different personnel involved in emergency response. The ontology can also be used to develop data checking tools that ensure the availability of essential data for firefighters in building and city-scale datasets.",
-        "datePublished": "29/08/2022",
-        "version": "V 2.0.0",
+        "headline": "Firefighters require accurate and timely information regarding a building and its environment to perform their duty safely and effectively during a fire emergency. However, due to the chaotic nature of building fires, firefighters often receive erroneous, conflicting, or delayed information that can affect the outcome of a hazard. In this paper, we propose a solution in the form of an ontology that defines building and environmental data needed by firefighters during a building fire emergency. The ontology can be a basis for developing intelligent tools and systems that collect building and environmental data from different data sources and provide comprehensive information to firefighters. It can also facilitate the data exchange process between the different personnel involved in emergency response. The ontology was developed by following the METHONTOLOGY method, and it was implemented using the web ontology language (OWL) in Protégé 5.5.0.",
+        "datePublished": "15/07/2022",
+        "version": "V 1.0.0",
         "author": [
           { "@type": "Person", "name": "Eyosias Guyo  " },
           { "@type": "Person", "name": "Timo Hartmann  " }
@@ -106,12 +106,12 @@
 
       @media only screen and (max-width: 400) {
         #image_1 {
-          content: url("resources\images_v2\ontology_01.jpg");
+          content: url("resources\images_v1\ontology_01.jpg");
         }
       }
       @media screen and (min-width: 401) {
         #image_1 {
-          content: url("resources\images_v2\ontology_01h.jpg");
+          content: url("resources\images_v1\ontology_01h.jpg");
         }
       }
       li {
@@ -124,26 +124,22 @@
     <div class="container">
       <div class="head">
         <div style="float: right">
-          language <a href="index.html"><b>en</b></a>
+          language <a href="index_v1.html"><b>en</b></a>
         </div>
         <h1>Firefighters' Data Requirements Ontology</h1>
-        <h2>Release 29/08/2022</h2>
+        <h2>Release 15/07/2022</h2>
 
         <dl>
           <dt>This version:</dt>
           <dd>
-            <a href="index.html">https://purl.org/ffdr-ontology/2.0.0</a>
+            <a href="index_v1.html">https://purl.org/ffdr-ontology/1.0.0</a>
           </dd>
           <dt>Latest version:</dt>
           <dd>
             <a href="index.html">https://purl.org/ffdr-ontology/2.0.0</a>
           </dd>
-          <dt>Previous version:</dt>
-          <dd>
-            <a href="index_v1.html">https://purl.org/ffdr-ontology/1.0.0</a>
-          </dd>
           <dt>Revision:</dt>
-          <dd>V 2.0.0</dd>
+          <dd>V 1.0.0</dd>
           <dt>Authors:</dt>
           <dd>
             Eyosias Guyo, Technische Universität Berlin, Trimble Solutions Oy
@@ -154,7 +150,7 @@
           <dd>
             <span
               ><a
-                href="Firefighters Data Requirements Ontology_v.2.0.0.jsonld"
+                href="Firefighters Data Requirements Ontology_v.1.0.0.jsonld"
                 target="_blank"
                 ><img
                   src="https://img.shields.io/badge/Format-JSON_LD-blue.svg"
@@ -162,7 +158,7 @@
               /></a> </span
             ><span
               ><a
-                href="Firefighters Data Requirements Ontology_v.2.0.0.rdf"
+                href="Firefighters Data Requirements Ontology_v.1.0.0.rdf"
                 target="_blank"
                 ><img
                   src="https://img.shields.io/badge/Format-RDF/XML-blue.svg"
@@ -170,7 +166,7 @@
               /></a> </span
             ><span
               ><a
-                href="Firefighters Data Requirements Ontology_v.2.0.0.nt"
+                href="Firefighters Data Requirements Ontology_v.1.0.0.nt"
                 target="_blank"
                 ><img
                   src="https://img.shields.io/badge/Format-N_Triples-blue.svg"
@@ -178,7 +174,7 @@
               /></a> </span
             ><span
               ><a
-                href="Firefighters Data Requirements Ontology_v.2.0.0.ttl"
+                href="Firefighters Data Requirements Ontology_v.1.0.0.ttl"
                 target="_blank"
                 ><img
                   src="https://img.shields.io/badge/Format-TTL-blue.svg"
@@ -211,12 +207,21 @@
             /> -->
             </a>
           </dd>
+
+          <!-- <dt>Visualization:</dt>
+          <dd>
+            <a href="webvowl/index.html#" target="_blank"
+              ><img
+                src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg"
+                alt="Visualize with WebVowl"
+            /></a>
+          </dd> -->
           <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> -->
           <dt>Cite as:</dt>
           <dd>
             Eyosias Guyo,Timo Hartmann. Firefighters' Data Requirements
-            Ontology. Revision: V 2.0.0. Retrieved from:
-            https://purl.org/ffdr-ontology/2.0.0
+            Ontology. Revision: V 1.0.0. Retrieved from:
+            https://purl.org/ffdr-ontology/1.0.0
           </dd>
         </dl>
 
@@ -229,33 +234,25 @@
       </div>
       <div id="abstract">
         <h2>
-          Abstract <span class="backlink"> back to <a href="#toc">ToC</a></span>
+          Abstract
+          <span class="backlink"> back to <a href="#toc">ToC</a></span>
         </h2>
         <p>
           Firefighters require accurate and timely information regarding a
           building and its environment to perform their duty safely and
-          successfully during a fire emergency. However, due to the chaotic
+          effectively during a fire emergency. However, due to the chaotic
           nature of building fires, firefighters often receive erroneous,
           conflicting, or delayed information that can affect the outcome of a
           hazard. In this paper, we propose a solution in the form of an
           ontology that defines building and environmental data needed by
-          firefighters during a building fire emergency. The ontology was
-          developed by following the METHONTOLOGY method and implemented using
-          the web ontology language (OWL) in Protégé 5.5.0. Built-in reasoners
-          in Protégé and an ontology pitfall scanning tool were employed to
-          verify the structure and consistency of the new ontology. A prototype
-          web application was created based on the ontology for validation.
-          Interviews with firefighters were also conducted during the validation
-          process. The prototype and the interviews were used to validate the
-          ontology's usefulness. Finally, a specification document that
-          describes the ontology was created and published online. The proposed
-          ontology can be a basis for developing intelligent tools and systems
-          that collect building and environmental data from different sources
-          and provide comprehensive information to firefighters. It can also
+          firefighters during a building fire emergency. The ontology can be a
+          basis for developing intelligent tools and systems that collect
+          building and environmental data from different data sources and
+          provide comprehensive information to firefighters. It can also
           facilitate the data exchange process between the different personnel
-          involved in emergency response. The ontology can also be used to
-          develop data checking tools that ensure the availability of essential
-          data for firefighters in building and city-scale datasets.
+          involved in emergency response. The ontology was developed by
+          following the METHONTOLOGY method, and it was implemented using the
+          web ontology language (OWL) in Protégé 5.5.0.
         </p>
       </div>
       <div id="toc"></div>
@@ -341,10 +338,6 @@
               gather essential data about a building and its surroundings and
               provide the collected data to firefighters in an integrated form.
               <p>
-                The ontology can be used to develop ontology-based data checking
-                systems for building and city datasets.
-              </p>
-              <p>
                 It can also facilitate the data exchange process between
                 different personnel involved in emergency response.
               </p>
@@ -416,7 +409,6 @@
           <h3 id="ns" class="list">Classes and Properties</h3>
           <div id="ns" align="center"></div>
         </div>
-
         <p>This ontology has the following classes and properties.</p>
         <h4>Classes</h4>
         <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
@@ -620,13 +612,6 @@
           </li>
           <li>
             <a
-              href="#EnvironmentalElement"
-              title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-              >EnvironmentalElement</a
-            >
-          </li>
-          <li>
-            <a
               href="#ExteriorDoor"
               title="https://purl.org/ffdr-ontology#ExteriorDoor"
               >ExteriorDoor</a
@@ -784,11 +769,6 @@
             >
           </li>
           <li>
-            <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-              >Hazard</a
-            >
-          </li>
-          <li>
             <a
               href="#HazardousMaterial"
               title="https://purl.org/ffdr-ontology#HazardousMaterial"
@@ -797,9 +777,9 @@
           </li>
           <li>
             <a
-              href="#HazardousOperation"
-              title="https://purl.org/ffdr-ontology#HazardousOperation"
-              >HazardousOperation</a
+              href="#HazardousSubstance"
+              title="https://purl.org/ffdr-ontology#HazardousSubstance"
+              >HazardousSubstance</a
             >
           </li>
           <li>
@@ -894,13 +874,6 @@
           </li>
           <li>
             <a
-              href="#ParkingArea"
-              title="https://purl.org/ffdr-ontology#ParkingArea"
-              >ParkingArea</a
-            >
-          </li>
-          <li>
-            <a
               href="#ParkingLot"
               title="https://purl.org/ffdr-ontology#ParkingLot"
               >ParkingLot</a
@@ -948,13 +921,6 @@
           </li>
           <li>
             <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp">Ramp</a>
-          </li>
-          <li>
-            <a
-              href="#RestrictedArea"
-              title="https://purl.org/ffdr-ontology#RestrictedArea"
-              >RestrictedArea</a
-            >
           </li>
           <li>
             <a href="#Road" title="https://purl.org/ffdr-ontology#Road">Road</a>
@@ -1053,6 +1019,13 @@
               href="#StructuralElement"
               title="https://purl.org/ffdr-ontology#StructuralElement"
               >StructuralElement</a
+            >
+          </li>
+          <li>
+            <a
+              href="#SurroundingStructure"
+              title="https://purl.org/ffdr-ontology#SurroundingStructure"
+              >SurroundingStructure</a
             >
           </li>
           <li>
@@ -1178,13 +1151,6 @@
           </li>
           <li>
             <a
-              href="#hasHazardousOperation"
-              title="https://purl.org/ffdr-ontology#hasHazardousOperation"
-              >hasHazardousOperation</a
-            >
-          </li>
-          <li>
-            <a
               href="#hasHoseConnection"
               title="https://purl.org/ffdr-ontology#hasHoseConnection"
               >hasHoseConnection</a
@@ -1224,14 +1190,6 @@
               title="https://purl.org/ffdr-ontology#hasWeatherCondition"
               >hasWeatherCondition</a
             >
-          </li>
-          <li>
-            <a
-              href="#isHazardousOperationIn"
-              title="https://purl.org/ffdr-ontology#isHazardousOperationIn"
-            >
-              <span>is hazardous operation in</span>
-            </a>
           </li>
           <li>
             <a
@@ -1548,13 +1506,6 @@
               href="#hasKeyLocated"
               title="https://purl.org/ffdr-ontology#hasKeyLocated"
               >hasKeyLocated</a
-            >
-          </li>
-          <li>
-            <a
-              href="#hasLandUse"
-              title="https://purl.org/ffdr-ontology#hasLandUse"
-              >hasLandUse</a
             >
           </li>
           <li>
@@ -1890,14 +1841,6 @@
               >isUtilityRunning</a
             >
           </li>
-          <li>
-            <a
-              href="#hasYearOfConstruction"
-              title="https://purl.org/ffdr-ontology#hasYearOfConstruction"
-              >The 'hasYearOfConstruction ' data property represents the
-              construction year of a building</a
-            >
-          </li>
         </ul>
         <h4>Annotation Properties</h4>
         <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
@@ -2087,11 +2030,11 @@
           <picture>
             <source
               media="(min-width: 1530px)"
-              srcset="resources\images_v2\ontology_01h.jpg"
+              srcset="resources\images_v1\ontology_01h.jpg"
             />
             <img
               style="max-height: 1500px; width: 95%"
-              src="resources\images_v2\ontology_01.jpg"
+              src="resources\images_v1\ontology_01.jpg"
             />
           </picture>
           <!-- <img id="image_1" src="resources\images\ontology_01h.jpg" /> -->
@@ -2119,8 +2062,8 @@
           <a href="https://ffdr-ontology.github.io/#SurroundingTerrain"
             >SurroundingTerrain</a
           >,
-          <a href="https://ffdr-ontology.github.io/#EnvironmentalElement"
-            >EnvironmentalElement</a
+          <a href="https://ffdr-ontology.github.io/#SurroundingStructure"
+            >SurroundingStructure</a
           >,
           <a href="https://ffdr-ontology.github.io/#FireCommandCenter"
             >FireCommandCenter</a
@@ -2139,8 +2082,8 @@
             >SurroundingTerrain</a
           >
           and
-          <a href="https://ffdr-ontology.github.io/#EnvironmentalElement"
-            >EnvironmentalElement</a
+          <a href="https://ffdr-ontology.github.io/#SurroundingStructure"
+            >SurroundingStructure</a
           >
           represent the terrain and structures surrounding the incident
           building, respectively. The
@@ -2161,13 +2104,13 @@
 
         <p>
           The
-          <a href="https://ffdr-ontology.github.io/#EnvironmentalElement"
-            >EnvironmentalElement</a
+          <a href="https://ffdr-ontology.github.io/#SurroundingStructure"
+            >SurroundingStructure</a
           >
           class represents all artificial and natural structures surrounding the
           incident building. The subclass of
-          <a href="https://ffdr-ontology.github.io/#EnvironmentalElement"
-            >EnvironmentalElement</a
+          <a href="https://ffdr-ontology.github.io/#SurroundingStructure"
+            >SurroundingStructure</a
           >
           represents powerlines, pipelines, hazardous materials, and
           obstructions such as fences. Vegetation surrounding an incident
@@ -2222,7 +2165,7 @@
         </p>
 
         <div class="figure">
-          <img height="900px" src="resources\images_v2\ontology_02.jpg" />
+          <img height="900px" src="resources\images_v1\ontology_02.jpg" />
           <caption>
             <div>
               <b>Figure 2</b>: The
@@ -2288,7 +2231,7 @@
         </p>
 
         <div class="figure">
-          <img height="900px" src="resources\images_v2\ontology_03.jpg" />
+          <img height="900px" src="resources\images_v1\ontology_03.jpg" />
           <caption>
             <div>
               <b>Figure 3</b>: Subclasses of (left)
@@ -2527,13 +2470,6 @@
             </li>
             <li>
               <a
-                href="#EnvironmentalElement"
-                title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                >EnvironmentalElement</a
-              >
-            </li>
-            <li>
-              <a
                 href="#ExteriorDoor"
                 title="https://purl.org/ffdr-ontology#ExteriorDoor"
                 >ExteriorDoor</a
@@ -2697,11 +2633,6 @@
               >
             </li>
             <li>
-              <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                >Hazard</a
-              >
-            </li>
-            <li>
               <a
                 href="#HazardousMaterial"
                 title="https://purl.org/ffdr-ontology#HazardousMaterial"
@@ -2710,9 +2641,9 @@
             </li>
             <li>
               <a
-                href="#HazardousOperation"
-                title="https://purl.org/ffdr-ontology#HazardousOperation"
-                >HazardousOperation</a
+                href="#HazardousSubstance"
+                title="https://purl.org/ffdr-ontology#HazardousSubstance"
+                >HazardousSubstance</a
               >
             </li>
             <li>
@@ -2811,13 +2742,6 @@
             </li>
             <li>
               <a
-                href="#ParkingArea"
-                title="https://purl.org/ffdr-ontology#ParkingArea"
-                >ParkingArea</a
-              >
-            </li>
-            <li>
-              <a
                 href="#ParkingLot"
                 title="https://purl.org/ffdr-ontology#ParkingLot"
                 >ParkingLot</a
@@ -2868,13 +2792,6 @@
             <li>
               <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp"
                 >Ramp</a
-              >
-            </li>
-            <li>
-              <a
-                href="#RestrictedArea"
-                title="https://purl.org/ffdr-ontology#RestrictedArea"
-                >RestrictedArea</a
               >
             </li>
             <li>
@@ -2978,6 +2895,13 @@
                 href="#StructuralElement"
                 title="https://purl.org/ffdr-ontology#StructuralElement"
                 >StructuralElement</a
+              >
+            </li>
+            <li>
+              <a
+                href="#SurroundingStructure"
+                title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                >SurroundingStructure</a
               >
             </li>
             <li>
@@ -3111,25 +3035,15 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -3196,6 +3110,12 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -3242,25 +3162,15 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -3327,6 +3237,12 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -3497,89 +3413,6 @@
                   href="#BuildingComponent"
                   title="https://purl.org/ffdr-ontology#BuildingComponent"
                   >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -3868,55 +3701,6 @@
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Door" title="https://purl.org/ffdr-ontology#Door"
-                  >Door</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Elevator"
-                  title="https://purl.org/ffdr-ontology#Elevator"
-                  >Elevator</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FloorAssembly"
-                  title="https://purl.org/ffdr-ontology#FloorAssembly"
-                  >FloorAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Hallway"
-                  title="https://purl.org/ffdr-ontology#Hallway"
-                  >Hallway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp"
-                  >Ramp</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofAssembly"
-                  title="https://purl.org/ffdr-ontology#RoofAssembly"
-                  >RoofAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Stairway"
-                  title="https://purl.org/ffdr-ontology#Stairway"
-                  >Stairway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Wall" title="https://purl.org/ffdr-ontology#Wall"
-                  >Wall</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Window" title="https://purl.org/ffdr-ontology#Window"
-                  >Window</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="Building">
@@ -3938,9 +3722,9 @@
               <dt>has super-classes</dt>
               <dd>
                 <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -4123,9 +3907,9 @@
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
+                  href="#HazardousSubstance"
+                  title="https://purl.org/ffdr-ontology#HazardousSubstance"
+                  >HazardousSubstance</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -4142,18 +3926,6 @@
                   href="#NonStructuralElement"
                   title="https://purl.org/ffdr-ontology#NonStructuralElement"
                   >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -4267,8 +4039,16 @@
                   >Material</a
                 >
                 <sup class="type-c" title="class">c</sup>,
-                <a href="#Road" title="https://purl.org/ffdr-ontology#Road"
-                  >Road</a
+                <a
+                  href="#RoadToIncident"
+                  title="https://purl.org/ffdr-ontology#RoadToIncident"
+                  >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -4610,22 +4390,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -4635,6 +4399,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -4695,6 +4465,12 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -4760,22 +4536,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -4785,6 +4545,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -4845,6 +4611,12 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -4983,85 +4755,6 @@
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="BuildingUtilitySystem">
@@ -5133,89 +4826,6 @@
                   >isUtilityRunning</a
                 >
                 <sup class="type-dp" title="data property">dp</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
-                >
-                <sup class="type-c" title="class">c</sup>
               </dd>
             </dl>
           </div>
@@ -5336,89 +4946,6 @@
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="ConstructionType">
@@ -5517,22 +5044,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -5542,6 +5053,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -5602,6 +5119,12 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -5699,22 +5222,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -5724,6 +5231,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -5787,6 +5300,12 @@
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
                   href="#SurroundingTerrain"
                   title="https://purl.org/ffdr-ontology#SurroundingTerrain"
                   >SurroundingTerrain</a
@@ -5839,57 +5358,6 @@
                   >isPrimaryFireServiceEntryPoint</a
                 >
                 <sup class="type-dp" title="data property">dp</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Balcony"
-                  title="https://purl.org/ffdr-ontology#Balcony"
-                  >Balcony</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Elevator"
-                  title="https://purl.org/ffdr-ontology#Elevator"
-                  >Elevator</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FloorAssembly"
-                  title="https://purl.org/ffdr-ontology#FloorAssembly"
-                  >FloorAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Hallway"
-                  title="https://purl.org/ffdr-ontology#Hallway"
-                  >Hallway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp"
-                  >Ramp</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofAssembly"
-                  title="https://purl.org/ffdr-ontology#RoofAssembly"
-                  >RoofAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Stairway"
-                  title="https://purl.org/ffdr-ontology#Stairway"
-                  >Stairway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Wall" title="https://purl.org/ffdr-ontology#Wall"
-                  >Wall</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Window" title="https://purl.org/ffdr-ontology#Window"
-                  >Window</a
-                >
-                <sup class="type-c" title="class">c</sup>
               </dd>
             </dl>
           </div>
@@ -6010,55 +5478,6 @@
                   >isQualifiedForEvacuation</a
                 >
                 <sup class="type-dp" title="data property">dp</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Balcony"
-                  title="https://purl.org/ffdr-ontology#Balcony"
-                  >Balcony</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Door" title="https://purl.org/ffdr-ontology#Door"
-                  >Door</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FloorAssembly"
-                  title="https://purl.org/ffdr-ontology#FloorAssembly"
-                  >FloorAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Hallway"
-                  title="https://purl.org/ffdr-ontology#Hallway"
-                  >Hallway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp"
-                  >Ramp</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofAssembly"
-                  title="https://purl.org/ffdr-ontology#RoofAssembly"
-                  >RoofAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Stairway"
-                  title="https://purl.org/ffdr-ontology#Stairway"
-                  >Stairway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Wall" title="https://purl.org/ffdr-ontology#Wall"
-                  >Wall</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Window" title="https://purl.org/ffdr-ontology#Window"
-                  >Window</a
-                >
-                <sup class="type-c" title="class">c</sup>
               </dd>
             </dl>
           </div>
@@ -6297,22 +5716,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -6322,6 +5725,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -6382,6 +5791,12 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -6473,174 +5888,6 @@
                   href="#UtilityContactAddress"
                   title="https://purl.org/ffdr-ontology#UtilityContactAddress"
                   >UtilityContactAddress</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-            </dl>
-          </div>
-          <div class="entity" id="EnvironmentalElement">
-            <h3>
-              EnvironmentalElement<sup class="type-c" title="class">c</sup>
-              <span class="backlink">
-                back to <a href="#toc">ToC</a> or
-                <a href="#classes">Class ToC</a>
-              </span>
-            </h3>
-            <p>
-              <strong>IRI:</strong>
-              https://purl.org/ffdr-ontology#EnvironmentalElement
-            </p>
-            <div class="comment">
-              <span class="markdown"
-                >The 'EnvironmentalElement' class represents environmental
-                elements surrounding an incident building (the building with a
-                fire emergency).</span
-              >
-            </div>
-            <dl class="description">
-              <dt>has super-classes</dt>
-              <dd />
-              <dt>has sub-classes</dt>
-              <dd>
-                <a
-                  href="#Building"
-                  title="https://purl.org/ffdr-ontology#Building"
-                  >Building</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FireHydrant"
-                  title="https://purl.org/ffdr-ontology#FireHydrant"
-                  >FireHydrant</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FireLane"
-                  title="https://purl.org/ffdr-ontology#FireLane"
-                  >FireLane</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Obstruction"
-                  title="https://purl.org/ffdr-ontology#Obstruction"
-                  >Obstruction</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingLot"
-                  title="https://purl.org/ffdr-ontology#ParkingLot"
-                  >ParkingLot</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Pipeline"
-                  title="https://purl.org/ffdr-ontology#Pipeline"
-                  >Pipeline</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#PowerLine"
-                  title="https://purl.org/ffdr-ontology#PowerLine"
-                  >PowerLine</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Vegetation"
-                  title="https://purl.org/ffdr-ontology#Vegetation"
-                  >Vegetation</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Address"
-                  title="https://purl.org/ffdr-ontology#Address"
-                  >Address</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AirSupply"
-                  title="https://purl.org/ffdr-ontology#AirSupply"
-                  >AirSupply</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingOccupancy"
-                  title="https://purl.org/ffdr-ontology#BuildingOccupancy"
-                  >BuildingOccupancy</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingPlan"
-                  title="https://purl.org/ffdr-ontology#BuildingPlan"
-                  >BuildingPlan</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConstructionType"
-                  title="https://purl.org/ffdr-ontology#ConstructionType"
-                  >ConstructionType</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ControlPanel"
-                  title="https://purl.org/ffdr-ontology#ControlPanel"
-                  >ControlPanel</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EmergencyServiceProvider"
-                  title="https://purl.org/ffdr-ontology#EmergencyServiceProvider"
-                  >EmergencyServiceProvider</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FireCommandCenter"
-                  title="https://purl.org/ffdr-ontology#FireCommandCenter"
-                  >FireCommandCenter</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HoseConnection"
-                  title="https://purl.org/ffdr-ontology#HoseConnection"
-                  >HoseConnection</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#IncidentSite"
-                  title="https://purl.org/ffdr-ontology#IncidentSite"
-                  >IncidentSite</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Material"
-                  title="https://purl.org/ffdr-ontology#Material"
-                  >Material</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#SurroundingTerrain"
-                  title="https://purl.org/ffdr-ontology#SurroundingTerrain"
-                  >SurroundingTerrain</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#WaterSource"
-                  title="https://purl.org/ffdr-ontology#WaterSource"
-                  >WaterSource</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#WeatherCondition"
-                  title="https://purl.org/ffdr-ontology#WeatherCondition"
-                  >WeatherCondition</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -6861,89 +6108,6 @@
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="Facade">
@@ -6994,79 +6158,6 @@
                   href="#Firewall"
                   title="https://purl.org/ffdr-ontology#Firewall"
                   >Firewall</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -7654,22 +6745,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -7679,6 +6754,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -7739,6 +6820,12 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -8104,9 +7191,9 @@
               <dt>has super-classes</dt>
               <dd>
                 <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -8190,14 +7277,14 @@
             <dl class="description">
               <dt>has super-classes</dt>
               <dd>
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
                 <a href="#Road" title="https://purl.org/ffdr-ontology#Road"
                   >Road</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -8618,55 +7705,6 @@
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Balcony"
-                  title="https://purl.org/ffdr-ontology#Balcony"
-                  >Balcony</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Door" title="https://purl.org/ffdr-ontology#Door"
-                  >Door</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Elevator"
-                  title="https://purl.org/ffdr-ontology#Elevator"
-                  >Elevator</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Hallway"
-                  title="https://purl.org/ffdr-ontology#Hallway"
-                  >Hallway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp"
-                  >Ramp</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofAssembly"
-                  title="https://purl.org/ffdr-ontology#RoofAssembly"
-                  >RoofAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Stairway"
-                  title="https://purl.org/ffdr-ontology#Stairway"
-                  >Stairway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Wall" title="https://purl.org/ffdr-ontology#Wall"
-                  >Wall</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Window" title="https://purl.org/ffdr-ontology#Window"
-                  >Window</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="GasDetector">
@@ -8794,187 +7832,6 @@
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Balcony"
-                  title="https://purl.org/ffdr-ontology#Balcony"
-                  >Balcony</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Door" title="https://purl.org/ffdr-ontology#Door"
-                  >Door</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Elevator"
-                  title="https://purl.org/ffdr-ontology#Elevator"
-                  >Elevator</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FloorAssembly"
-                  title="https://purl.org/ffdr-ontology#FloorAssembly"
-                  >FloorAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp"
-                  >Ramp</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofAssembly"
-                  title="https://purl.org/ffdr-ontology#RoofAssembly"
-                  >RoofAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Stairway"
-                  title="https://purl.org/ffdr-ontology#Stairway"
-                  >Stairway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Wall" title="https://purl.org/ffdr-ontology#Wall"
-                  >Wall</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Window" title="https://purl.org/ffdr-ontology#Window"
-                  >Window</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-            </dl>
-          </div>
-          <div class="entity" id="Hazard">
-            <h3>
-              Hazard<sup class="type-c" title="class">c</sup>
-              <span class="backlink">
-                back to <a href="#toc">ToC</a> or
-                <a href="#classes">Class ToC</a>
-              </span>
-            </h3>
-            <p><strong>IRI:</strong> https://purl.org/ffdr-ontology#Hazard</p>
-            <div class="comment">
-              <span class="markdown"
-                >The 'Hazard' class represents materials or activities within a
-                building that can be hazardous to firefighters.</span
-              >
-            </div>
-            <dl class="description">
-              <dt>has super-classes</dt>
-              <dd />
-              <dt>has sub-classes</dt>
-              <dd>
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousOperation"
-                  title="https://purl.org/ffdr-ontology#HazardousOperation"
-                  >HazardousOperation</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Address"
-                  title="https://purl.org/ffdr-ontology#Address"
-                  >Address</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AirSupply"
-                  title="https://purl.org/ffdr-ontology#AirSupply"
-                  >AirSupply</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingOccupancy"
-                  title="https://purl.org/ffdr-ontology#BuildingOccupancy"
-                  >BuildingOccupancy</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingPlan"
-                  title="https://purl.org/ffdr-ontology#BuildingPlan"
-                  >BuildingPlan</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConstructionType"
-                  title="https://purl.org/ffdr-ontology#ConstructionType"
-                  >ConstructionType</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ControlPanel"
-                  title="https://purl.org/ffdr-ontology#ControlPanel"
-                  >ControlPanel</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EmergencyServiceProvider"
-                  title="https://purl.org/ffdr-ontology#EmergencyServiceProvider"
-                  >EmergencyServiceProvider</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FireCommandCenter"
-                  title="https://purl.org/ffdr-ontology#FireCommandCenter"
-                  >FireCommandCenter</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HoseConnection"
-                  title="https://purl.org/ffdr-ontology#HoseConnection"
-                  >HoseConnection</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#IncidentBuilding"
-                  title="https://purl.org/ffdr-ontology#IncidentBuilding"
-                  >IncidentBuilding</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#IncidentSite"
-                  title="https://purl.org/ffdr-ontology#IncidentSite"
-                  >IncidentSite</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Material"
-                  title="https://purl.org/ffdr-ontology#Material"
-                  >Material</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Road" title="https://purl.org/ffdr-ontology#Road"
-                  >Road</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#SurroundingTerrain"
-                  title="https://purl.org/ffdr-ontology#SurroundingTerrain"
-                  >SurroundingTerrain</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#WaterSource"
-                  title="https://purl.org/ffdr-ontology#WaterSource"
-                  >WaterSource</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#WeatherCondition"
-                  title="https://purl.org/ffdr-ontology#WeatherCondition"
-                  >WeatherCondition</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="HazardousMaterial">
@@ -8991,127 +7848,22 @@
             </p>
             <div class="comment">
               <span class="markdown"
-                >The 'HazardousMaterial' class represents hazardous materials
-                that may be found inside or outside a building.</span
+                >The 'HazardousMaterial' class represents any hazardous
+                materials such as gas tanks and chemical storage.</span
               >
             </div>
             <dl class="description">
               <dt>has super-classes</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-              <dt>is in domain of</dt>
-              <dd>
-                <a
-                  href="#isDecontaminationRequired"
-                  title="https://purl.org/ffdr-ontology#isDecontaminationRequired"
-                  >isDecontaminationRequired</a
-                >
-                <sup class="type-dp" title="data property">dp</sup>
-              </dd>
               <dt>is disjoint with</dt>
               <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousOperation"
-                  title="https://purl.org/ffdr-ontology#HazardousOperation"
-                  >HazardousOperation</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
-                >
-                <sup class="type-c" title="class">c</sup>,
                 <a
                   href="#Building"
                   title="https://purl.org/ffdr-ontology#Building"
@@ -9163,9 +7915,9 @@
               </dd>
             </dl>
           </div>
-          <div class="entity" id="HazardousOperation">
+          <div class="entity" id="HazardousSubstance">
             <h3>
-              HazardousOperation<sup class="type-c" title="class">c</sup>
+              HazardousSubstance<sup class="type-c" title="class">c</sup>
               <span class="backlink">
                 back to <a href="#toc">ToC</a> or
                 <a href="#classes">Class ToC</a>
@@ -9173,48 +7925,32 @@
             </h3>
             <p>
               <strong>IRI:</strong>
-              https://purl.org/ffdr-ontology#HazardousOperation
+              https://purl.org/ffdr-ontology#HazardousSubstance
             </p>
             <div class="comment">
               <span class="markdown"
-                >The 'HazardousOperation' class represents different types of
-                hazardous operations in a building.</span
+                >The 'HazardousSubstance' class represents hazardous substances
+                that may be found in a building.</span
               >
             </div>
             <dl class="description">
               <dt>has super-classes</dt>
               <dd>
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
               <dt>is in domain of</dt>
               <dd>
                 <a
-                  href="#isHazardousOperationIn"
-                  title="https://purl.org/ffdr-ontology#isHazardousOperationIn"
-                  >is hazardous operation in</a
+                  href="#isDecontaminationRequired"
+                  title="https://purl.org/ffdr-ontology#isDecontaminationRequired"
+                  >isDecontaminationRequired</a
                 >
-                <sup class="type-op" title="object property">op</sup>
-              </dd>
-              <dt>is in range of</dt>
-              <dd>
-                <a
-                  href="#hasHazardousOperation"
-                  title="https://purl.org/ffdr-ontology#hasHazardousOperation"
-                  >hasHazardousOperation</a
-                >
-                <sup class="type-op" title="object property">op</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>
+                <sup class="type-dp" title="data property">dp</sup>
               </dd>
             </dl>
           </div>
@@ -9240,89 +7976,6 @@
                   href="#BuildingComponent"
                   title="https://purl.org/ffdr-ontology#BuildingComponent"
                   >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -9377,22 +8030,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -9402,6 +8039,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -9462,6 +8105,12 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -9606,13 +8255,6 @@
               <dt>is in domain of</dt>
               <dd>
                 <a
-                  href="#hasYearOfConstruction"
-                  title="https://purl.org/ffdr-ontology#hasYearOfConstruction"
-                  >The 'hasYearOfConstruction ' data property represents the
-                  construction year of a building</a
-                >
-                <sup class="type-dp" title="data property">dp</sup>,
-                <a
                   href="#hasBuildingArea"
                   title="https://purl.org/ffdr-ontology#hasBuildingArea"
                   >hasBuildingArea</a
@@ -9643,12 +8285,6 @@
                 >
                 <sup class="type-op" title="object property">op</sup>,
                 <a
-                  href="#hasHazardousOperation"
-                  title="https://purl.org/ffdr-ontology#hasHazardousOperation"
-                  >hasHazardousOperation</a
-                >
-                <sup class="type-op" title="object property">op</sup>,
-                <a
                   href="#hasNumberOfExit"
                   title="https://purl.org/ffdr-ontology#hasNumberOfExit"
                   >hasNumberOfExit</a
@@ -9667,6 +8303,12 @@
                 >
                 <sup class="type-dp" title="data property">dp</sup>,
                 <a
+                  href="#hasOccupancy"
+                  title="https://purl.org/ffdr-ontology#hasOccupancy"
+                  >hasOccupancy</a
+                >
+                <sup class="type-op" title="object property">op</sup>,
+                <a
                   href="#hasOccupantLoad"
                   title="https://purl.org/ffdr-ontology#hasOccupantLoad"
                   >hasOccupantLoad</a
@@ -9681,12 +8323,6 @@
               </dd>
               <dt>is in range of</dt>
               <dd>
-                <a
-                  href="#isHazardousOperationIn"
-                  title="https://purl.org/ffdr-ontology#isHazardousOperationIn"
-                  >is hazardous operation in</a
-                >
-                <sup class="type-op" title="object property">op</sup>,
                 <a
                   href="#isBuildingPlanOf"
                   title="https://purl.org/ffdr-ontology#isBuildingPlanOf"
@@ -9715,16 +8351,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -9734,6 +8360,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -9797,6 +8429,12 @@
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
                   href="#SurroundingTerrain"
                   title="https://purl.org/ffdr-ontology#SurroundingTerrain"
                   >SurroundingTerrain</a
@@ -9846,12 +8484,6 @@
                 >
                 <sup class="type-dp" title="data property">dp</sup>,
                 <a
-                  href="#hasLandUse"
-                  title="https://purl.org/ffdr-ontology#hasLandUse"
-                  >hasLandUse</a
-                >
-                <sup class="type-dp" title="data property">dp</sup>,
-                <a
                   href="#hasWeatherCondition"
                   title="https://purl.org/ffdr-ontology#hasWeatherCondition"
                   >hasWeatherCondition</a
@@ -9870,22 +8502,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -9895,6 +8511,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -9958,6 +8580,12 @@
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
                   href="#SurroundingTerrain"
                   title="https://purl.org/ffdr-ontology#SurroundingTerrain"
                   >SurroundingTerrain</a
@@ -10010,91 +8638,6 @@
                   >hasKey</a
                 >
                 <sup class="type-dp" title="data property">dp</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
-                >
-                <sup class="type-c" title="class">c</sup>
               </dd>
             </dl>
           </div>
@@ -10325,22 +8868,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -10350,6 +8877,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -10410,6 +8943,12 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -10574,85 +9113,6 @@
                 >
                 <sup class="type-dp" title="data property">dp</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="Obstruction">
@@ -10677,9 +9137,9 @@
               <dt>has super-classes</dt>
               <dd>
                 <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -10805,118 +9265,6 @@
               </dd>
             </dl>
           </div>
-          <div class="entity" id="ParkingArea">
-            <h3>
-              ParkingArea<sup class="type-c" title="class">c</sup>
-              <span class="backlink">
-                back to <a href="#toc">ToC</a> or
-                <a href="#classes">Class ToC</a>
-              </span>
-            </h3>
-            <p>
-              <strong>IRI:</strong> https://purl.org/ffdr-ontology#ParkingArea
-            </p>
-            <div class="comment">
-              <span class="markdown"
-                >The 'ParkingArea' class represents a part of a building used
-                for parking vehicles.</span
-              >
-            </div>
-            <dl class="description">
-              <dt>has super-classes</dt>
-              <dd>
-                <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-            </dl>
-          </div>
           <div class="entity" id="ParkingLot">
             <h3>
               ParkingLot<sup class="type-c" title="class">c</sup>
@@ -10937,9 +9285,9 @@
               <dt>has super-classes</dt>
               <dd>
                 <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -11024,9 +9372,9 @@
               <dt>has super-classes</dt>
               <dd>
                 <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -11269,9 +9617,9 @@
               <dt>has super-classes</dt>
               <dd>
                 <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -11481,170 +9829,6 @@
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Balcony"
-                  title="https://purl.org/ffdr-ontology#Balcony"
-                  >Balcony</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Door" title="https://purl.org/ffdr-ontology#Door"
-                  >Door</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Elevator"
-                  title="https://purl.org/ffdr-ontology#Elevator"
-                  >Elevator</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FloorAssembly"
-                  title="https://purl.org/ffdr-ontology#FloorAssembly"
-                  >FloorAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Hallway"
-                  title="https://purl.org/ffdr-ontology#Hallway"
-                  >Hallway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofAssembly"
-                  title="https://purl.org/ffdr-ontology#RoofAssembly"
-                  >RoofAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Stairway"
-                  title="https://purl.org/ffdr-ontology#Stairway"
-                  >Stairway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Wall" title="https://purl.org/ffdr-ontology#Wall"
-                  >Wall</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Window" title="https://purl.org/ffdr-ontology#Window"
-                  >Window</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-            </dl>
-          </div>
-          <div class="entity" id="RestrictedArea">
-            <h3>
-              RestrictedArea<sup class="type-c" title="class">c</sup>
-              <span class="backlink">
-                back to <a href="#toc">ToC</a> or
-                <a href="#classes">Class ToC</a>
-              </span>
-            </h3>
-            <p>
-              <strong>IRI:</strong>
-              https://purl.org/ffdr-ontology#RestrictedArea
-            </p>
-            <div class="comment">
-              <span class="markdown"
-                >The 'RestrictedArea' class represents an area inside a building
-                that requires special permission to access.</span
-              >
-            </div>
-            <dl class="description">
-              <dt>has super-classes</dt>
-              <dd>
-                <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="Road">
@@ -11685,19 +9869,6 @@
                   >hasStatus</a
                 >
                 <sup class="type-dp" title="data property">dp</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>
               </dd>
             </dl>
           </div>
@@ -11754,6 +9925,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -11817,6 +9994,12 @@
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
                   href="#SurroundingTerrain"
                   title="https://purl.org/ffdr-ontology#SurroundingTerrain"
                   >SurroundingTerrain</a
@@ -11873,55 +10056,6 @@
                 >
                 <sup class="type-dp" title="data property">dp</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Balcony"
-                  title="https://purl.org/ffdr-ontology#Balcony"
-                  >Balcony</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Door" title="https://purl.org/ffdr-ontology#Door"
-                  >Door</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Elevator"
-                  title="https://purl.org/ffdr-ontology#Elevator"
-                  >Elevator</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FloorAssembly"
-                  title="https://purl.org/ffdr-ontology#FloorAssembly"
-                  >FloorAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Hallway"
-                  title="https://purl.org/ffdr-ontology#Hallway"
-                  >Hallway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp"
-                  >Ramp</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Stairway"
-                  title="https://purl.org/ffdr-ontology#Stairway"
-                  >Stairway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Wall" title="https://purl.org/ffdr-ontology#Wall"
-                  >Wall</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Window" title="https://purl.org/ffdr-ontology#Window"
-                  >Window</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="RoofTopElement">
@@ -11950,89 +10084,6 @@
                   href="#BuildingComponent"
                   title="https://purl.org/ffdr-ontology#BuildingComponent"
                   >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -12714,55 +10765,6 @@
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Balcony"
-                  title="https://purl.org/ffdr-ontology#Balcony"
-                  >Balcony</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Door" title="https://purl.org/ffdr-ontology#Door"
-                  >Door</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Elevator"
-                  title="https://purl.org/ffdr-ontology#Elevator"
-                  >Elevator</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FloorAssembly"
-                  title="https://purl.org/ffdr-ontology#FloorAssembly"
-                  >FloorAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Hallway"
-                  title="https://purl.org/ffdr-ontology#Hallway"
-                  >Hallway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp"
-                  >Ramp</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofAssembly"
-                  title="https://purl.org/ffdr-ontology#RoofAssembly"
-                  >RoofAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Wall" title="https://purl.org/ffdr-ontology#Wall"
-                  >Wall</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Window" title="https://purl.org/ffdr-ontology#Window"
-                  >Window</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="StandpipeSystem">
@@ -12967,40 +10969,48 @@
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-              <dt>is disjoint with</dt>
+            </dl>
+          </div>
+          <div class="entity" id="SurroundingStructure">
+            <h3>
+              SurroundingStructure<sup class="type-c" title="class">c</sup>
+              <span class="backlink">
+                back to <a href="#toc">ToC</a> or
+                <a href="#classes">Class ToC</a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              https://purl.org/ffdr-ontology#SurroundingStructure
+            </p>
+            <div class="comment">
+              <span class="markdown"
+                >The 'SurroundingStructure' class represents structures
+                surrounding an incident building (the building with a fire
+                emergency).</span
+              >
+            </div>
+            <dl class="description">
+              <dt>has super-classes</dt>
+              <dd />
+              <dt>has sub-classes</dt>
               <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
+                <a
+                  href="#Building"
+                  title="https://purl.org/ffdr-ontology#Building"
+                  >Building</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
+                  href="#FireHydrant"
+                  title="https://purl.org/ffdr-ontology#FireHydrant"
+                  >FireHydrant</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
+                  href="#FireLane"
+                  title="https://purl.org/ffdr-ontology#FireLane"
+                  >FireLane</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -13010,87 +11020,38 @@
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
+                  href="#Obstruction"
+                  title="https://purl.org/ffdr-ontology#Obstruction"
+                  >Obstruction</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
+                  href="#ParkingLot"
+                  title="https://purl.org/ffdr-ontology#ParkingLot"
+                  >ParkingLot</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
+                  href="#Pipeline"
+                  title="https://purl.org/ffdr-ontology#Pipeline"
+                  >Pipeline</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
+                  href="#PowerLine"
+                  title="https://purl.org/ffdr-ontology#PowerLine"
+                  >PowerLine</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#VerticalOpening"
-                  title="https://purl.org/ffdr-ontology#VerticalOpening"
-                  >VerticalOpening</a
+                  href="#Vegetation"
+                  title="https://purl.org/ffdr-ontology#Vegetation"
+                  >Vegetation</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
-            </dl>
-          </div>
-          <div class="entity" id="SurroundingTerrain">
-            <h3>
-              SurroundingTerrain<sup class="type-c" title="class">c</sup>
-              <span class="backlink">
-                back to <a href="#toc">ToC</a> or
-                <a href="#classes">Class ToC</a>
-              </span>
-            </h3>
-            <p>
-              <strong>IRI:</strong>
-              https://purl.org/ffdr-ontology#SurroundingTerrain
-            </p>
-            <div class="comment">
-              <span class="markdown"
-                >The 'SurroundingTerrain' class represents terrain surrounding
-                an incident building (the building with a fire emergency).</span
-              >
-            </div>
-            <dl class="description">
-              <dt>has super-classes</dt>
-              <dd />
               <dt>is disjoint with</dt>
               <dd>
-                <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
                 <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
@@ -13101,6 +11062,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -13167,6 +11134,140 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingTerrain"
+                  title="https://purl.org/ffdr-ontology#SurroundingTerrain"
+                  >SurroundingTerrain</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#WaterSource"
+                  title="https://purl.org/ffdr-ontology#WaterSource"
+                  >WaterSource</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#WeatherCondition"
+                  title="https://purl.org/ffdr-ontology#WeatherCondition"
+                  >WeatherCondition</a
+                >
+                <sup class="type-c" title="class">c</sup>
+              </dd>
+            </dl>
+          </div>
+          <div class="entity" id="SurroundingTerrain">
+            <h3>
+              SurroundingTerrain<sup class="type-c" title="class">c</sup>
+              <span class="backlink">
+                back to <a href="#toc">ToC</a> or
+                <a href="#classes">Class ToC</a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              https://purl.org/ffdr-ontology#SurroundingTerrain
+            </p>
+            <div class="comment">
+              <span class="markdown"
+                >The 'SurroundingTerrain' class represents terrain surrounding
+                an incident building (the building with a fire emergency).</span
+              >
+            </div>
+            <dl class="description">
+              <dt>has super-classes</dt>
+              <dd />
+              <dt>is disjoint with</dt>
+              <dd>
+                <a
+                  href="#Address"
+                  title="https://purl.org/ffdr-ontology#Address"
+                  >Address</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#AirSupply"
+                  title="https://purl.org/ffdr-ontology#AirSupply"
+                  >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingOccupancy"
+                  title="https://purl.org/ffdr-ontology#BuildingOccupancy"
+                  >BuildingOccupancy</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingPlan"
+                  title="https://purl.org/ffdr-ontology#BuildingPlan"
+                  >BuildingPlan</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#ConstructionType"
+                  title="https://purl.org/ffdr-ontology#ConstructionType"
+                  >ConstructionType</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#ControlPanel"
+                  title="https://purl.org/ffdr-ontology#ControlPanel"
+                  >ControlPanel</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#EmergencyServiceProvider"
+                  title="https://purl.org/ffdr-ontology#EmergencyServiceProvider"
+                  >EmergencyServiceProvider</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#FireCommandCenter"
+                  title="https://purl.org/ffdr-ontology#FireCommandCenter"
+                  >FireCommandCenter</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#HoseConnection"
+                  title="https://purl.org/ffdr-ontology#HoseConnection"
+                  >HoseConnection</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#IncidentBuilding"
+                  title="https://purl.org/ffdr-ontology#IncidentBuilding"
+                  >IncidentBuilding</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#IncidentSite"
+                  title="https://purl.org/ffdr-ontology#IncidentSite"
+                  >IncidentSite</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#Material"
+                  title="https://purl.org/ffdr-ontology#Material"
+                  >Material</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#RoadToIncident"
+                  title="https://purl.org/ffdr-ontology#RoadToIncident"
+                  >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -13349,9 +11450,9 @@
               <dt>has super-classes</dt>
               <dd>
                 <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>
               </dd>
@@ -13463,89 +11564,6 @@
                 >
                 <sup class="type-op" title="object property">op</sup>
               </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a href="#Facade" title="https://purl.org/ffdr-ontology#Facade"
-                  >Facade</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#AreaOfRefuge"
-                  title="https://purl.org/ffdr-ontology#AreaOfRefuge"
-                  >AreaOfRefuge</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingSafetySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingSafetySystem"
-                  >BuildingSafetySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#BuildingUtilitySystem"
-                  title="https://purl.org/ffdr-ontology#BuildingUtilitySystem"
-                  >BuildingUtilitySystem</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ConcealedSpace"
-                  title="https://purl.org/ffdr-ontology#ConcealedSpace"
-                  >ConcealedSpace</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ExtremelyValuableMaterial"
-                  title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
-                  >ExtremelyValuableMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#HazardousMaterial"
-                  title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                  >HazardousMaterial</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Helipad"
-                  title="https://purl.org/ffdr-ontology#Helipad"
-                  >Helipad</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#KeyBox" title="https://purl.org/ffdr-ontology#KeyBox"
-                  >KeyBox</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#NonStructuralElement"
-                  title="https://purl.org/ffdr-ontology#NonStructuralElement"
-                  >NonStructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#ParkingArea"
-                  title="https://purl.org/ffdr-ontology#ParkingArea"
-                  >ParkingArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RestrictedArea"
-                  title="https://purl.org/ffdr-ontology#RestrictedArea"
-                  >RestrictedArea</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofTopElement"
-                  title="https://purl.org/ffdr-ontology#RoofTopElement"
-                  >RoofTopElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#StructuralElement"
-                  title="https://purl.org/ffdr-ontology#StructuralElement"
-                  >StructuralElement</a
-                >
-                <sup class="type-c" title="class">c</sup>
-              </dd>
             </dl>
           </div>
           <div class="entity" id="Wall">
@@ -13580,57 +11598,6 @@
                   >hasThickness</a
                 >
                 <sup class="type-dp" title="data property">dp</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Balcony"
-                  title="https://purl.org/ffdr-ontology#Balcony"
-                  >Balcony</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Door" title="https://purl.org/ffdr-ontology#Door"
-                  >Door</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Elevator"
-                  title="https://purl.org/ffdr-ontology#Elevator"
-                  >Elevator</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FloorAssembly"
-                  title="https://purl.org/ffdr-ontology#FloorAssembly"
-                  >FloorAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Hallway"
-                  title="https://purl.org/ffdr-ontology#Hallway"
-                  >Hallway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp"
-                  >Ramp</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofAssembly"
-                  title="https://purl.org/ffdr-ontology#RoofAssembly"
-                  >RoofAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Stairway"
-                  title="https://purl.org/ffdr-ontology#Stairway"
-                  >Stairway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Window" title="https://purl.org/ffdr-ontology#Window"
-                  >Window</a
-                >
-                <sup class="type-c" title="class">c</sup>
               </dd>
             </dl>
           </div>
@@ -13672,22 +11639,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -13697,6 +11648,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -13763,6 +11720,12 @@
                   href="#RoadToIncident"
                   title="https://purl.org/ffdr-ontology#RoadToIncident"
                   >RoadToIncident</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -13917,22 +11880,6 @@
               <dt>is disjoint with</dt>
               <dd>
                 <a
-                  href="#BuildingComponent"
-                  title="https://purl.org/ffdr-ontology#BuildingComponent"
-                  >BuildingComponent</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#EnvironmentalElement"
-                  title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                  >EnvironmentalElement</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Hazard" title="https://purl.org/ffdr-ontology#Hazard"
-                  >Hazard</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
                   href="#Address"
                   title="https://purl.org/ffdr-ontology#Address"
                   >Address</a
@@ -13942,6 +11889,12 @@
                   href="#AirSupply"
                   title="https://purl.org/ffdr-ontology#AirSupply"
                   >AirSupply</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
+                  href="#BuildingComponent"
+                  title="https://purl.org/ffdr-ontology#BuildingComponent"
+                  >BuildingComponent</a
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
@@ -14011,6 +11964,12 @@
                 >
                 <sup class="type-c" title="class">c</sup>,
                 <a
+                  href="#SurroundingStructure"
+                  title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                  >SurroundingStructure</a
+                >
+                <sup class="type-c" title="class">c</sup>,
+                <a
                   href="#SurroundingTerrain"
                   title="https://purl.org/ffdr-ontology#SurroundingTerrain"
                   >SurroundingTerrain</a
@@ -14057,57 +12016,6 @@
                   >hasHeight</a
                 >
                 <sup class="type-dp" title="data property">dp</sup>
-              </dd>
-              <dt>is disjoint with</dt>
-              <dd>
-                <a
-                  href="#Balcony"
-                  title="https://purl.org/ffdr-ontology#Balcony"
-                  >Balcony</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Door" title="https://purl.org/ffdr-ontology#Door"
-                  >Door</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Elevator"
-                  title="https://purl.org/ffdr-ontology#Elevator"
-                  >Elevator</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#FloorAssembly"
-                  title="https://purl.org/ffdr-ontology#FloorAssembly"
-                  >FloorAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Hallway"
-                  title="https://purl.org/ffdr-ontology#Hallway"
-                  >Hallway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Ramp" title="https://purl.org/ffdr-ontology#Ramp"
-                  >Ramp</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#RoofAssembly"
-                  title="https://purl.org/ffdr-ontology#RoofAssembly"
-                  >RoofAssembly</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a
-                  href="#Stairway"
-                  title="https://purl.org/ffdr-ontology#Stairway"
-                  >Stairway</a
-                >
-                <sup class="type-c" title="class">c</sup>,
-                <a href="#Wall" title="https://purl.org/ffdr-ontology#Wall"
-                  >Wall</a
-                >
-                <sup class="type-c" title="class">c</sup>
               </dd>
             </dl>
           </div>
@@ -14176,13 +12084,6 @@
             </li>
             <li>
               <a
-                href="#hasHazardousOperation"
-                title="https://purl.org/ffdr-ontology#hasHazardousOperation"
-                >hasHazardousOperation</a
-              >
-            </li>
-            <li>
-              <a
                 href="#hasHoseConnection"
                 title="https://purl.org/ffdr-ontology#hasHoseConnection"
                 >hasHoseConnection</a
@@ -14222,14 +12123,6 @@
                 title="https://purl.org/ffdr-ontology#hasWeatherCondition"
                 >hasWeatherCondition</a
               >
-            </li>
-            <li>
-              <a
-                href="#isHazardousOperationIn"
-                title="https://purl.org/ffdr-ontology#isHazardousOperationIn"
-              >
-                <span>is hazardous operation in</span>
-              </a>
             </li>
             <li>
               <a
@@ -14375,13 +12268,6 @@
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
                   <a
-                    href="#EnvironmentalElement"
-                    title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                    >EnvironmentalElement</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
-                  <a
                     href="#FireCommandCenter"
                     title="https://purl.org/ffdr-ontology#FireCommandCenter"
                     >FireCommandCenter</a
@@ -14392,6 +12278,13 @@
                     href="#IncidentBuilding"
                     title="https://purl.org/ffdr-ontology#IncidentBuilding"
                     >IncidentBuilding</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#SurroundingStructure"
+                    title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                    >SurroundingStructure</a
                   >
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
@@ -14924,59 +12817,6 @@
               </dl>
             </div>
           </div>
-          <div class="entity" id="hasHazardousOperation">
-            <h3>
-              hasHazardousOperation<sup class="type-op" title="object property"
-                >op</sup
-              >
-              <span class="backlink">
-                back to <a href="#toc">ToC</a> or
-                <a href="#objectproperties">Object Property ToC</a>
-              </span>
-            </h3>
-            <p>
-              <strong>IRI:</strong>
-              https://purl.org/ffdr-ontology#hasHazardousOperation
-            </p>
-            <div class="comment">
-              <span class="markdown"
-                >The 'hasHazardousOperation' object property represents a
-                relationship between a building and hazardous operations in the
-                building.</span
-              >
-            </div>
-            <div class="description">
-              <dl>
-                <dt>has domain</dt>
-                <dd>
-                  <a
-                    href="#IncidentBuilding"
-                    title="https://purl.org/ffdr-ontology#IncidentBuilding"
-                    >IncidentBuilding</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                </dd>
-                <dt>has range</dt>
-                <dd>
-                  <a
-                    href="#HazardousOperation"
-                    title="https://purl.org/ffdr-ontology#HazardousOperation"
-                    >HazardousOperation</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                </dd>
-                <dt>is inverse of</dt>
-                <dd>
-                  <a
-                    href="#isHazardousOperationIn"
-                    title="https://purl.org/ffdr-ontology#isHazardousOperationIn"
-                    >is hazardous operation in</a
-                  >
-                  <sup class="type-op" title="object property">op</sup>
-                </dd>
-              </dl>
-            </div>
-          </div>
           <div class="entity" id="hasHoseConnection">
             <h3>
               hasHoseConnection<sup class="type-op" title="object property"
@@ -15132,13 +12972,6 @@
               <dl>
                 <dt>has domain</dt>
                 <dd>
-                  <a
-                    href="#Building"
-                    title="https://purl.org/ffdr-ontology#Building"
-                    >Building</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
                   <a
                     href="#IncidentBuilding"
                     title="https://purl.org/ffdr-ontology#IncidentBuilding"
@@ -15353,54 +13186,6 @@
                     href="#isWeatherConditionOf"
                     title="https://purl.org/ffdr-ontology#isWeatherConditionOf"
                     >isWeatherConditionOf</a
-                  >
-                  <sup class="type-op" title="object property">op</sup>
-                </dd>
-              </dl>
-            </div>
-          </div>
-          <div class="entity" id="isHazardousOperationIn">
-            <h3>
-              is hazardous operation in<sup
-                class="type-op"
-                title="object property"
-                >op</sup
-              >
-              <span class="backlink">
-                back to <a href="#toc">ToC</a> or
-                <a href="#objectproperties">Object Property ToC</a>
-              </span>
-            </h3>
-            <p>
-              <strong>IRI:</strong>
-              https://purl.org/ffdr-ontology#isHazardousOperationIn
-            </p>
-            <div class="description">
-              <dl>
-                <dt>has domain</dt>
-                <dd>
-                  <a
-                    href="#HazardousOperation"
-                    title="https://purl.org/ffdr-ontology#HazardousOperation"
-                    >HazardousOperation</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                </dd>
-                <dt>has range</dt>
-                <dd>
-                  <a
-                    href="#IncidentBuilding"
-                    title="https://purl.org/ffdr-ontology#IncidentBuilding"
-                    >IncidentBuilding</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                </dd>
-                <dt>is inverse of</dt>
-                <dd>
-                  <a
-                    href="#hasHazardousOperation"
-                    title="https://purl.org/ffdr-ontology#hasHazardousOperation"
-                    >hasHazardousOperation</a
                   >
                   <sup class="type-op" title="object property">op</sup>
                 </dd>
@@ -15650,13 +13435,6 @@
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
                   <a
-                    href="#EnvironmentalElement"
-                    title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                    >EnvironmentalElement</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
-                  <a
                     href="#FireCommandCenter"
                     title="https://purl.org/ffdr-ontology#FireCommandCenter"
                     >FireCommandCenter</a
@@ -15667,6 +13445,13 @@
                     href="#IncidentBuilding"
                     title="https://purl.org/ffdr-ontology#IncidentBuilding"
                     >IncidentBuilding</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#SurroundingStructure"
+                    title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                    >SurroundingStructure</a
                   >
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
@@ -16472,13 +14257,6 @@
             </li>
             <li>
               <a
-                href="#hasLandUse"
-                title="https://purl.org/ffdr-ontology#hasLandUse"
-                >hasLandUse</a
-              >
-            </li>
-            <li>
-              <a
                 href="#hasLocation"
                 title="https://purl.org/ffdr-ontology#hasLocation"
                 >hasLocation</a
@@ -16814,14 +14592,6 @@
                 >isUtilityRunning</a
               >
             </li>
-            <li>
-              <a
-                href="#hasYearOfConstruction"
-                title="https://purl.org/ffdr-ontology#hasYearOfConstruction"
-                >The 'hasYearOfConstruction ' data property represents the
-                construction year of a building</a
-              >
-            </li>
           </ul>
           <div class="entity" id="hasAccessBarrierType">
             <h3>
@@ -17044,8 +14814,7 @@
             <div class="comment">
               <span class="markdown"
                 >The 'hasCapacity' data property represents the number of people
-                or objects (such as vehicles) a given area or room can
-                support.</span
+                a given area or room can support.</span
               >
             </div>
             <div class="description">
@@ -17077,13 +14846,6 @@
                     href="#Hallway"
                     title="https://purl.org/ffdr-ontology#Hallway"
                     >Hallway</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
-                  <a
-                    href="#ParkingArea"
-                    title="https://purl.org/ffdr-ontology#ParkingArea"
-                    >ParkingArea</a
                   >
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
@@ -17368,9 +15130,16 @@
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
                   <a
-                    href="#Hazard"
-                    title="https://purl.org/ffdr-ontology#Hazard"
-                    >Hazard</a
+                    href="#HazardousMaterial"
+                    title="https://purl.org/ffdr-ontology#HazardousMaterial"
+                    >HazardousMaterial</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#HazardousSubstance"
+                    title="https://purl.org/ffdr-ontology#HazardousSubstance"
+                    >HazardousSubstance</a
                   >
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
@@ -17382,23 +15151,9 @@
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
                   <a
-                    href="#RestrictedArea"
-                    title="https://purl.org/ffdr-ontology#RestrictedArea"
-                    >RestrictedArea</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
-                  <a
                     href="#RoofTopElement"
                     title="https://purl.org/ffdr-ontology#RoofTopElement"
                     >RoofTopElement</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
-                  <a
-                    href="#SmokeandHeatRemovalSystem"
-                    title="https://purl.org/ffdr-ontology#SmokeandHeatRemovalSystem"
-                    >SmokeandHeatRemovalSystem</a
                   >
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
@@ -17610,16 +15365,16 @@
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
                   <a
-                    href="#EnvironmentalElement"
-                    title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                    >EnvironmentalElement</a
+                    href="#StaticWaterSource"
+                    title="https://purl.org/ffdr-ontology#StaticWaterSource"
+                    >StaticWaterSource</a
                   >
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
                   <a
-                    href="#StaticWaterSource"
-                    title="https://purl.org/ffdr-ontology#StaticWaterSource"
-                    >StaticWaterSource</a
+                    href="#SurroundingStructure"
+                    title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                    >SurroundingStructure</a
                   >
                   <sup class="type-c" title="class">c</sup>
                 </dd>
@@ -18095,6 +15850,29 @@
                   >
                   <sup class="type-dp" title="data property">dp</sup>
                 </dd>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    href="#HazardousMaterial"
+                    title="https://purl.org/ffdr-ontology#HazardousMaterial"
+                    >HazardousMaterial</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#HazardousSubstance"
+                    title="https://purl.org/ffdr-ontology#HazardousSubstance"
+                    >HazardousSubstance</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#Vegetation"
+                    title="https://purl.org/ffdr-ontology#Vegetation"
+                    >Vegetation</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                </dd>
                 <dt>has range</dt>
                 <dd>
                   <a
@@ -18211,6 +15989,29 @@
                   >
                   <sup class="type-dp" title="data property">dp</sup>
                 </dd>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    href="#HazardousMaterial"
+                    title="https://purl.org/ffdr-ontology#HazardousMaterial"
+                    >HazardousMaterial</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#HazardousSubstance"
+                    title="https://purl.org/ffdr-ontology#HazardousSubstance"
+                    >HazardousSubstance</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#Vegetation"
+                    title="https://purl.org/ffdr-ontology#Vegetation"
+                    >Vegetation</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                </dd>
                 <dt>has range</dt>
                 <dd>
                   <a
@@ -18271,6 +16072,22 @@
                     >hasHazardLevel</a
                   >
                   <sup class="type-dp" title="data property">dp</sup>
+                </dd>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    href="#HazardousMaterial"
+                    title="https://purl.org/ffdr-ontology#HazardousMaterial"
+                    >HazardousMaterial</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#HazardousSubstance"
+                    title="https://purl.org/ffdr-ontology#HazardousSubstance"
+                    >HazardousSubstance</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
                 </dd>
                 <dt>has range</dt>
                 <dd>
@@ -18404,6 +16221,22 @@
                     >hasHazardLevel</a
                   >
                   <sup class="type-dp" title="data property">dp</sup>
+                </dd>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    href="#HazardousMaterial"
+                    title="https://purl.org/ffdr-ontology#HazardousMaterial"
+                    >HazardousMaterial</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#HazardousSubstance"
+                    title="https://purl.org/ffdr-ontology#HazardousSubstance"
+                    >HazardousSubstance</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
                 </dd>
                 <dt>has range</dt>
                 <dd>
@@ -18540,46 +16373,6 @@
               </dl>
             </div>
           </div>
-          <div class="entity" id="hasLandUse">
-            <h3>
-              hasLandUse<sup class="type-dp" title="data property">dp</sup>
-              <span class="backlink">
-                back to <a href="#toc">ToC</a> or
-                <a href="#dataproperties">Data Property ToC</a>
-              </span>
-            </h3>
-            <p>
-              <strong>IRI:</strong> https://purl.org/ffdr-ontology#hasLandUse
-            </p>
-            <div class="comment">
-              <span class="markdown"
-                >The 'hasLandUse' data property represents the human activity at
-                a given location.</span
-              >
-            </div>
-            <div class="description">
-              <dl>
-                <dt>has domain</dt>
-                <dd>
-                  <a
-                    href="#IncidentSite"
-                    title="https://purl.org/ffdr-ontology#IncidentSite"
-                    >IncidentSite</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                </dd>
-                <dt>has range</dt>
-                <dd>
-                  <a
-                    href="http://www.w3.org/2001/XMLSchema#string"
-                    target="_blank"
-                    title="http://www.w3.org/2001/XMLSchema#string"
-                    >string</a
-                  >
-                </dd>
-              </dl>
-            </div>
-          </div>
           <div class="entity" id="hasLocation">
             <h3>
               hasLocation<sup class="type-dp" title="data property">dp</sup>
@@ -18651,13 +16444,6 @@
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
                   <a
-                    href="#EnvironmentalElement"
-                    title="https://purl.org/ffdr-ontology#EnvironmentalElement"
-                    >EnvironmentalElement</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
-                  <a
                     href="#ExtremelyValuableMaterial"
                     title="https://purl.org/ffdr-ontology#ExtremelyValuableMaterial"
                     >ExtremelyValuableMaterial</a
@@ -18707,16 +16493,9 @@
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
                   <a
-                    href="#Hazard"
-                    title="https://purl.org/ffdr-ontology#Hazard"
-                    >Hazard</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
-                  <a
-                    href="#HazardousMaterial"
-                    title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                    >HazardousMaterial</a
+                    href="#HazardousSubstance"
+                    title="https://purl.org/ffdr-ontology#HazardousSubstance"
+                    >HazardousSubstance</a
                   >
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
@@ -18742,23 +16521,9 @@
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
                   <a
-                    href="#ParkingArea"
-                    title="https://purl.org/ffdr-ontology#ParkingArea"
-                    >ParkingArea</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
-                  <a
                     href="#PortableFireExtinguisher"
                     title="https://purl.org/ffdr-ontology#PortableFireExtinguisher"
                     >PortableFireExtinguisher</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
-                  <a
-                    href="#RestrictedArea"
-                    title="https://purl.org/ffdr-ontology#RestrictedArea"
-                    >RestrictedArea</a
                   >
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
@@ -18787,6 +16552,13 @@
                     href="#StructuralElement"
                     title="https://purl.org/ffdr-ontology#StructuralElement"
                     >StructuralElement</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#SurroundingStructure"
+                    title="https://purl.org/ffdr-ontology#SurroundingStructure"
+                    >SurroundingStructure</a
                   >
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
@@ -19589,6 +17361,22 @@
                     >top data property</a
                   >
                 </dd>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    href="#HazardousMaterial"
+                    title="https://purl.org/ffdr-ontology#HazardousMaterial"
+                    >HazardousMaterial</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                  <span class="logic">or</span>
+                  <a
+                    href="#HazardousSubstance"
+                    title="https://purl.org/ffdr-ontology#HazardousSubstance"
+                    >HazardousSubstance</a
+                  >
+                  <sup class="type-c" title="class">c</sup>
+                </dd>
                 <dt>has range</dt>
                 <dd>
                   <a
@@ -19932,13 +17720,6 @@
                     href="#FireHydrant"
                     title="https://purl.org/ffdr-ontology#FireHydrant"
                     >FireHydrant</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                  <span class="logic">or</span>
-                  <a
-                    href="#Hazard"
-                    title="https://purl.org/ffdr-ontology#Hazard"
-                    >Hazard</a
                   >
                   <sup class="type-c" title="class">c</sup>
                   <span class="logic">or</span>
@@ -20460,9 +18241,9 @@
                 <dt>has domain</dt>
                 <dd>
                   <a
-                    href="#HazardousMaterial"
-                    title="https://purl.org/ffdr-ontology#HazardousMaterial"
-                    >HazardousMaterial</a
+                    href="#HazardousSubstance"
+                    title="https://purl.org/ffdr-ontology#HazardousSubstance"
+                    >HazardousSubstance</a
                   >
                   <sup class="type-c" title="class">c</sup>
                 </dd>
@@ -21061,46 +18842,6 @@
                     target="_blank"
                     title="http://www.w3.org/2001/XMLSchema#boolean"
                     >boolean</a
-                  >
-                </dd>
-              </dl>
-            </div>
-          </div>
-          <div class="entity" id="hasYearOfConstruction">
-            <h3>
-              The 'hasYearOfConstruction ' data property represents the
-              construction year of a building<sup
-                class="type-dp"
-                title="data property"
-                >dp</sup
-              >
-              <span class="backlink">
-                back to <a href="#toc">ToC</a> or
-                <a href="#dataproperties">Data Property ToC</a>
-              </span>
-            </h3>
-            <p>
-              <strong>IRI:</strong>
-              https://purl.org/ffdr-ontology#hasYearOfConstruction
-            </p>
-            <div class="description">
-              <dl>
-                <dt>has domain</dt>
-                <dd>
-                  <a
-                    href="#IncidentBuilding"
-                    title="https://purl.org/ffdr-ontology#IncidentBuilding"
-                    >IncidentBuilding</a
-                  >
-                  <sup class="type-c" title="class">c</sup>
-                </dd>
-                <dt>has range</dt>
-                <dd>
-                  <a
-                    href="http://www.w3.org/2001/XMLSchema#int"
-                    target="_blank"
-                    title="http://www.w3.org/2001/XMLSchema#int"
-                    >int</a
                   >
                 </dd>
               </dl>
