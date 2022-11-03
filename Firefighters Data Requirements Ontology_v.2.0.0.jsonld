@@ -2057,13 +2057,22 @@
   "@id" : "_:genid460",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/ffdr-ontology#hasNumberOfParkedCars"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "_:genid461",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasArea"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid461",
+  "@id" : "_:genid462",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasFireExtinguisherRating"
@@ -2072,7 +2081,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid462",
+  "@id" : "_:genid463",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasLocation"
@@ -2081,7 +2090,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid463",
+  "@id" : "_:genid464",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasType"
@@ -2090,7 +2099,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid464",
+  "@id" : "_:genid465",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasFireExtinguishingSystem"
@@ -2099,7 +2108,7 @@
     "@id" : "https://purl.org/ffdr-ontology#AutomaticFireExtinguishingSystem"
   } ]
 }, {
-  "@id" : "_:genid465",
+  "@id" : "_:genid466",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasDirectionToExit"
@@ -2108,7 +2117,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid466",
+  "@id" : "_:genid467",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasDischargeLevel"
@@ -2117,7 +2126,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid467",
+  "@id" : "_:genid468",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasFloorsServed"
@@ -2126,26 +2135,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid468",
+  "@id" : "_:genid469",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isRoofAccess"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
-  "@id" : "_:genid469",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#int"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasCapacity"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid47",
@@ -2163,10 +2159,10 @@
   "@id" : "_:genid470",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasExitTravelDistances"
+    "@id" : "https://purl.org/ffdr-ontology#hasCapacity"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -2179,7 +2175,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasWidth"
+    "@id" : "https://purl.org/ffdr-ontology#hasExitTravelDistances"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -2187,6 +2183,19 @@
   } ]
 }, {
   "@id" : "_:genid472",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/ffdr-ontology#hasWidth"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid473",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -2199,19 +2208,10 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid473",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasDescription"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "_:genid474",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasLocation"
+    "@id" : "https://purl.org/ffdr-ontology#hasDescription"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2220,13 +2220,22 @@
   "@id" : "_:genid475",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/ffdr-ontology#hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid476",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasMaterial"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://purl.org/ffdr-ontology#Material"
   } ]
 }, {
-  "@id" : "_:genid476",
+  "@id" : "_:genid477",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasCondition"
@@ -2235,7 +2244,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid477",
+  "@id" : "_:genid478",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasSlope"
@@ -2244,7 +2253,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid478",
+  "@id" : "_:genid479",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasType"
@@ -2253,7 +2262,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid479",
+  "@id" : "_:genid480",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasWidth"
@@ -2262,7 +2271,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid480",
+  "@id" : "_:genid481",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasTrafficLevel"
@@ -2271,7 +2280,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid481",
+  "@id" : "_:genid482",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isAccessible"
@@ -2280,7 +2289,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid482",
+  "@id" : "_:genid483",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isLightweightConstruction"
@@ -2289,19 +2298,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid483",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasDescription"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "_:genid484",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasLocation"
+    "@id" : "https://purl.org/ffdr-ontology#hasDescription"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2310,7 +2310,7 @@
   "@id" : "_:genid485",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasType"
+    "@id" : "https://purl.org/ffdr-ontology#hasLocation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2319,7 +2319,7 @@
   "@id" : "_:genid486",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasCoverageZone"
+    "@id" : "https://purl.org/ffdr-ontology#hasType"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2328,13 +2328,22 @@
   "@id" : "_:genid487",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/ffdr-ontology#hasCoverageZone"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid488",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isInAlarm"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid488",
+  "@id" : "_:genid489",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasEnclosedArea"
@@ -2343,7 +2352,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid489",
+  "@id" : "_:genid490",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasControlPanel"
@@ -2352,7 +2361,7 @@
     "@id" : "https://purl.org/ffdr-ontology#SmokeControlSystemControlPanel"
   } ]
 }, {
-  "@id" : "_:genid490",
+  "@id" : "_:genid491",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasCoverageZone"
@@ -2361,7 +2370,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid491",
+  "@id" : "_:genid492",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasType"
@@ -2370,7 +2379,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid492",
+  "@id" : "_:genid493",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isSystemActivated"
@@ -2379,7 +2388,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid493",
+  "@id" : "_:genid494",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasEnclosedArea"
@@ -2388,7 +2397,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid494",
+  "@id" : "_:genid495",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasDescription"
@@ -2397,7 +2406,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid495",
+  "@id" : "_:genid496",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasLocation"
@@ -2406,7 +2415,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid496",
+  "@id" : "_:genid497",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasType"
@@ -2415,7 +2424,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid497",
+  "@id" : "_:genid498",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isSystemActivated"
@@ -2424,7 +2433,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid498",
+  "@id" : "_:genid499",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasFireExtinguishingSystem"
@@ -2433,7 +2442,7 @@
     "@id" : "https://purl.org/ffdr-ontology#AutomaticFireExtinguishingSystem"
   } ]
 }, {
-  "@id" : "_:genid499",
+  "@id" : "_:genid500",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasDirectionToExit"
@@ -2442,7 +2451,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid500",
+  "@id" : "_:genid501",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasDischargeLevel"
@@ -2451,7 +2460,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid501",
+  "@id" : "_:genid502",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasFloorsServed"
@@ -2460,7 +2469,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid502",
+  "@id" : "_:genid503",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isRoofAccess"
@@ -2469,7 +2478,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid503",
+  "@id" : "_:genid504",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
@@ -2482,7 +2491,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid504",
+  "@id" : "_:genid505",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -2495,7 +2504,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid505",
+  "@id" : "_:genid506",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -2508,7 +2517,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid506",
+  "@id" : "_:genid507",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -2521,16 +2530,16 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid507",
+  "@id" : "_:genid508",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasWaterSource"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid508"
+    "@id" : "_:genid509"
   } ]
 }, {
-  "@id" : "_:genid508",
+  "@id" : "_:genid509",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -2554,7 +2563,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid511",
+  "@id" : "_:genid512",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasClass"
@@ -2563,7 +2572,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid512",
+  "@id" : "_:genid513",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasCoverageZone"
@@ -2572,7 +2581,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid513",
+  "@id" : "_:genid514",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasIsolationValveLocation"
@@ -2581,7 +2590,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid514",
+  "@id" : "_:genid515",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasRequiredMaximumPressure"
@@ -2590,7 +2599,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid515",
+  "@id" : "_:genid516",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasRequiredMinimumPressure"
@@ -2599,7 +2608,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid516",
+  "@id" : "_:genid517",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasType"
@@ -2608,7 +2617,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid517",
+  "@id" : "_:genid518",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isIsolationValveOpen"
@@ -2617,7 +2626,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid518",
+  "@id" : "_:genid519",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasDistanceFromFDC"
@@ -2626,7 +2635,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid519",
+  "@id" : "_:genid520",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasDistanceFromIncidentBuilding"
@@ -2635,19 +2644,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid520",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasLocation"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "_:genid521",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://purl.org/ffdr-ontology#hasType"
+    "@id" : "https://purl.org/ffdr-ontology#hasLocation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2656,13 +2656,22 @@
   "@id" : "_:genid522",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/ffdr-ontology#hasType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid523",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasMaterial"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://purl.org/ffdr-ontology#Material"
   } ]
 }, {
-  "@id" : "_:genid523",
+  "@id" : "_:genid524",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasLocation"
@@ -2671,7 +2680,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid524",
+  "@id" : "_:genid525",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -2684,7 +2693,7 @@
     "@id" : "https://purl.org/ffdr-ontology#hasFireResistanceRating"
   } ]
 }, {
-  "@id" : "_:genid525",
+  "@id" : "_:genid526",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasSlope"
@@ -2693,7 +2702,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid526",
+  "@id" : "_:genid527",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasFlammabilityLevel"
@@ -2702,7 +2711,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "_:genid527",
+  "@id" : "_:genid528",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasSpecies"
@@ -2711,7 +2720,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid528",
+  "@id" : "_:genid529",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasShaftEnclosure"
@@ -2720,7 +2729,7 @@
     "@id" : "https://purl.org/ffdr-ontology#ShaftEnclosure"
   } ]
 }, {
-  "@id" : "_:genid529",
+  "@id" : "_:genid530",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasDescription"
@@ -2729,7 +2738,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid530",
+  "@id" : "_:genid531",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasLocation"
@@ -2738,7 +2747,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid531",
+  "@id" : "_:genid532",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasThickness"
@@ -2747,7 +2756,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid532",
+  "@id" : "_:genid533",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasFireFlow"
@@ -2756,7 +2765,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid533",
+  "@id" : "_:genid534",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isFunctional"
@@ -2765,7 +2774,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid534",
+  "@id" : "_:genid535",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasPrecipitationValue"
@@ -2774,7 +2783,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid535",
+  "@id" : "_:genid536",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasRelativeHumidity"
@@ -2783,7 +2792,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid536",
+  "@id" : "_:genid537",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasTemperature"
@@ -2792,7 +2801,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid537",
+  "@id" : "_:genid538",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasTimeMark"
@@ -2801,7 +2810,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
   } ]
 }, {
-  "@id" : "_:genid538",
+  "@id" : "_:genid539",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasWindDirection"
@@ -2810,7 +2819,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid539",
+  "@id" : "_:genid540",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasWindSpeed"
@@ -2819,7 +2828,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid540",
+  "@id" : "_:genid541",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasHeight"
@@ -2828,7 +2837,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "_:genid541",
+  "@id" : "_:genid542",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#hasOpeningDirection"
@@ -2837,7 +2846,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid542",
+  "@id" : "_:genid543",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isFunctional"
@@ -2846,7 +2855,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid543",
+  "@id" : "_:genid544",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isOnExterior"
@@ -2855,7 +2864,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid544",
+  "@id" : "_:genid545",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/ffdr-ontology#isShaftway"
@@ -2864,7 +2873,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "_:genid545",
+  "@id" : "_:genid546",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -2877,7 +2886,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid546",
+  "@id" : "_:genid547",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -2925,7 +2934,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid563",
+  "@id" : "_:genid564",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -2947,7 +2956,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid572",
+  "@id" : "_:genid573",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -2981,7 +2990,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid587",
+  "@id" : "_:genid588",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3031,7 +3040,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid602",
+  "@id" : "_:genid603",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3047,7 +3056,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid608",
+  "@id" : "_:genid609",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3073,7 +3082,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid619",
+  "@id" : "_:genid620",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3097,7 +3106,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid629",
+  "@id" : "_:genid630",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3117,7 +3126,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid637",
+  "@id" : "_:genid638",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3129,7 +3138,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid641",
+  "@id" : "_:genid642",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3143,7 +3152,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid646",
+  "@id" : "_:genid647",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3171,7 +3180,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid653",
+  "@id" : "_:genid654",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -4865,6 +4874,8 @@
     "@id" : "_:genid458"
   }, {
     "@id" : "_:genid459"
+  }, {
+    "@id" : "_:genid460"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#ParkingLot",
@@ -4880,7 +4891,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#EnvironmentalElement"
   }, {
-    "@id" : "_:genid460"
+    "@id" : "_:genid461"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#Pipeline",
@@ -4927,11 +4938,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#BuildingSafetySystem"
   }, {
-    "@id" : "_:genid461"
-  }, {
     "@id" : "_:genid462"
   }, {
     "@id" : "_:genid463"
+  }, {
+    "@id" : "_:genid464"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#PowerLine",
@@ -4989,8 +5000,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#NonStructuralElement"
   }, {
-    "@id" : "_:genid464"
-  }, {
     "@id" : "_:genid465"
   }, {
     "@id" : "_:genid466"
@@ -5006,6 +5015,8 @@
     "@id" : "_:genid471"
   }, {
     "@id" : "_:genid472"
+  }, {
+    "@id" : "_:genid473"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#Residential",
@@ -5032,9 +5043,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#BuildingComponent"
   }, {
-    "@id" : "_:genid473"
-  }, {
     "@id" : "_:genid474"
+  }, {
+    "@id" : "_:genid475"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#Road",
@@ -5048,8 +5059,6 @@
     "@value" : "Road"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid475"
-  }, {
     "@id" : "_:genid476"
   }, {
     "@id" : "_:genid477"
@@ -5057,6 +5066,8 @@
     "@id" : "_:genid478"
   }, {
     "@id" : "_:genid479"
+  }, {
+    "@id" : "_:genid480"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#RoadToIncident",
@@ -5072,7 +5083,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#Road"
   }, {
-    "@id" : "_:genid480"
+    "@id" : "_:genid481"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#RoofAssembly",
@@ -5088,9 +5099,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#NonStructuralElement"
   }, {
-    "@id" : "_:genid481"
-  }, {
     "@id" : "_:genid482"
+  }, {
+    "@id" : "_:genid483"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#RoofTopElement",
@@ -5106,11 +5117,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#BuildingComponent"
   }, {
-    "@id" : "_:genid483"
-  }, {
     "@id" : "_:genid484"
   }, {
     "@id" : "_:genid485"
+  }, {
+    "@id" : "_:genid486"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#SensorDetector",
@@ -5126,9 +5137,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#BuildingSafetySystem"
   }, {
-    "@id" : "_:genid486"
-  }, {
     "@id" : "_:genid487"
+  }, {
+    "@id" : "_:genid488"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#ShaftEnclosure",
@@ -5158,7 +5169,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#FireandSmokeProtectionElement"
   }, {
-    "@id" : "_:genid488"
+    "@id" : "_:genid489"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#SmokeControlSystem",
@@ -5177,13 +5188,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#BuildingSafetySystem"
   }, {
-    "@id" : "_:genid489"
-  }, {
     "@id" : "_:genid490"
   }, {
     "@id" : "_:genid491"
   }, {
     "@id" : "_:genid492"
+  }, {
+    "@id" : "_:genid493"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#SmokeControlSystemControlPanel",
@@ -5213,7 +5224,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#FireandSmokeProtectionElement"
   }, {
-    "@id" : "_:genid493"
+    "@id" : "_:genid494"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#SmokeandHeatRemovalSystem",
@@ -5229,13 +5240,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#BuildingSafetySystem"
   }, {
-    "@id" : "_:genid494"
-  }, {
     "@id" : "_:genid495"
   }, {
     "@id" : "_:genid496"
   }, {
     "@id" : "_:genid497"
+  }, {
+    "@id" : "_:genid498"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#Stairway",
@@ -5250,8 +5261,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#NonStructuralElement"
-  }, {
-    "@id" : "_:genid498"
   }, {
     "@id" : "_:genid499"
   }, {
@@ -5268,6 +5277,8 @@
     "@id" : "_:genid505"
   }, {
     "@id" : "_:genid506"
+  }, {
+    "@id" : "_:genid507"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#StandpipeSystem",
@@ -5286,9 +5297,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#BuildingSafetySystem"
   }, {
-    "@id" : "_:genid507"
-  }, {
-    "@id" : "_:genid511"
+    "@id" : "_:genid508"
   }, {
     "@id" : "_:genid512"
   }, {
@@ -5301,6 +5310,8 @@
     "@id" : "_:genid516"
   }, {
     "@id" : "_:genid517"
+  }, {
+    "@id" : "_:genid518"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#StaticWaterSource",
@@ -5319,13 +5330,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#WaterSource"
   }, {
-    "@id" : "_:genid518"
-  }, {
     "@id" : "_:genid519"
   }, {
     "@id" : "_:genid520"
   }, {
     "@id" : "_:genid521"
+  }, {
+    "@id" : "_:genid522"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#Storage",
@@ -5352,11 +5363,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#BuildingComponent"
   }, {
-    "@id" : "_:genid522"
-  }, {
     "@id" : "_:genid523"
   }, {
     "@id" : "_:genid524"
+  }, {
+    "@id" : "_:genid525"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#SurroundingTerrain",
@@ -5370,7 +5381,7 @@
     "@value" : "SurroundingTerrain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid525"
+    "@id" : "_:genid526"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#TypeI",
@@ -5489,9 +5500,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#EnvironmentalElement"
   }, {
-    "@id" : "_:genid526"
-  }, {
     "@id" : "_:genid527"
+  }, {
+    "@id" : "_:genid528"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#VerticalOpening",
@@ -5507,11 +5518,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#BuildingComponent"
   }, {
-    "@id" : "_:genid528"
-  }, {
     "@id" : "_:genid529"
   }, {
     "@id" : "_:genid530"
+  }, {
+    "@id" : "_:genid531"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#Wall",
@@ -5527,7 +5538,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#NonStructuralElement"
   }, {
-    "@id" : "_:genid531"
+    "@id" : "_:genid532"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#WaterSource",
@@ -5540,9 +5551,9 @@
     "@value" : "WaterSource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid532"
-  }, {
     "@id" : "_:genid533"
+  }, {
+    "@id" : "_:genid534"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#WaterSupplyandSewerageSystem",
@@ -5570,8 +5581,6 @@
     "@value" : "WeatherCondition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid534"
-  }, {
     "@id" : "_:genid535"
   }, {
     "@id" : "_:genid536"
@@ -5581,6 +5590,8 @@
     "@id" : "_:genid538"
   }, {
     "@id" : "_:genid539"
+  }, {
+    "@id" : "_:genid540"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#Window",
@@ -5596,8 +5607,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/ffdr-ontology#NonStructuralElement"
   }, {
-    "@id" : "_:genid540"
-  }, {
     "@id" : "_:genid541"
   }, {
     "@id" : "_:genid542"
@@ -5607,6 +5616,8 @@
     "@id" : "_:genid544"
   }, {
     "@id" : "_:genid545"
+  }, {
+    "@id" : "_:genid546"
   } ]
 }, {
   "@id" : "https://purl.org/ffdr-ontology#contains",
@@ -6506,6 +6517,23 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasNumberOfOutlet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://purl.org/ffdr-ontology#hasNumberOfParkedCars",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The 'hasNumberOfParkedCars' data property represents the number of cars currently parked at a parking area."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/ffdr-ontology#ParkingArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasNumberOfParkedCars"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#int"

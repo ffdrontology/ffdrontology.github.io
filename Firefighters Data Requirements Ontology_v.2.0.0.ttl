@@ -953,6 +953,14 @@ Source: NFPA 704, 2022"""@en ;
                    rdfs:label "hasNumberOfOutlet"@en .
 
 
+###  https://purl.org/ffdr-ontology#hasNumberOfParkedCars
+:hasNumberOfParkedCars rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :ParkingArea ;
+                       rdfs:range xsd:int ;
+                       rdfs:comment "The 'hasNumberOfParkedCars' data property represents the number of cars currently parked at a parking area."@en ;
+                       rdfs:label "hasNumberOfParkedCars"@en .
+
+
 ###  https://purl.org/ffdr-ontology#hasNumberOfSimultaneousFill
 :hasNumberOfSimultaneousFill rdf:type owl:DatatypeProperty ;
                              rdfs:domain :FarsFillStation ;
@@ -2576,6 +2584,10 @@ Source: NFPA 704, 2022"""@en ;
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasLocation ;
                                owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasNumberOfParkedCars ;
+                               owl:someValuesFrom xsd:int
                              ] ;
              rdfs:comment "The 'ParkingArea' class represents a part of a building used for parking vehicles."@en ;
              rdfs:label "ParkingArea"@en .

@@ -1396,6 +1396,18 @@ Source: NFPA 704, 2022</rdfs:comment>
     
 
 
+    <!-- https://purl.org/ffdr-ontology#hasNumberOfParkedCars -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/ffdr-ontology#hasNumberOfParkedCars">
+        <rdfs:domain rdf:resource="https://purl.org/ffdr-ontology#ParkingArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">The &apos;hasNumberOfParkedCars&apos; data property represents the number of cars currently parked at a parking area.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasNumberOfParkedCars</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://purl.org/ffdr-ontology#hasNumberOfSimultaneousFill -->
 
 
@@ -3827,6 +3839,12 @@ Source: NFPA 704, 2022</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/ffdr-ontology#hasLocation"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/ffdr-ontology#hasNumberOfParkedCars"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The &apos;ParkingArea&apos; class represents a part of a building used for parking vehicles.</rdfs:comment>
