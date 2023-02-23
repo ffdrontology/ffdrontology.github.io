@@ -1728,7 +1728,7 @@ _:genid292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid292 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasLocation> .
 _:genid292 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purl.org/ffdr-ontology#AreaOfRefuge> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/ffdr-ontology#Facade> .
-<https://purl.org/ffdr-ontology#AreaOfRefuge> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'AreaOfRefuge' class represents an area of refuge, which is a protected area in a building where occupants can take refuge during an emergency (NFPA 101)."@en .
+<https://purl.org/ffdr-ontology#AreaOfRefuge> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'AreaOfRefuge' class represents an area where persons unable to use stairways can remain temporarily to await instructions or assistance during emergency evacuation (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#AreaOfRefuge> <http://www.w3.org/2000/01/rdf-schema#label> "AreaOfRefuge"@en .
 # 
 # https://purl.org/ffdr-ontology#AutomaticFireExtinguishingSystem
@@ -1780,7 +1780,7 @@ _:genid302 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid303 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid303 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#isControlValveOn> .
 _:genid303 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://purl.org/ffdr-ontology#AutomaticSprinklerSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'AutomaticSprinklerSystem' class represents a sprinkler system installed in a building."@en .
+<https://purl.org/ffdr-ontology#AutomaticSprinklerSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'AutomaticSprinklerSystem' class represents an integrated system of underground and overhead piping designed in accordance with fire protection engineering standards (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#AutomaticSprinklerSystem> <http://www.w3.org/2000/01/rdf-schema#label> "AutomaticSprinklerSystem"@en .
 # 
 # https://purl.org/ffdr-ontology#BackUpPowerSupplySystem
@@ -1802,13 +1802,13 @@ _:genid305 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid305 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasWidth> .
 _:genid305 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid305 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
-<https://purl.org/ffdr-ontology#Balcony> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Balcony' class represents balconies that may be found in a building."@en .
+<https://purl.org/ffdr-ontology#Balcony> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Balcony' class represents an exterior floor projecting from, and supported by, a structure without additional independent supports (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#Balcony> <http://www.w3.org/2000/01/rdf-schema#label> "Balcony"@en .
 # 
 # https://purl.org/ffdr-ontology#Building
 <https://purl.org/ffdr-ontology#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/ffdr-ontology#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/ffdr-ontology#EnvironmentalElement> .
-<https://purl.org/ffdr-ontology#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Building' class represents buildings other than the incident building."@en .
+<https://purl.org/ffdr-ontology#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Building' any structure utilized or intended for supporting or sheltering any occupancy (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Building"@en .
 # 
 # https://purl.org/ffdr-ontology#BuildingAddress
@@ -1939,7 +1939,7 @@ _:genid323 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 # https://purl.org/ffdr-ontology#CarbonMonoxideDetector
 <https://purl.org/ffdr-ontology#CarbonMonoxideDetector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/ffdr-ontology#CarbonMonoxideDetector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/ffdr-ontology#SensorDetector> .
-<https://purl.org/ffdr-ontology#CarbonMonoxideDetector> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'CarbonMonoxideDetector' class represents Carbon Monoxide detectors installed in a building."@en .
+<https://purl.org/ffdr-ontology#CarbonMonoxideDetector> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'CarbonMonoxideDetector' class represents a device with an integral sensor to detect carbon monoxide gas and transmit an alarm signal to a connected alarm control unit (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#CarbonMonoxideDetector> <http://www.w3.org/2000/01/rdf-schema#label> "CarbonMonoxideDetector"@en .
 # 
 # https://purl.org/ffdr-ontology#CbrSensor
@@ -1964,7 +1964,7 @@ _:genid326 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid326 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasLocation> .
 _:genid326 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purl.org/ffdr-ontology#ConcealedSpace> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/ffdr-ontology#Facade> .
-<https://purl.org/ffdr-ontology#ConcealedSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'ConcealedSpace' class represents concealed spaces that may be found in a building."@en .
+<https://purl.org/ffdr-ontology#ConcealedSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'ConcealedSpace' class represents that portion(s) of a building behind walls, over suspended ceilings, in pipe chases, and in attics whose size might normally range from 44.45 mm (13∕ 4 in.) stud spaces to 2.44 m (8 ft.) interstitial truss spaces and that might contain combustible materials such as building structural members, thermal and/or electrical insulation, and ducting (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#ConcealedSpace> <http://www.w3.org/2000/01/rdf-schema#label> "ConcealedSpace"@en .
 # 
 # https://purl.org/ffdr-ontology#ConstructionType
@@ -1997,7 +1997,7 @@ _:genid334 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ont
 _:genid334 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purl.org/ffdr-ontology#ConstructionType> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/ffdr-ontology#EnvironmentalElement> .
 <https://purl.org/ffdr-ontology#ConstructionType> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/ffdr-ontology#Hazard> .
-<https://purl.org/ffdr-ontology#ConstructionType> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'ConstructionType' class represents the construction type of a building. The classification is based on the materials used in a building (whether they are combustible or noncombustible) and the fire resistance of a building's elements (IBC, 2018)"@en .
+<https://purl.org/ffdr-ontology#ConstructionType> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'ConstructionType' class represents the combination of materials used in the construction of a building or structure, based on the varying degrees of fire resistance and combustibility (NFPA Glossary of Terms)"@en .
 <https://purl.org/ffdr-ontology#ConstructionType> <http://www.w3.org/2000/01/rdf-schema#label> "ConstructionType"@en .
 # 
 # https://purl.org/ffdr-ontology#ControlPanel
@@ -2203,7 +2203,7 @@ _:genid367 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2
 _:genid366 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid365 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/ffdr-ontology#ExteriorWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/ffdr-ontology#Facade> .
-<https://purl.org/ffdr-ontology#ExteriorWall> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'ExteriorWall' class represents walls found on the exterior of a building."@en .
+<https://purl.org/ffdr-ontology#ExteriorWall> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'ExteriorWall' class represents A wall, bearing or nonbearing, that is used as an enclosing wall for a building, other than a fire wall, and that has a slope of 60 degrees (1.05 rad) or greater with the horizontal plane (2018 International Fire Code)"@en .
 <https://purl.org/ffdr-ontology#ExteriorWall> <http://www.w3.org/2000/01/rdf-schema#label> "ExteriorWall"@en .
 # 
 # https://purl.org/ffdr-ontology#ExteriorWindow
@@ -2300,7 +2300,7 @@ _:genid381 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid382 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid382 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#isSystemActivated> .
 _:genid382 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://purl.org/ffdr-ontology#FireAlarmSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireAlarmSystem' class represents a fire alarm system installed in a building."@en .
+<https://purl.org/ffdr-ontology#FireAlarmSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireAlarmSystem' class represents a system or portion of a combination system consisting of components and circuits arranged to monitor and annunciate the status of fire alarm or supervisory signal-initiating devices and to initiate the appropriate response to those signals (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#FireAlarmSystem> <http://www.w3.org/2000/01/rdf-schema#label> "FireAlarmSystem"@en .
 # 
 # https://purl.org/ffdr-ontology#FireBarrier
@@ -2310,7 +2310,7 @@ _:genid382 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid383 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasEnclosedArea> .
 _:genid383 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://purl.org/ffdr-ontology#FireBarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireBarrier' class represents a fire barrier, which is a fire-resistance-rated wall assembly of materials designed to restrict the spread of fire in which continuity of the wall is maintained (IFC, 2018)."@en .
+<https://purl.org/ffdr-ontology#FireBarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireBarrier' class represents a fire barrier, which is a fire-resistance-rated wall assembly of materials designed to restrict the spread of fire in which continuity of the wall is maintained (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#FireBarrier> <http://www.w3.org/2000/01/rdf-schema#label> "FireBarrier"@en .
 # 
 # https://purl.org/ffdr-ontology#FireCommandCenter
@@ -2328,7 +2328,7 @@ _:genid386 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid386 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasLocation> .
 _:genid386 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purl.org/ffdr-ontology#FireCommandCenter> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/ffdr-ontology#Hazard> .
-<https://purl.org/ffdr-ontology#FireCommandCenter> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireCommandCenter' class represents A fire command center, which is a dedicated room or area where fire protection systems, alarms, and other emergency systems are monitored and controlled (NFPA 72)."@en .
+<https://purl.org/ffdr-ontology#FireCommandCenter> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireCommandCenter' class represents The principal attended or unattended location where the status of detection, alarm communications and control systems is displayed, and from which the system(s) can be manually controlled. (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#FireCommandCenter> <http://www.w3.org/2000/01/rdf-schema#label> "FireCommandCenter"@en .
 # 
 # https://purl.org/ffdr-ontology#FireDepartmentCommunicationSystemPanel
@@ -2364,7 +2364,7 @@ _:genid391 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid392 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid392 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasNumberOfInlet> .
 _:genid392 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#int> .
-<https://purl.org/ffdr-ontology#FireDepartmentConnection> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireDepartmentConnection' class represents fire department connections (FDC) through which firefighters pump water into a standpipe system (NFPA 14)."@en .
+<https://purl.org/ffdr-ontology#FireDepartmentConnection> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireDepartmentConnection' class represents a connection through which the fire department can pump supplemental water into the fixed water-based fire-fighting system, sprinkler system, standpipe system, or other systems furnishing water for fire suppression and extinguishment to supplement existing water supplies (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#FireDepartmentConnection> <http://www.w3.org/2000/01/rdf-schema#label> "FireDepartmentConnection"@en .
 # 
 # https://purl.org/ffdr-ontology#FireHoseConnection
@@ -2416,7 +2416,7 @@ _:genid401 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid402 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid402 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#isFunctional> .
 _:genid402 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://purl.org/ffdr-ontology#FireHydrant> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireHydrant' class represents fire hydrants, which are an important part of a fire suppression operation that provides firefighters with a hose connection to a water supply system (NFPA 24)."@en .
+<https://purl.org/ffdr-ontology#FireHydrant> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireHydrant' class represents a valved connection on a water supply system having one or more outlets and that is used to supply hose and fire department pumpers with water (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#FireHydrant> <http://www.w3.org/2000/01/rdf-schema#comment> "Type: Wet barrel hydrants (on pressurized water distribution systems), Dry barrel hydrants (used on static water supply sources)"@en .
 <https://purl.org/ffdr-ontology#FireHydrant> <http://www.w3.org/2000/01/rdf-schema#label> "FireHydrant"@en .
 # 
@@ -2441,7 +2441,7 @@ _:genid406 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid406 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasVerticalClearance> .
 _:genid406 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#double> .
 <https://purl.org/ffdr-ontology#FireLane> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/ffdr-ontology#RoadToIncident> .
-<https://purl.org/ffdr-ontology#FireLane> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireLane' class represents a fire lane, which is an access road designated for fire apparatus (NFPA 1)."@en .
+<https://purl.org/ffdr-ontology#FireLane> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FireLane' class represents a road or other passageway developed to allow the passage of fire apparatus. A fire lane is not necessarily intended for vehicular traffic other than fire apparatus (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#FireLane> <http://www.w3.org/2000/01/rdf-schema#label> "FireLane"@en .
 # 
 # https://purl.org/ffdr-ontology#FirePartition
@@ -2451,7 +2451,7 @@ _:genid406 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid407 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasEnclosedArea> .
 _:genid407 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://purl.org/ffdr-ontology#FirePartition> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FirePartition' class represents a fire partition, which is a vertical assembly of materials designed to restrict the spread of fire while protecting openings (IFC, 2018)."@en .
+<https://purl.org/ffdr-ontology#FirePartition> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FirePartition' class represents a fire partition, which is a vertical assembly of materials designed to restrict the spread of fire while protecting openings (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#FirePartition> <http://www.w3.org/2000/01/rdf-schema#label> "FirePartition"@en .
 # 
 # https://purl.org/ffdr-ontology#FirePump
@@ -2461,7 +2461,7 @@ _:genid407 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid408 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid408 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasLocation> .
 _:genid408 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://purl.org/ffdr-ontology#FirePump> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FirePump' class represents fire pumps which are used to boost the water pressure to standpipes and sprinkler systems (OSHA, 2015)."@en .
+<https://purl.org/ffdr-ontology#FirePump> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'FirePump' class represents a pump that is a provider of liquid flow and pressure dedicated to fire protection (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#FirePump> <http://www.w3.org/2000/01/rdf-schema#label> "FirePump"@en .
 # 
 # https://purl.org/ffdr-ontology#FireServiceOrganization
@@ -2497,7 +2497,7 @@ _:genid411 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/X
 _:genid412 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid412 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasEnclosedArea> .
 _:genid412 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://purl.org/ffdr-ontology#Firewall> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Firewall' class represents a firewall, which is a fire-resistance-rated wall that restricts the spread of fire while protecting openings and extending continuously from the foundation to or through the roof. It has sufficient structural stability under fire conditions to allow the structure to collapse without the collapse of the wall (IFC, 2018)."@en .
+<https://purl.org/ffdr-ontology#Firewall> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Firewall' class represents a firewall, which is a fire-resistance-rated wall that restricts the spread of fire while protecting openings and extending continuously from the foundation to or through the roof. It has sufficient structural stability under fire conditions to allow the structure to collapse without the collapse of the wall (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#Firewall> <http://www.w3.org/2000/01/rdf-schema#label> "Firewall"@en .
 # 
 # https://purl.org/ffdr-ontology#FloorAssembly
@@ -2513,7 +2513,7 @@ _:genid413 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 # https://purl.org/ffdr-ontology#GasDetector
 <https://purl.org/ffdr-ontology#GasDetector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/ffdr-ontology#GasDetector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/ffdr-ontology#SensorDetector> .
-<https://purl.org/ffdr-ontology#GasDetector> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'GasDetector' class represents different gas detectors installed in a building."@en .
+<https://purl.org/ffdr-ontology#GasDetector> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'GasDetector' class represents an instrument that samples the local atmosphere and indicates the presence of ignitable vapors or gases within the flammable or explosive range expressed as a volume percent in air (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#GasDetector> <http://www.w3.org/2000/01/rdf-schema#label> "GasDetector"@en .
 # 
 # https://purl.org/ffdr-ontology#GasSupplySystem
@@ -2560,7 +2560,7 @@ _:genid418 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 <https://purl.org/ffdr-ontology#Hazard> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/ffdr-ontology#SurroundingTerrain> .
 <https://purl.org/ffdr-ontology#Hazard> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/ffdr-ontology#WaterSource> .
 <https://purl.org/ffdr-ontology#Hazard> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/ffdr-ontology#WeatherCondition> .
-<https://purl.org/ffdr-ontology#Hazard> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Hazard' class represents materials or activities within a building that can be hazardous to firefighters."@en .
+<https://purl.org/ffdr-ontology#Hazard> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Hazard' class represents real or potential condition that can cause injury (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#Hazard> <http://www.w3.org/2000/01/rdf-schema#label> "Hazard"@en .
 # 
 # https://purl.org/ffdr-ontology#HazardousMaterial
@@ -2573,7 +2573,7 @@ _:genid419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid419 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#isDecontaminationRequired> .
 _:genid419 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://purl.org/ffdr-ontology#HazardousMaterial> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/ffdr-ontology#HazardousOperation> .
-<https://purl.org/ffdr-ontology#HazardousMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'HazardousMaterial' class represents hazardous materials that may be found inside or outside a building."@en .
+<https://purl.org/ffdr-ontology#HazardousMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'HazardousMaterial' class represents a substance that, by reason of being explosive, flammable, poisonous, corrosive, oxidizing, irritating, or otherwise harmful, is likely to cause death or injury (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#HazardousMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "HazardousMaterial"@en .
 # 
 # https://purl.org/ffdr-ontology#HazardousOperation
@@ -2589,7 +2589,7 @@ _:genid419 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid420 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasLocation> .
 _:genid420 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://purl.org/ffdr-ontology#Helipad> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Helipad' class represents a helipad, which is an area for landing helicopters, that may be available on a building."@en .
+<https://purl.org/ffdr-ontology#Helipad> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Helipad' class represents a  structural surface that is used for the land- ing, taking off, taxiing and parking of helicopters (2018 International Building Code)"@en .
 <https://purl.org/ffdr-ontology#Helipad> <http://www.w3.org/2000/01/rdf-schema#label> "Helipad"@en .
 # 
 # https://purl.org/ffdr-ontology#HoseConnection
@@ -2609,7 +2609,7 @@ _:genid422 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 # https://purl.org/ffdr-ontology#Hospital
 <https://purl.org/ffdr-ontology#Hospital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/ffdr-ontology#Hospital> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/ffdr-ontology#EmergencyServiceProvider> .
-<https://purl.org/ffdr-ontology#Hospital> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Hospital' class represents hospitals."@en .
+<https://purl.org/ffdr-ontology#Hospital> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Hospital' class represents a building or portion thereof used on a 24-⁠hour basis for the medical, psychiatric, obstetrical, or surgical care of four or more inpatients (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#Hospital> <http://www.w3.org/2000/01/rdf-schema#label> "Hospital"@en .
 # 
 # https://purl.org/ffdr-ontology#HvacSystem
@@ -2736,7 +2736,7 @@ _:genid446 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid447 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasLocation> .
 _:genid447 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://purl.org/ffdr-ontology#KeyBox> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'KeyBox' class represents key boxes,  which are small vaults placed in a building or nearby that contain keys to a building's doors, elevators, and other rooms (OSHA, 2015)."@en .
+<https://purl.org/ffdr-ontology#KeyBox> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'KeyBox' class represents a secure device with a lock operable only by a fire department master key, and containing building entry keys and other keys that may be required for access in an emergency (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#KeyBox> <http://www.w3.org/2000/01/rdf-schema#label> "KeyBox"@en .
 # 
 # https://purl.org/ffdr-ontology#MassNotificationSystem
@@ -2755,7 +2755,7 @@ _:genid450 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid450 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasType> .
 _:genid450 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purl.org/ffdr-ontology#MassNotificationSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Notification type could be auditory or visual or both."@en .
-<https://purl.org/ffdr-ontology#MassNotificationSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'MassNotificationSystem' class represents a mass notification system that is used by firefighters to provide clear instruction to building occupants (OSHA, 2015)."@en .
+<https://purl.org/ffdr-ontology#MassNotificationSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'MassNotificationSystem' class represents a system used to provide information and instructions to people in a building(s) or other space using intelligible voice communications and including visual signals, text, graphics, tactile, or other communication methods (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#MassNotificationSystem> <http://www.w3.org/2000/01/rdf-schema#label> "MassNotificationSystem"@en .
 # 
 # https://purl.org/ffdr-ontology#MassNotificationSystemControlPanel
@@ -2854,7 +2854,7 @@ _:genid461 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 # https://purl.org/ffdr-ontology#Pipeline
 <https://purl.org/ffdr-ontology#Pipeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/ffdr-ontology#Pipeline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/ffdr-ontology#EnvironmentalElement> .
-<https://purl.org/ffdr-ontology#Pipeline> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Pipeline' class represents pipelines located near an incident building."@en .
+<https://purl.org/ffdr-ontology#Pipeline> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Pipeline' class represents a length of pipe including pumps, valves, flanges, control devices, strainers, and/or similar equipment for conveying fluids (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#Pipeline> <http://www.w3.org/2000/01/rdf-schema#label> "Pipeline"@en .
 # 
 # https://purl.org/ffdr-ontology#PoliceDepartment
@@ -2879,7 +2879,7 @@ _:genid464 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid464 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasType> .
 _:genid464 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purl.org/ffdr-ontology#PortableFireExtinguisher> <http://www.w3.org/2000/01/rdf-schema#comment> "Has different type such as:   Air-Water;  Air-Foam;  Wet Chemical;  Dry Chemical Powder; Carbon Dioxide and Vaporising Liquid."@en .
-<https://purl.org/ffdr-ontology#PortableFireExtinguisher> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'PortableFireExtinguisher' class represents portable fire extinguishers placed throughout a building."@en .
+<https://purl.org/ffdr-ontology#PortableFireExtinguisher> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'PortableFireExtinguisher' class represents portable device, carried or on wheels and operated by hand, containing an extinguishing agent that can be expelled under pressure for the purpose of suppressing or extinguishing fire (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#PortableFireExtinguisher> <http://www.w3.org/2000/01/rdf-schema#label> "PortableFireExtinguisher"@en .
 # 
 # https://purl.org/ffdr-ontology#PowerLine
@@ -2943,7 +2943,7 @@ _:genid473 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid473 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#isExit> .
 _:genid473 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid473 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://purl.org/ffdr-ontology#Ramp> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Ramp' class represents ramps that may be found in a building."@en .
+<https://purl.org/ffdr-ontology#Ramp> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Ramp' class represents a walking surface that has a running slope steeper than one unit vertical in 20 units horizontal (5-percent slope) (2018 International Building Code)"@en .
 <https://purl.org/ffdr-ontology#Ramp> <http://www.w3.org/2000/01/rdf-schema#label> "Ramp"@en .
 # 
 # https://purl.org/ffdr-ontology#RestrictedArea
@@ -2957,7 +2957,7 @@ _:genid474 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid475 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid475 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasLocation> .
 _:genid475 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://purl.org/ffdr-ontology#RestrictedArea> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'RestrictedArea' class represents an area inside a building that requires special permission to access."@en .
+<https://purl.org/ffdr-ontology#RestrictedArea> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'RestrictedArea' class represents a room, office, building, or facility to which access is strictly and tightly controlled (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#RestrictedArea> <http://www.w3.org/2000/01/rdf-schema#label> "RestrictedArea"@en .
 # 
 # https://purl.org/ffdr-ontology#Road
@@ -2982,7 +2982,7 @@ _:genid479 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid480 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasWidth> .
 _:genid480 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#double> .
-<https://purl.org/ffdr-ontology#Road> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Road' class represents roads."@en .
+<https://purl.org/ffdr-ontology#Road> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Road' class represents any accessway, not including a driveway, that gives access to more than one parcel and is primarily intended for vehicular access (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#Road> <http://www.w3.org/2000/01/rdf-schema#label> "Road"@en .
 # 
 # https://purl.org/ffdr-ontology#RoadToIncident
@@ -3006,7 +3006,7 @@ _:genid482 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid483 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid483 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#isLightweightConstruction> .
 _:genid483 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://purl.org/ffdr-ontology#RoofAssembly> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'RoofAssembly' class represents the roof assembly in a building."@en .
+<https://purl.org/ffdr-ontology#RoofAssembly> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'RoofAssembly' class represents the component(s) above the roof structural framing including the roof deck, vapor barrier, insulation, roof cover, coatings, toppings, or any combination thereof (NFPA Glossary of Terms)"@en .
 <https://purl.org/ffdr-ontology#RoofAssembly> <http://www.w3.org/2000/01/rdf-schema#label> "RoofAssembly"@en .
 # 
 # https://purl.org/ffdr-ontology#RoofTopElement
@@ -3044,7 +3044,7 @@ _:genid488 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 # https://purl.org/ffdr-ontology#ShaftEnclosure
 <https://purl.org/ffdr-ontology#ShaftEnclosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/ffdr-ontology#ShaftEnclosure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/ffdr-ontology#FireandSmokeProtectionElement> .
-<https://purl.org/ffdr-ontology#ShaftEnclosure> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'ShaftEnclosure' class represents a shaft enclosure that protects vertical openings."@en .
+<https://purl.org/ffdr-ontology#ShaftEnclosure> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'ShaftEnclosure' class represents The walls or construction forming the boundaries of a shaft (2018 International Building Code)."@en .
 <https://purl.org/ffdr-ontology#ShaftEnclosure> <http://www.w3.org/2000/01/rdf-schema#label> "ShaftEnclosure"@en .
 # 
 # https://purl.org/ffdr-ontology#SmokeBarrier
@@ -3054,7 +3054,7 @@ _:genid488 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid489 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid489 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasEnclosedArea> .
 _:genid489 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://purl.org/ffdr-ontology#SmokeBarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'SmokeBarrier' class represents a smoke barrier, which is a continuous vertical or horizontal membrane (such as a wall, floor, or ceiling assembly) that restricts the movement of smoke (IFC 2018)."@en .
+<https://purl.org/ffdr-ontology#SmokeBarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'SmokeBarrier' class represents a smoke barrier, which is a continuous vertical or horizontal membrane (such as a wall, floor, or ceiling assembly) that restricts the movement of smoke (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#SmokeBarrier> <http://www.w3.org/2000/01/rdf-schema#label> "SmokeBarrier"@en .
 # 
 # https://purl.org/ffdr-ontology#SmokeControlSystem
@@ -3077,7 +3077,7 @@ _:genid493 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid493 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#isSystemActivated> .
 _:genid493 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://purl.org/ffdr-ontology#SmokeControlSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "System type could be: smoke exhaust systems and stair pressurization systems"@en .
-<https://purl.org/ffdr-ontology#SmokeControlSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'SmokeControlSystem' class represents a smoke control system that supports the protection of building occupants while they evacuate the building (OSHA, 2015)."@en .
+<https://purl.org/ffdr-ontology#SmokeControlSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'SmokeControlSystem' class represents an engineered system that includes all methods that can be used singly or in combinatin to modify smoke movement (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#SmokeControlSystem> <http://www.w3.org/2000/01/rdf-schema#label> "SmokeControlSystem"@en .
 # 
 # https://purl.org/ffdr-ontology#SmokeControlSystemControlPanel
@@ -3093,7 +3093,7 @@ _:genid493 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid494 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid494 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasEnclosedArea> .
 _:genid494 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://purl.org/ffdr-ontology#SmokePartition> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'SmokePartition' class represents a smoke partition, which is a wall assembly that limits the transfer of smoke (IFC, 2018)."@en .
+<https://purl.org/ffdr-ontology#SmokePartition> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'SmokePartition' class represents a smoke partition, which is a wall assembly that limits the transfer of smoke (2018 International Fire Code)."@en .
 <https://purl.org/ffdr-ontology#SmokePartition> <http://www.w3.org/2000/01/rdf-schema#label> "SmokePartition"@en .
 # 
 # https://purl.org/ffdr-ontology#SmokeandHeatRemovalSystem
@@ -3208,7 +3208,7 @@ _:genid518 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid518 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#isIsolationValveOpen> .
 _:genid518 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://purl.org/ffdr-ontology#StandpipeSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Properties:\n\nhas water source: Automatic water supply, manual supply through FDC, Or both\n\nhas Class: fire service use (Class I), occupant use (Class II), or combined fire service and occupant use (Class III)\n\nhas type: Wet (automatic or manual) and Dry"@en .
-<https://purl.org/ffdr-ontology#StandpipeSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'StandpipeSystem' class represents a standpipe system which is a system of pipes within a building that provides water to fire hose connections and, in some cases, to sprinkler systems (NFPA 14)."@en .
+<https://purl.org/ffdr-ontology#StandpipeSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'StandpipeSystem' class represents an arrangement of piping, valves, hose connections, and allied equipment installed in a building or structure such that, when supplied with adequate water, allows attached hose lines to be used to extinguish a fire (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#StandpipeSystem> <http://www.w3.org/2000/01/rdf-schema#label> "StandpipeSystem"@en .
 # 
 # https://purl.org/ffdr-ontology#StaticWaterSource
@@ -3250,7 +3250,7 @@ _:genid525 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid525 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasFireResistanceRating> .
 _:genid525 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid525 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
-<https://purl.org/ffdr-ontology#StructuralElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'StructuralElement' class represents the structural elements of a building."@en .
+<https://purl.org/ffdr-ontology#StructuralElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'StructuralElement' class represents the columns and girders, beams, trusses, joists, braced frames, moment-resistant frames, and vertical and lateral resisting elements, and other framing members that are designed to carry any portion of the dead or live load and lateral forces, that are essential to the stability of the building or structure (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#StructuralElement> <http://www.w3.org/2000/01/rdf-schema#label> "StructuralElement"@en .
 # 
 # https://purl.org/ffdr-ontology#SurroundingTerrain
@@ -3303,7 +3303,7 @@ _:genid530 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid531 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid531 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasLocation> .
 _:genid531 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://purl.org/ffdr-ontology#VerticalOpening> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'VerticalOpening' class represents vertical Openings that may be found in a building."@en .
+<https://purl.org/ffdr-ontology#VerticalOpening> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'VerticalOpening' class represents an opening through a floor or roof (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#VerticalOpening> <http://www.w3.org/2000/01/rdf-schema#label> "VerticalOpening"@en .
 # 
 # https://purl.org/ffdr-ontology#Wall
@@ -3313,7 +3313,7 @@ _:genid531 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 _:genid532 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid532 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasThickness> .
 _:genid532 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#double> .
-<https://purl.org/ffdr-ontology#Wall> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Wall' class represents walls in a building."@en .
+<https://purl.org/ffdr-ontology#Wall> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Wall' class represents a component that has a slope of 60 degrees or greater with the horizontal plane used to enclose or divide space (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#Wall> <http://www.w3.org/2000/01/rdf-schema#label> "Wall"@en .
 # 
 # https://purl.org/ffdr-ontology#WaterSource
@@ -3392,7 +3392,7 @@ _:genid546 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid546 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/ffdr-ontology#hasWidth> .
 _:genid546 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid546 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
-<https://purl.org/ffdr-ontology#Window> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Window' class represents windows in a building."@en .
+<https://purl.org/ffdr-ontology#Window> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'Window' class represents integral fabricated units, placed in an opening in a wall, primarily intended for the admission of light, or light and air, and not intended primarily for human entrance or exit (NFPA Glossary of Terms)."@en .
 <https://purl.org/ffdr-ontology#Window> <http://www.w3.org/2000/01/rdf-schema#label> "Window"@en .
 # 
 # 

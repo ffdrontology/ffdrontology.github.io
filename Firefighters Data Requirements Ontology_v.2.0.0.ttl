@@ -1457,7 +1457,7 @@ Source: NFPA 704, 2022"""@en ;
                                 owl:someValuesFrom xsd:string
                               ] ;
               owl:disjointWith :Facade ;
-              rdfs:comment "The 'AreaOfRefuge' class represents an area of refuge, which is a protected area in a building where occupants can take refuge during an emergency (NFPA 101)."@en ;
+              rdfs:comment "The 'AreaOfRefuge' class represents an area where persons unable to use stairways can remain temporarily to await instructions or assistance during emergency evacuation (2018 International Fire Code)."@en ;
               rdfs:label "AreaOfRefuge"@en .
 
 
@@ -1507,7 +1507,7 @@ Source: NFPA 704, 2022"""@en ;
                                             owl:onProperty :isControlValveOn ;
                                             owl:someValuesFrom xsd:boolean
                                           ] ;
-                          rdfs:comment "The 'AutomaticSprinklerSystem' class represents a sprinkler system installed in a building."@en ;
+                          rdfs:comment "The 'AutomaticSprinklerSystem' class represents an integrated system of underground and overhead piping designed in accordance with fire protection engineering standards (2018 International Fire Code)."@en ;
                           rdfs:label "AutomaticSprinklerSystem"@en .
 
 
@@ -1531,14 +1531,14 @@ Source: NFPA 704, 2022"""@en ;
                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:double
                          ] ;
-         rdfs:comment "The 'Balcony' class represents balconies that may be found in a building."@en ;
+         rdfs:comment "The 'Balcony' class represents an exterior floor projecting from, and supported by, a structure without additional independent supports (NFPA Glossary of Terms)."@en ;
          rdfs:label "Balcony"@en .
 
 
 ###  https://purl.org/ffdr-ontology#Building
 :Building rdf:type owl:Class ;
           rdfs:subClassOf :EnvironmentalElement ;
-          rdfs:comment "The 'Building' class represents buildings other than the incident building."@en ;
+          rdfs:comment "The 'Building' any structure utilized or intended for supporting or sheltering any occupancy (2018 International Fire Code)."@en ;
           rdfs:label "Building"@en .
 
 
@@ -1658,7 +1658,7 @@ Source: NFPA 704, 2022"""@en ;
 ###  https://purl.org/ffdr-ontology#CarbonMonoxideDetector
 :CarbonMonoxideDetector rdf:type owl:Class ;
                         rdfs:subClassOf :SensorDetector ;
-                        rdfs:comment "The 'CarbonMonoxideDetector' class represents Carbon Monoxide detectors installed in a building."@en ;
+                        rdfs:comment "The 'CarbonMonoxideDetector' class represents a device with an integral sensor to detect carbon monoxide gas and transmit an alarm signal to a connected alarm control unit (2018 International Fire Code)."@en ;
                         rdfs:label "CarbonMonoxideDetector"@en .
 
 
@@ -1685,7 +1685,7 @@ Source: NFPA 704, 2022"""@en ;
                                   owl:someValuesFrom xsd:string
                                 ] ;
                 owl:disjointWith :Facade ;
-                rdfs:comment "The 'ConcealedSpace' class represents concealed spaces that may be found in a building."@en ;
+                rdfs:comment "The 'ConcealedSpace' class represents that portion(s) of a building behind walls, over suspended ceilings, in pipe chases, and in attics whose size might normally range from 44.45 mm (13∕ 4 in.) stud spaces to 2.44 m (8 ft.) interstitial truss spaces and that might contain combustible materials such as building structural members, thermal and/or electrical insulation, and ducting (NFPA Glossary of Terms)."@en ;
                 rdfs:label "ConcealedSpace"@en .
 
 
@@ -1709,7 +1709,7 @@ Source: NFPA 704, 2022"""@en ;
                                   ] ;
                   owl:disjointWith :EnvironmentalElement ,
                                    :Hazard ;
-                  rdfs:comment "The 'ConstructionType' class represents the construction type of a building. The classification is based on the materials used in a building (whether they are combustible or noncombustible) and the fire resistance of a building's elements (IBC, 2018)"@en ;
+                  rdfs:comment "The 'ConstructionType' class represents the combination of materials used in the construction of a building or structure, based on the varying degrees of fire resistance and combustibility (NFPA Glossary of Terms)"@en ;
                   rdfs:label "ConstructionType"@en .
 
 
@@ -1918,7 +1918,7 @@ Source: NFPA 704, 2022"""@en ;
                                     rdf:type owl:Class
                                   ] ;
               rdfs:subClassOf :Facade ;
-              rdfs:comment "The 'ExteriorWall' class represents walls found on the exterior of a building."@en ;
+              rdfs:comment "The 'ExteriorWall' class represents A wall, bearing or nonbearing, that is used as an enclosing wall for a building, other than a fire wall, and that has a slope of 60 degrees (1.05 rad) or greater with the horizontal plane (2018 International Fire Code)"@en ;
               rdfs:label "ExteriorWall"@en .
 
 
@@ -2017,7 +2017,7 @@ Source: NFPA 704, 2022"""@en ;
                                    owl:onProperty :isSystemActivated ;
                                    owl:someValuesFrom xsd:boolean
                                  ] ;
-                 rdfs:comment "The 'FireAlarmSystem' class represents a fire alarm system installed in a building."@en ;
+                 rdfs:comment "The 'FireAlarmSystem' class represents a system or portion of a combination system consisting of components and circuits arranged to monitor and annunciate the status of fire alarm or supervisory signal-initiating devices and to initiate the appropriate response to those signals (2018 International Fire Code)."@en ;
                  rdfs:label "FireAlarmSystem"@en .
 
 
@@ -2028,7 +2028,7 @@ Source: NFPA 704, 2022"""@en ;
                                owl:onProperty :hasEnclosedArea ;
                                owl:someValuesFrom xsd:string
                              ] ;
-             rdfs:comment "The 'FireBarrier' class represents a fire barrier, which is a fire-resistance-rated wall assembly of materials designed to restrict the spread of fire in which continuity of the wall is maintained (IFC, 2018)."@en ;
+             rdfs:comment "The 'FireBarrier' class represents a fire barrier, which is a fire-resistance-rated wall assembly of materials designed to restrict the spread of fire in which continuity of the wall is maintained (2018 International Fire Code)."@en ;
              rdfs:label "FireBarrier"@en .
 
 
@@ -2047,7 +2047,7 @@ Source: NFPA 704, 2022"""@en ;
                                      owl:someValuesFrom xsd:string
                                    ] ;
                    owl:disjointWith :Hazard ;
-                   rdfs:comment "The 'FireCommandCenter' class represents A fire command center, which is a dedicated room or area where fire protection systems, alarms, and other emergency systems are monitored and controlled (NFPA 72)."@en ;
+                   rdfs:comment "The 'FireCommandCenter' class represents The principal attended or unattended location where the status of detection, alarm communications and control systems is displayed, and from which the system(s) can be manually controlled. (2018 International Fire Code)."@en ;
                    rdfs:label "FireCommandCenter"@en .
 
 
@@ -2085,7 +2085,7 @@ Source: NFPA 704, 2022"""@en ;
                                             owl:onProperty :hasNumberOfInlet ;
                                             owl:someValuesFrom xsd:int
                                           ] ;
-                          rdfs:comment "The 'FireDepartmentConnection' class represents fire department connections (FDC) through which firefighters pump water into a standpipe system (NFPA 14)."@en ;
+                          rdfs:comment "The 'FireDepartmentConnection' class represents a connection through which the fire department can pump supplemental water into the fixed water-based fire-fighting system, sprinkler system, standpipe system, or other systems furnishing water for fire suppression and extinguishment to supplement existing water supplies (NFPA Glossary of Terms)."@en ;
                           rdfs:label "FireDepartmentConnection"@en .
 
 
@@ -2139,7 +2139,7 @@ Source: NFPA 704, 2022"""@en ;
                                owl:onProperty :isFunctional ;
                                owl:someValuesFrom xsd:boolean
                              ] ;
-             rdfs:comment "The 'FireHydrant' class represents fire hydrants, which are an important part of a fire suppression operation that provides firefighters with a hose connection to a water supply system (NFPA 24)."@en ,
+             rdfs:comment "The 'FireHydrant' class represents a valved connection on a water supply system having one or more outlets and that is used to supply hose and fire department pumpers with water (NFPA Glossary of Terms)."@en ,
                           "Type: Wet barrel hydrants (on pressurized water distribution systems), Dry barrel hydrants (used on static water supply sources)"@en ;
              rdfs:label "FireHydrant"@en .
 
@@ -2165,7 +2165,7 @@ Source: NFPA 704, 2022"""@en ;
                             owl:someValuesFrom xsd:double
                           ] ;
           owl:disjointWith :RoadToIncident ;
-          rdfs:comment "The 'FireLane' class represents a fire lane, which is an access road designated for fire apparatus (NFPA 1)."@en ;
+          rdfs:comment "The 'FireLane' class represents a road or other passageway developed to allow the passage of fire apparatus. A fire lane is not necessarily intended for vehicular traffic other than fire apparatus (2018 International Fire Code)."@en ;
           rdfs:label "FireLane"@en .
 
 
@@ -2176,7 +2176,7 @@ Source: NFPA 704, 2022"""@en ;
                                  owl:onProperty :hasEnclosedArea ;
                                  owl:someValuesFrom xsd:string
                                ] ;
-               rdfs:comment "The 'FirePartition' class represents a fire partition, which is a vertical assembly of materials designed to restrict the spread of fire while protecting openings (IFC, 2018)."@en ;
+               rdfs:comment "The 'FirePartition' class represents a fire partition, which is a vertical assembly of materials designed to restrict the spread of fire while protecting openings (2018 International Fire Code)."@en ;
                rdfs:label "FirePartition"@en .
 
 
@@ -2187,7 +2187,7 @@ Source: NFPA 704, 2022"""@en ;
                             owl:onProperty :hasLocation ;
                             owl:someValuesFrom xsd:string
                           ] ;
-          rdfs:comment "The 'FirePump' class represents fire pumps which are used to boost the water pressure to standpipes and sprinkler systems (OSHA, 2015)."@en ;
+          rdfs:comment "The 'FirePump' class represents a pump that is a provider of liquid flow and pressure dedicated to fire protection (NFPA Glossary of Terms)."@en ;
           rdfs:label "FirePump"@en .
 
 
@@ -2226,7 +2226,7 @@ Source: NFPA 704, 2022"""@en ;
                             owl:onProperty :hasEnclosedArea ;
                             owl:someValuesFrom xsd:string
                           ] ;
-          rdfs:comment "The 'Firewall' class represents a firewall, which is a fire-resistance-rated wall that restricts the spread of fire while protecting openings and extending continuously from the foundation to or through the roof. It has sufficient structural stability under fire conditions to allow the structure to collapse without the collapse of the wall (IFC, 2018)."@en ;
+          rdfs:comment "The 'Firewall' class represents a firewall, which is a fire-resistance-rated wall that restricts the spread of fire while protecting openings and extending continuously from the foundation to or through the roof. It has sufficient structural stability under fire conditions to allow the structure to collapse without the collapse of the wall (2018 International Fire Code)."@en ;
           rdfs:label "Firewall"@en .
 
 
@@ -2244,7 +2244,7 @@ Source: NFPA 704, 2022"""@en ;
 ###  https://purl.org/ffdr-ontology#GasDetector
 :GasDetector rdf:type owl:Class ;
              rdfs:subClassOf :SensorDetector ;
-             rdfs:comment "The 'GasDetector' class represents different gas detectors installed in a building."@en ;
+             rdfs:comment "The 'GasDetector' class represents an instrument that samples the local atmosphere and indicates the presence of ignitable vapors or gases within the flammable or explosive range expressed as a volume percent in air (2018 International Fire Code)."@en ;
              rdfs:label "GasDetector"@en .
 
 
@@ -2294,7 +2294,7 @@ Source: NFPA 704, 2022"""@en ;
                          :SurroundingTerrain ,
                          :WaterSource ,
                          :WeatherCondition ;
-        rdfs:comment "The 'Hazard' class represents materials or activities within a building that can be hazardous to firefighters."@en ;
+        rdfs:comment "The 'Hazard' class represents real or potential condition that can cause injury (NFPA Glossary of Terms)."@en ;
         rdfs:label "Hazard"@en .
 
 
@@ -2308,7 +2308,7 @@ Source: NFPA 704, 2022"""@en ;
                                      owl:someValuesFrom xsd:boolean
                                    ] ;
                    owl:disjointWith :HazardousOperation ;
-                   rdfs:comment "The 'HazardousMaterial' class represents hazardous materials that may be found inside or outside a building."@en ;
+                   rdfs:comment "The 'HazardousMaterial' class represents a substance that, by reason of being explosive, flammable, poisonous, corrosive, oxidizing, irritating, or otherwise harmful, is likely to cause death or injury (NFPA Glossary of Terms)."@en ;
                    rdfs:label "HazardousMaterial"@en .
 
 
@@ -2326,7 +2326,7 @@ Source: NFPA 704, 2022"""@en ;
                            owl:onProperty :hasLocation ;
                            owl:someValuesFrom xsd:string
                          ] ;
-         rdfs:comment "The 'Helipad' class represents a helipad, which is an area for landing helicopters, that may be available on a building."@en ;
+         rdfs:comment "The 'Helipad' class represents a  structural surface that is used for the land- ing, taking off, taxiing and parking of helicopters (2018 International Building Code)"@en ;
          rdfs:label "Helipad"@en .
 
 
@@ -2348,7 +2348,7 @@ Source: NFPA 704, 2022"""@en ;
 ###  https://purl.org/ffdr-ontology#Hospital
 :Hospital rdf:type owl:Class ;
           rdfs:subClassOf :EmergencyServiceProvider ;
-          rdfs:comment "The 'Hospital' class represents hospitals."@en ;
+          rdfs:comment "The 'Hospital' class represents a building or portion thereof used on a 24-⁠hour basis for the medical, psychiatric, obstetrical, or surgical care of four or more inpatients (NFPA Glossary of Terms)."@en ;
           rdfs:label "Hospital"@en .
 
 
@@ -2479,7 +2479,7 @@ Source: NFPA 704, 2022"""@en ;
                           owl:onProperty :hasLocation ;
                           owl:someValuesFrom xsd:string
                         ] ;
-        rdfs:comment "The 'KeyBox' class represents key boxes,  which are small vaults placed in a building or nearby that contain keys to a building's doors, elevators, and other rooms (OSHA, 2015)."@en ;
+        rdfs:comment "The 'KeyBox' class represents a secure device with a lock operable only by a fire department master key, and containing building entry keys and other keys that may be required for access in an emergency (2018 International Fire Code)."@en ;
         rdfs:label "KeyBox"@en .
 
 
@@ -2499,7 +2499,7 @@ Source: NFPA 704, 2022"""@en ;
                                           owl:someValuesFrom xsd:string
                                         ] ;
                         rdfs:comment "Notification type could be auditory or visual or both."@en ,
-                                     "The 'MassNotificationSystem' class represents a mass notification system that is used by firefighters to provide clear instruction to building occupants (OSHA, 2015)."@en ;
+                                     "The 'MassNotificationSystem' class represents a system used to provide information and instructions to people in a building(s) or other space using intelligible voice communications and including visual signals, text, graphics, tactile, or other communication methods (NFPA Glossary of Terms)."@en ;
                         rdfs:label "MassNotificationSystem"@en .
 
 
@@ -2607,7 +2607,7 @@ Source: NFPA 704, 2022"""@en ;
 ###  https://purl.org/ffdr-ontology#Pipeline
 :Pipeline rdf:type owl:Class ;
           rdfs:subClassOf :EnvironmentalElement ;
-          rdfs:comment "The 'Pipeline' class represents pipelines located near an incident building."@en ;
+          rdfs:comment "The 'Pipeline' class represents a length of pipe including pumps, valves, flanges, control devices, strainers, and/or similar equipment for conveying fluids (NFPA Glossary of Terms)."@en ;
           rdfs:label "Pipeline"@en .
 
 
@@ -2634,7 +2634,7 @@ Source: NFPA 704, 2022"""@en ;
                                             owl:someValuesFrom xsd:string
                                           ] ;
                           rdfs:comment "Has different type such as:   Air-Water;  Air-Foam;  Wet Chemical;  Dry Chemical Powder; Carbon Dioxide and Vaporising Liquid."@en ,
-                                       "The 'PortableFireExtinguisher' class represents portable fire extinguishers placed throughout a building."@en ;
+                                       "The 'PortableFireExtinguisher' class represents portable device, carried or on wheels and operated by hand, containing an extinguishing agent that can be expelled under pressure for the purpose of suppressing or extinguishing fire (NFPA Glossary of Terms)."@en ;
                           rdfs:label "PortableFireExtinguisher"@en .
 
 
@@ -2702,7 +2702,7 @@ Source: NFPA 704, 2022"""@en ;
                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                         owl:onDataRange xsd:boolean
                       ] ;
-      rdfs:comment "The 'Ramp' class represents ramps that may be found in a building."@en ;
+      rdfs:comment "The 'Ramp' class represents a walking surface that has a running slope steeper than one unit vertical in 20 units horizontal (5-percent slope) (2018 International Building Code)"@en ;
       rdfs:label "Ramp"@en .
 
 
@@ -2717,7 +2717,7 @@ Source: NFPA 704, 2022"""@en ;
                                   owl:onProperty :hasLocation ;
                                   owl:someValuesFrom xsd:string
                                 ] ;
-                rdfs:comment "The 'RestrictedArea' class represents an area inside a building that requires special permission to access."@en ;
+                rdfs:comment "The 'RestrictedArea' class represents a room, office, building, or facility to which access is strictly and tightly controlled (NFPA Glossary of Terms)."@en ;
                 rdfs:label "RestrictedArea"@en .
 
 
@@ -2743,7 +2743,7 @@ Source: NFPA 704, 2022"""@en ;
                         owl:onProperty :hasWidth ;
                         owl:someValuesFrom xsd:double
                       ] ;
-      rdfs:comment "The 'Road' class represents roads."@en ;
+      rdfs:comment "The 'Road' class represents any accessway, not including a driveway, that gives access to more than one parcel and is primarily intended for vehicular access (NFPA Glossary of Terms)."@en ;
       rdfs:label "Road"@en .
 
 
@@ -2769,7 +2769,7 @@ Source: NFPA 704, 2022"""@en ;
                                 owl:onProperty :isLightweightConstruction ;
                                 owl:someValuesFrom xsd:boolean
                               ] ;
-              rdfs:comment "The 'RoofAssembly' class represents the roof assembly in a building."@en ;
+              rdfs:comment "The 'RoofAssembly' class represents the component(s) above the roof structural framing including the roof deck, vapor barrier, insulation, roof cover, coatings, toppings, or any combination thereof (NFPA Glossary of Terms)"@en ;
               rdfs:label "RoofAssembly"@en .
 
 
@@ -2810,7 +2810,7 @@ Source: NFPA 704, 2022"""@en ;
 ###  https://purl.org/ffdr-ontology#ShaftEnclosure
 :ShaftEnclosure rdf:type owl:Class ;
                 rdfs:subClassOf :FireandSmokeProtectionElement ;
-                rdfs:comment "The 'ShaftEnclosure' class represents a shaft enclosure that protects vertical openings."@en ;
+                rdfs:comment "The 'ShaftEnclosure' class represents The walls or construction forming the boundaries of a shaft (2018 International Building Code)."@en ;
                 rdfs:label "ShaftEnclosure"@en .
 
 
@@ -2821,7 +2821,7 @@ Source: NFPA 704, 2022"""@en ;
                                 owl:onProperty :hasEnclosedArea ;
                                 owl:someValuesFrom xsd:string
                               ] ;
-              rdfs:comment "The 'SmokeBarrier' class represents a smoke barrier, which is a continuous vertical or horizontal membrane (such as a wall, floor, or ceiling assembly) that restricts the movement of smoke (IFC 2018)."@en ;
+              rdfs:comment "The 'SmokeBarrier' class represents a smoke barrier, which is a continuous vertical or horizontal membrane (such as a wall, floor, or ceiling assembly) that restricts the movement of smoke (2018 International Fire Code)."@en ;
               rdfs:label "SmokeBarrier"@en .
 
 
@@ -2845,7 +2845,7 @@ Source: NFPA 704, 2022"""@en ;
                                       owl:someValuesFrom xsd:boolean
                                     ] ;
                     rdfs:comment "System type could be: smoke exhaust systems and stair pressurization systems"@en ,
-                                 "The 'SmokeControlSystem' class represents a smoke control system that supports the protection of building occupants while they evacuate the building (OSHA, 2015)."@en ;
+                                 "The 'SmokeControlSystem' class represents an engineered system that includes all methods that can be used singly or in combinatin to modify smoke movement (NFPA Glossary of Terms)."@en ;
                     rdfs:label "SmokeControlSystem"@en .
 
 
@@ -2863,7 +2863,7 @@ Source: NFPA 704, 2022"""@en ;
                                   owl:onProperty :hasEnclosedArea ;
                                   owl:someValuesFrom xsd:string
                                 ] ;
-                rdfs:comment "The 'SmokePartition' class represents a smoke partition, which is a wall assembly that limits the transfer of smoke (IFC, 2018)."@en ;
+                rdfs:comment "The 'SmokePartition' class represents a smoke partition, which is a wall assembly that limits the transfer of smoke (2018 International Fire Code)."@en ;
                 rdfs:label "SmokePartition"@en .
 
 
@@ -2983,7 +2983,7 @@ has water source: Automatic water supply, manual supply through FDC, Or both
 has Class: fire service use (Class I), occupant use (Class II), or combined fire service and occupant use (Class III)
 
 has type: Wet (automatic or manual) and Dry"""@en ,
-                              "The 'StandpipeSystem' class represents a standpipe system which is a system of pipes within a building that provides water to fire hose connections and, in some cases, to sprinkler systems (NFPA 14)."@en ;
+                              "The 'StandpipeSystem' class represents an arrangement of piping, valves, hose connections, and allied equipment installed in a building or structure such that, when supplied with adequate water, allows attached hose lines to be used to extinguish a fire (NFPA Glossary of Terms)."@en ;
                  rdfs:label "StandpipeSystem"@en .
 
 
@@ -3027,7 +3027,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                      owl:onDataRange xsd:double
                                    ] ;
-                   rdfs:comment "The 'StructuralElement' class represents the structural elements of a building."@en ;
+                   rdfs:comment "The 'StructuralElement' class represents the columns and girders, beams, trusses, joists, braced frames, moment-resistant frames, and vertical and lateral resisting elements, and other framing members that are designed to carry any portion of the dead or live load and lateral forces, that are essential to the stability of the building or structure (NFPA Glossary of Terms)."@en ;
                    rdfs:label "StructuralElement"@en .
 
 
@@ -3085,7 +3085,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                                    owl:onProperty :hasLocation ;
                                    owl:someValuesFrom xsd:string
                                  ] ;
-                 rdfs:comment "The 'VerticalOpening' class represents vertical Openings that may be found in a building."@en ;
+                 rdfs:comment "The 'VerticalOpening' class represents an opening through a floor or roof (NFPA Glossary of Terms)."@en ;
                  rdfs:label "VerticalOpening"@en .
 
 
@@ -3096,7 +3096,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                         owl:onProperty :hasThickness ;
                         owl:someValuesFrom xsd:double
                       ] ;
-      rdfs:comment "The 'Wall' class represents walls in a building."@en ;
+      rdfs:comment "The 'Wall' class represents a component that has a slope of 60 degrees or greater with the horizontal plane used to enclose or divide space (NFPA Glossary of Terms)."@en ;
       rdfs:label "Wall"@en .
 
 
@@ -3179,7 +3179,7 @@ has type: Wet (automatic or manual) and Dry"""@en ,
                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                           owl:onDataRange xsd:double
                         ] ;
-        rdfs:comment "The 'Window' class represents windows in a building."@en ;
+        rdfs:comment "The 'Window' class represents integral fabricated units, placed in an opening in a wall, primarily intended for the admission of light, or light and air, and not intended primarily for human entrance or exit (NFPA Glossary of Terms)."@en ;
         rdfs:label "Window"@en .
 
 

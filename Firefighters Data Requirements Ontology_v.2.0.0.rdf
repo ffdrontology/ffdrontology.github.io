@@ -2153,7 +2153,7 @@ Source: NFPA 704, 2022</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://purl.org/ffdr-ontology#Facade"/>
-        <rdfs:comment xml:lang="en">The &apos;AreaOfRefuge&apos; class represents an area of refuge, which is a protected area in a building where occupants can take refuge during an emergency (NFPA 101).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;AreaOfRefuge&apos; class represents an area where persons unable to use stairways can remain temporarily to await instructions or assistance during emergency evacuation (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">AreaOfRefuge</rdfs:label>
     </owl:Class>
     
@@ -2230,7 +2230,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;AutomaticSprinklerSystem&apos; class represents a sprinkler system installed in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;AutomaticSprinklerSystem&apos; class represents an integrated system of underground and overhead piping designed in accordance with fire protection engineering standards (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">AutomaticSprinklerSystem</rdfs:label>
     </owl:Class>
     
@@ -2266,7 +2266,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;Balcony&apos; class represents balconies that may be found in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Balcony&apos; class represents an exterior floor projecting from, and supported by, a structure without additional independent supports (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">Balcony</rdfs:label>
     </owl:Class>
     
@@ -2277,7 +2277,7 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <owl:Class rdf:about="https://purl.org/ffdr-ontology#Building">
         <rdfs:subClassOf rdf:resource="https://purl.org/ffdr-ontology#EnvironmentalElement"/>
-        <rdfs:comment xml:lang="en">The &apos;Building&apos; class represents buildings other than the incident building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Building&apos; any structure utilized or intended for supporting or sheltering any occupancy (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">Building</rdfs:label>
     </owl:Class>
     
@@ -2450,7 +2450,7 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <owl:Class rdf:about="https://purl.org/ffdr-ontology#CarbonMonoxideDetector">
         <rdfs:subClassOf rdf:resource="https://purl.org/ffdr-ontology#SensorDetector"/>
-        <rdfs:comment xml:lang="en">The &apos;CarbonMonoxideDetector&apos; class represents Carbon Monoxide detectors installed in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;CarbonMonoxideDetector&apos; class represents a device with an integral sensor to detect carbon monoxide gas and transmit an alarm signal to a connected alarm control unit (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">CarbonMonoxideDetector</rdfs:label>
     </owl:Class>
     
@@ -2491,7 +2491,7 @@ Source: NFPA 704, 2022</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://purl.org/ffdr-ontology#Facade"/>
-        <rdfs:comment xml:lang="en">The &apos;ConcealedSpace&apos; class represents concealed spaces that may be found in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;ConcealedSpace&apos; class represents that portion(s) of a building behind walls, over suspended ceilings, in pipe chases, and in attics whose size might normally range from 44.45 mm (13∕ 4 in.) stud spaces to 2.44 m (8 ft.) interstitial truss spaces and that might contain combustible materials such as building structural members, thermal and/or electrical insulation, and ducting (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">ConcealedSpace</rdfs:label>
     </owl:Class>
     
@@ -2526,7 +2526,7 @@ Source: NFPA 704, 2022</rdfs:comment>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://purl.org/ffdr-ontology#EnvironmentalElement"/>
         <owl:disjointWith rdf:resource="https://purl.org/ffdr-ontology#Hazard"/>
-        <rdfs:comment xml:lang="en">The &apos;ConstructionType&apos; class represents the construction type of a building. The classification is based on the materials used in a building (whether they are combustible or noncombustible) and the fire resistance of a building&apos;s elements (IBC, 2018)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;ConstructionType&apos; class represents the combination of materials used in the construction of a building or structure, based on the varying degrees of fire resistance and combustibility (NFPA Glossary of Terms)</rdfs:comment>
         <rdfs:label xml:lang="en">ConstructionType</rdfs:label>
     </owl:Class>
     
@@ -2837,7 +2837,7 @@ Source: NFPA 704, 2022</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.org/ffdr-ontology#Facade"/>
-        <rdfs:comment xml:lang="en">The &apos;ExteriorWall&apos; class represents walls found on the exterior of a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;ExteriorWall&apos; class represents A wall, bearing or nonbearing, that is used as an enclosing wall for a building, other than a fire wall, and that has a slope of 60 degrees (1.05 rad) or greater with the horizontal plane (2018 International Fire Code)</rdfs:comment>
         <rdfs:label xml:lang="en">ExteriorWall</rdfs:label>
     </owl:Class>
     
@@ -2983,7 +2983,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;FireAlarmSystem&apos; class represents a fire alarm system installed in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;FireAlarmSystem&apos; class represents a system or portion of a combination system consisting of components and circuits arranged to monitor and annunciate the status of fire alarm or supervisory signal-initiating devices and to initiate the appropriate response to those signals (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">FireAlarmSystem</rdfs:label>
     </owl:Class>
     
@@ -3000,7 +3000,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;FireBarrier&apos; class represents a fire barrier, which is a fire-resistance-rated wall assembly of materials designed to restrict the spread of fire in which continuity of the wall is maintained (IFC, 2018).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;FireBarrier&apos; class represents a fire barrier, which is a fire-resistance-rated wall assembly of materials designed to restrict the spread of fire in which continuity of the wall is maintained (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">FireBarrier</rdfs:label>
     </owl:Class>
     
@@ -3029,7 +3029,7 @@ Source: NFPA 704, 2022</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://purl.org/ffdr-ontology#Hazard"/>
-        <rdfs:comment xml:lang="en">The &apos;FireCommandCenter&apos; class represents A fire command center, which is a dedicated room or area where fire protection systems, alarms, and other emergency systems are monitored and controlled (NFPA 72).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;FireCommandCenter&apos; class represents The principal attended or unattended location where the status of detection, alarm communications and control systems is displayed, and from which the system(s) can be manually controlled. (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">FireCommandCenter</rdfs:label>
     </owl:Class>
     
@@ -3087,7 +3087,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;FireDepartmentConnection&apos; class represents fire department connections (FDC) through which firefighters pump water into a standpipe system (NFPA 14).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;FireDepartmentConnection&apos; class represents a connection through which the fire department can pump supplemental water into the fixed water-based fire-fighting system, sprinkler system, standpipe system, or other systems furnishing water for fire suppression and extinguishment to supplement existing water supplies (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">FireDepartmentConnection</rdfs:label>
     </owl:Class>
     
@@ -3169,7 +3169,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;FireHydrant&apos; class represents fire hydrants, which are an important part of a fire suppression operation that provides firefighters with a hose connection to a water supply system (NFPA 24).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;FireHydrant&apos; class represents a valved connection on a water supply system having one or more outlets and that is used to supply hose and fire department pumpers with water (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:comment xml:lang="en">Type: Wet barrel hydrants (on pressurized water distribution systems), Dry barrel hydrants (used on static water supply sources)</rdfs:comment>
         <rdfs:label xml:lang="en">FireHydrant</rdfs:label>
     </owl:Class>
@@ -3207,7 +3207,7 @@ Source: NFPA 704, 2022</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://purl.org/ffdr-ontology#RoadToIncident"/>
-        <rdfs:comment xml:lang="en">The &apos;FireLane&apos; class represents a fire lane, which is an access road designated for fire apparatus (NFPA 1).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;FireLane&apos; class represents a road or other passageway developed to allow the passage of fire apparatus. A fire lane is not necessarily intended for vehicular traffic other than fire apparatus (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">FireLane</rdfs:label>
     </owl:Class>
     
@@ -3224,7 +3224,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;FirePartition&apos; class represents a fire partition, which is a vertical assembly of materials designed to restrict the spread of fire while protecting openings (IFC, 2018).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;FirePartition&apos; class represents a fire partition, which is a vertical assembly of materials designed to restrict the spread of fire while protecting openings (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">FirePartition</rdfs:label>
     </owl:Class>
     
@@ -3241,7 +3241,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;FirePump&apos; class represents fire pumps which are used to boost the water pressure to standpipes and sprinkler systems (OSHA, 2015).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;FirePump&apos; class represents a pump that is a provider of liquid flow and pressure dedicated to fire protection (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">FirePump</rdfs:label>
     </owl:Class>
     
@@ -3300,7 +3300,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;Firewall&apos; class represents a firewall, which is a fire-resistance-rated wall that restricts the spread of fire while protecting openings and extending continuously from the foundation to or through the roof. It has sufficient structural stability under fire conditions to allow the structure to collapse without the collapse of the wall (IFC, 2018).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Firewall&apos; class represents a firewall, which is a fire-resistance-rated wall that restricts the spread of fire while protecting openings and extending continuously from the foundation to or through the roof. It has sufficient structural stability under fire conditions to allow the structure to collapse without the collapse of the wall (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">Firewall</rdfs:label>
     </owl:Class>
     
@@ -3328,7 +3328,7 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <owl:Class rdf:about="https://purl.org/ffdr-ontology#GasDetector">
         <rdfs:subClassOf rdf:resource="https://purl.org/ffdr-ontology#SensorDetector"/>
-        <rdfs:comment xml:lang="en">The &apos;GasDetector&apos; class represents different gas detectors installed in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;GasDetector&apos; class represents an instrument that samples the local atmosphere and indicates the presence of ignitable vapors or gases within the flammable or explosive range expressed as a volume percent in air (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">GasDetector</rdfs:label>
     </owl:Class>
     
@@ -3400,7 +3400,7 @@ Source: NFPA 704, 2022</rdfs:comment>
         <owl:disjointWith rdf:resource="https://purl.org/ffdr-ontology#SurroundingTerrain"/>
         <owl:disjointWith rdf:resource="https://purl.org/ffdr-ontology#WaterSource"/>
         <owl:disjointWith rdf:resource="https://purl.org/ffdr-ontology#WeatherCondition"/>
-        <rdfs:comment xml:lang="en">The &apos;Hazard&apos; class represents materials or activities within a building that can be hazardous to firefighters.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Hazard&apos; class represents real or potential condition that can cause injury (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">Hazard</rdfs:label>
     </owl:Class>
     
@@ -3420,7 +3420,7 @@ Source: NFPA 704, 2022</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://purl.org/ffdr-ontology#HazardousOperation"/>
-        <rdfs:comment xml:lang="en">The &apos;HazardousMaterial&apos; class represents hazardous materials that may be found inside or outside a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;HazardousMaterial&apos; class represents a substance that, by reason of being explosive, flammable, poisonous, corrosive, oxidizing, irritating, or otherwise harmful, is likely to cause death or injury (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">HazardousMaterial</rdfs:label>
     </owl:Class>
     
@@ -3448,7 +3448,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;Helipad&apos; class represents a helipad, which is an area for landing helicopters, that may be available on a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Helipad&apos; class represents a  structural surface that is used for the land- ing, taking off, taxiing and parking of helicopters (2018 International Building Code)</rdfs:comment>
         <rdfs:label xml:lang="en">Helipad</rdfs:label>
     </owl:Class>
     
@@ -3482,7 +3482,7 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <owl:Class rdf:about="https://purl.org/ffdr-ontology#Hospital">
         <rdfs:subClassOf rdf:resource="https://purl.org/ffdr-ontology#EmergencyServiceProvider"/>
-        <rdfs:comment xml:lang="en">The &apos;Hospital&apos; class represents hospitals.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Hospital&apos; class represents a building or portion thereof used on a 24-⁠hour basis for the medical, psychiatric, obstetrical, or surgical care of four or more inpatients (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">Hospital</rdfs:label>
     </owl:Class>
     
@@ -3679,7 +3679,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;KeyBox&apos; class represents key boxes,  which are small vaults placed in a building or nearby that contain keys to a building&apos;s doors, elevators, and other rooms (OSHA, 2015).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;KeyBox&apos; class represents a secure device with a lock operable only by a fire department master key, and containing building entry keys and other keys that may be required for access in an emergency (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">KeyBox</rdfs:label>
     </owl:Class>
     
@@ -3709,7 +3709,7 @@ Source: NFPA 704, 2022</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Notification type could be auditory or visual or both.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The &apos;MassNotificationSystem&apos; class represents a mass notification system that is used by firefighters to provide clear instruction to building occupants (OSHA, 2015).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;MassNotificationSystem&apos; class represents a system used to provide information and instructions to people in a building(s) or other space using intelligible voice communications and including visual signals, text, graphics, tactile, or other communication methods (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">MassNotificationSystem</rdfs:label>
     </owl:Class>
     
@@ -3875,7 +3875,7 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <owl:Class rdf:about="https://purl.org/ffdr-ontology#Pipeline">
         <rdfs:subClassOf rdf:resource="https://purl.org/ffdr-ontology#EnvironmentalElement"/>
-        <rdfs:comment xml:lang="en">The &apos;Pipeline&apos; class represents pipelines located near an incident building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Pipeline&apos; class represents a length of pipe including pumps, valves, flanges, control devices, strainers, and/or similar equipment for conveying fluids (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">Pipeline</rdfs:label>
     </owl:Class>
     
@@ -3916,7 +3916,7 @@ Source: NFPA 704, 2022</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Has different type such as:   Air-Water;  Air-Foam;  Wet Chemical;  Dry Chemical Powder; Carbon Dioxide and Vaporising Liquid.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The &apos;PortableFireExtinguisher&apos; class represents portable fire extinguishers placed throughout a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;PortableFireExtinguisher&apos; class represents portable device, carried or on wheels and operated by hand, containing an extinguishing agent that can be expelled under pressure for the purpose of suppressing or extinguishing fire (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">PortableFireExtinguisher</rdfs:label>
     </owl:Class>
     
@@ -4018,7 +4018,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;Ramp&apos; class represents ramps that may be found in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Ramp&apos; class represents a walking surface that has a running slope steeper than one unit vertical in 20 units horizontal (5-percent slope) (2018 International Building Code)</rdfs:comment>
         <rdfs:label xml:lang="en">Ramp</rdfs:label>
     </owl:Class>
     
@@ -4041,7 +4041,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;RestrictedArea&apos; class represents an area inside a building that requires special permission to access.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;RestrictedArea&apos; class represents a room, office, building, or facility to which access is strictly and tightly controlled (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">RestrictedArea</rdfs:label>
     </owl:Class>
     
@@ -4081,7 +4081,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;Road&apos; class represents roads.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Road&apos; class represents any accessway, not including a driveway, that gives access to more than one parcel and is primarily intended for vehicular access (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">Road</rdfs:label>
     </owl:Class>
     
@@ -4121,7 +4121,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;RoofAssembly&apos; class represents the roof assembly in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;RoofAssembly&apos; class represents the component(s) above the roof structural framing including the roof deck, vapor barrier, insulation, roof cover, coatings, toppings, or any combination thereof (NFPA Glossary of Terms)</rdfs:comment>
         <rdfs:label xml:lang="en">RoofAssembly</rdfs:label>
     </owl:Class>
     
@@ -4184,7 +4184,7 @@ Source: NFPA 704, 2022</rdfs:comment>
 
     <owl:Class rdf:about="https://purl.org/ffdr-ontology#ShaftEnclosure">
         <rdfs:subClassOf rdf:resource="https://purl.org/ffdr-ontology#FireandSmokeProtectionElement"/>
-        <rdfs:comment xml:lang="en">The &apos;ShaftEnclosure&apos; class represents a shaft enclosure that protects vertical openings.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;ShaftEnclosure&apos; class represents The walls or construction forming the boundaries of a shaft (2018 International Building Code).</rdfs:comment>
         <rdfs:label xml:lang="en">ShaftEnclosure</rdfs:label>
     </owl:Class>
     
@@ -4201,7 +4201,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;SmokeBarrier&apos; class represents a smoke barrier, which is a continuous vertical or horizontal membrane (such as a wall, floor, or ceiling assembly) that restricts the movement of smoke (IFC 2018).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;SmokeBarrier&apos; class represents a smoke barrier, which is a continuous vertical or horizontal membrane (such as a wall, floor, or ceiling assembly) that restricts the movement of smoke (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">SmokeBarrier</rdfs:label>
     </owl:Class>
     
@@ -4237,7 +4237,7 @@ Source: NFPA 704, 2022</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">System type could be: smoke exhaust systems and stair pressurization systems</rdfs:comment>
-        <rdfs:comment xml:lang="en">The &apos;SmokeControlSystem&apos; class represents a smoke control system that supports the protection of building occupants while they evacuate the building (OSHA, 2015).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;SmokeControlSystem&apos; class represents an engineered system that includes all methods that can be used singly or in combinatin to modify smoke movement (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">SmokeControlSystem</rdfs:label>
     </owl:Class>
     
@@ -4265,7 +4265,7 @@ Source: NFPA 704, 2022</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;SmokePartition&apos; class represents a smoke partition, which is a wall assembly that limits the transfer of smoke (IFC, 2018).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;SmokePartition&apos; class represents a smoke partition, which is a wall assembly that limits the transfer of smoke (2018 International Fire Code).</rdfs:comment>
         <rdfs:label xml:lang="en">SmokePartition</rdfs:label>
     </owl:Class>
     
@@ -4442,7 +4442,7 @@ has water source: Automatic water supply, manual supply through FDC, Or both
 has Class: fire service use (Class I), occupant use (Class II), or combined fire service and occupant use (Class III)
 
 has type: Wet (automatic or manual) and Dry</rdfs:comment>
-        <rdfs:comment xml:lang="en">The &apos;StandpipeSystem&apos; class represents a standpipe system which is a system of pipes within a building that provides water to fire hose connections and, in some cases, to sprinkler systems (NFPA 14).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;StandpipeSystem&apos; class represents an arrangement of piping, valves, hose connections, and allied equipment installed in a building or structure such that, when supplied with adequate water, allows attached hose lines to be used to extinguish a fire (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">StandpipeSystem</rdfs:label>
     </owl:Class>
     
@@ -4508,7 +4508,7 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;StructuralElement&apos; class represents the structural elements of a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;StructuralElement&apos; class represents the columns and girders, beams, trusses, joists, braced frames, moment-resistant frames, and vertical and lateral resisting elements, and other framing members that are designed to carry any portion of the dead or live load and lateral forces, that are essential to the stability of the building or structure (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">StructuralElement</rdfs:label>
     </owl:Class>
     
@@ -4598,7 +4598,7 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;VerticalOpening&apos; class represents vertical Openings that may be found in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;VerticalOpening&apos; class represents an opening through a floor or roof (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">VerticalOpening</rdfs:label>
     </owl:Class>
     
@@ -4615,7 +4615,7 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;Wall&apos; class represents walls in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Wall&apos; class represents a component that has a slope of 60 degrees or greater with the horizontal plane used to enclose or divide space (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">Wall</rdfs:label>
     </owl:Class>
     
@@ -4742,7 +4742,7 @@ has type: Wet (automatic or manual) and Dry</rdfs:comment>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The &apos;Window&apos; class represents windows in a building.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The &apos;Window&apos; class represents integral fabricated units, placed in an opening in a wall, primarily intended for the admission of light, or light and air, and not intended primarily for human entrance or exit (NFPA Glossary of Terms).</rdfs:comment>
         <rdfs:label xml:lang="en">Window</rdfs:label>
     </owl:Class>
     
